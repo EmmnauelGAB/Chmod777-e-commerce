@@ -92,13 +92,9 @@ footer{
 }
 
 
-
-
-
-
-
-
-
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -109,3 +105,4 @@ footer{
  
   justify-content: center;
 }
+
