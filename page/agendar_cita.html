@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PLATÍCALO CON PSIC. DÁNIKA</title>
-    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="shortcut icon" href="./img/cardiograma 2.png" />
     <link
       rel="stylesheet"
@@ -13,10 +12,16 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <!--Fuente de la letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!--Main CSS3-->
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
     <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark navs">
+    <nav class="navbar navbar-expand-lg navbar-dark navStyle">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -68,20 +73,24 @@
         
       </div>
     </nav>
+    <header class="jumbotron text-center jumbotronCita">
+      <h1 class="display-4 titulopagina font-weight-bold">
+         AGENDAR CITA
+      </h1>
+    </header>
  
     <!--Footer-->
-    <footer class="text-white icons">
-        <div class="iconsf bf">
-          <img src="../img/icon-mail 2.png" alt="" width="35px" class="ic" />
-          <img src="../img/icon-phone 2.png" alt="" width="35px" class="ic" />
-          <img src="../img/icon-instagram 2.png" alt="" width="35px" class="ic" />
-          <img src="../img/icon-twitter 2.png" alt="" width="35px" class="ic" />
-        </div>
-        <div class="copy">
-          Hecho con 🤍 de Chmod 777 Copyright 2022 - Todos los derechos Reservados
-        </div>
-      </footer>
-
+    <footer class="">
+      <div class="iconContStyle">
+        <img src="../img/icon-mail 2.png" alt="imagen email" width="35px" class="iconStyle"/>
+        <img src="../img/icon-phone 2.png" alt="imagen telefono" width="35px" class="iconStyle"/>
+        <img src="../img/icon-instagram 2.png" alt="imagen instagram" width="35px" class="iconStyle"/>
+        <img src="../img/icon-twitter 2.png" alt="imagen twitter" width="35px" class="iconStyle"/>
+      </div>
+      <div class="footerStyle">
+        Hecho con 🤍 de Chmod 777 Copyright 2022 - Todos los derechos Reservados
+      </div>
+    </footer>
     <!--Declaracion de Scripts-->
     <!--Bootstrap-->
     <script

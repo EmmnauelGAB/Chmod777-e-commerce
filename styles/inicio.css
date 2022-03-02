@@ -1,0 +1,7 @@
+/* Estilos del jumbotron */ 
+.jumbotronInicio{
+    color: var(--ColorWhite);
+    letter-spacing: 3px;
+    background-image: url(/img/wall3.png);
+    border-radius: 0%;
+  }
