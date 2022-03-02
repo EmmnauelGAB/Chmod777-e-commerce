@@ -1,0 +1,7 @@
+@media screen and (max-width: 600px){
+    .biblio{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
