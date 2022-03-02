@@ -1,0 +1,57 @@
+/* Estilos */
+@import url(./inicio.css);
+@import url(./nosotros.css);
+@import url(./servicios.css);
+@import url(./contacto.css);
+@import url(./cita.css);
+
+
+/* Variables */
+:root{
+    font-family: 'Acme', sans-serif;
+    --ColorWhite: #ffffff;
+    --ColorBlack: #000000;
+    --colorBlueClear: #253444;;
+    --colorBlueDark: #1A252F;
+    --colorGreen: #18BC9C;
+}
+
+/* Nav */
+.navStyle{
+    background-color: var(--colorGreen);
+  }
+  
+/* Body */
+body{
+    background-color: var(--ColorWhite);
+    font-family: 'Acme', sans-serif;
+}
+  
+ /* Footer */ 
+footer{
+    background-color:  var(--colorBlueClear);
+}
+  
+.footerStyle{
+    background-color: var(--colorBlueDark);
+    color: var(--ColorWhite);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+ /* Contenedor de los iconos*/ 
+.iconContStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+}
+/* Iconos */
+.iconStyle{
+    margin:20px;
+}
+

@@ -14,3 +14,11 @@
       bottom: 0;
       margin: auto;
   }
+
+/* Estilos del jumbotron */
+.jumbotronNosotros{
+    color: var(--ColorWhite);
+    letter-spacing: 3px;
+    background-color: var(--colorBlueClear);
+    border-radius: 0%;
+}

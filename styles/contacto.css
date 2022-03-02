@@ -1,0 +1,7 @@
+/* Estilos del jumbotron */
+.jumbotronContacto{
+    color: var(--ColorWhite);
+    letter-spacing: 3px;
+    background-color: var(--colorBlueClear);
+    border-radius: 0%;
+}
