@@ -65,32 +65,65 @@
             </a>
           </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <a
-            class="btn btn-outline-light my-2 my-sm-0"
-            style="border-radius: 16px 1px 1px 16px"
-            type="submit"
-          >
+        <form class="form-inline my-2 my-lg-0">
+          <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLogin" style="border-radius: 16px 1px 1px 16px">
             INGRESAR
-          </a>
-          <a
-            class="btn btn-outline-light my-2 my-sm-0"
-            style="border-radius: 1px 16px 16px 1px"
-            type="submit"
-          >
+          </button>
+          <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 1px 16px 16px 1px">
             REGISTRARSE
-          </a>
-        </form> -->
+          </button>
+        </form>
       </div>
     </nav>
     <!-- JUMBOTRON-->
     <header class="jumbotron" id="jb">
       <h1 class="display-4 titulopagina font-weight-bold">
-        <img src="./img/cardiograma 2.png" alt="banner" /> PLATÍCALO CON
-        PSIC. DÁNIKA
+        <img src="./img/cardiograma 2.png" alt="banner" /> PLATÍCALO CON PSIC.
+        DÁNIKA
       </h1>
     </header>
- 
+    <!--Modal Registro-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Registro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+    <!--Modal Login-->
+    <div class="modal fade" id="exampleModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-login -->
+
     <!--Footer-->
     <footer class="text-white icons">
       <div class="iconsf bf">

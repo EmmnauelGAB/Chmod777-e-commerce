@@ -1,7 +1,16 @@
-@media screen and (max-width: 600px){
-    .biblio{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-}
+#centrador{
+    position: relative;
+    /* width: 400px;
+    height: 400px;
+    background-color: rgb(251, 251, 251); */
+  } 
+  
+  #imagen{
+      position: relative;
+      width: 200px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+  }
