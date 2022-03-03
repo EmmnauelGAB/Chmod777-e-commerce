@@ -1,0 +1,7 @@
+/* Estilos del jumbotron */
+.jumbotronCita{
+    color: var(--ColorWhite);
+    letter-spacing: 3px;
+    background-color: var(--colorBlueClear);
+    border-radius: 0%;
+}

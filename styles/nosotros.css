@@ -1,16 +1,31 @@
 #centrador{
-    position: relative;
-    /* width: 400px;
-    height: 400px;
-    background-color: rgb(251, 251, 251); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   } 
-  
-  #imagen{
-      position: relative;
-      width: 200px;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-  }
+
+#imagen{  
+    border-radius: 24px;
+    width: 180px;
+}
+
+.card-style{
+  border-radius: 24px;
+  border-color: #18BC9C;
+  border-width: 3px;
+}
+
+.text-muted{
+    font-size: 16px;
+}
+
+.card-title{
+    font-size: 30px;
+}
+/* Estilos del jumbotron */
+.jumbotronNosotros{
+    color: var(--ColorWhite);
+    letter-spacing: 3px;
+    background-color: var(--colorBlueClear);
+    border-radius: 0%;
+}
