@@ -4,6 +4,7 @@
 @import url(./servicios.css);
 @import url(./contacto.css);
 @import url(./cita.css);
+@import url(./map.css);
 
 
 /* Variables */
@@ -54,4 +55,3 @@ footer{
 .iconStyle{
     margin:20px;
 }
-
