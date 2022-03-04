@@ -32,7 +32,7 @@
 
 .card-style{
   border-radius: 24px;
-  border-color: #18BC9C;
+  border-color: var(--colorGreen);
   border-width: 3px;
 }
 
@@ -63,13 +63,17 @@
     border-color: transparent;
 }
 
+.button:hover{
+  background-color: var(--colorBlueClear);
+  border-radius: 50px;
+}
 .icon{
     width: 45px;
     height: 45px; 
 }
 
 #line{
-    background: #18BC9C;
+    background: var(--colorGreen);
     border-width: 3px;
 }
 
@@ -78,10 +82,64 @@
     color: rgba(46, 43, 43, 0.849);
 }
 
-/* Estilos del jumbotron */
+/* Estilos de imagen */
+#imagen{  
+    border-radius: 24px;
+    width: 180px;
+}
+/* Estilos de las cards */
+.card-style{
+  border-radius: 24px;
+  border-color: var(--colorGreen);
+  border-width: 3px;
+}
+/* Estilos del texto inferior*/
+.text-muted{
+    font-size: 16px;
+}
+/* Estils del texto del titulo */
+.card-title{
+    font-size: 30px;
+}
+/* Estilos del jumbotron */ 
 .jumbotronNosotros{
     color: var(--ColorWhite);
     letter-spacing: 3px;
-    background-color: var(--colorBlueClear);
     border-radius: 0%;
+    /*background-color: var(--colorBlueClear);*/
+
+    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos/nosotros.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  
+  }
+
+/*Le da formato al titulo de la Hero image*/
+
+  .heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--ColorWhite);
+  }
+
+/*Le da estilo al button de la Hero image*/
+
+.btnJB{
+  background-color: var(--colorGreen);
+  border-radius: none;
+  color: var(--ColorWhite);
+}
+
+/*Le da estilo al button de la Hero image al pasar el puntero*/
+
+.btnJB:hover{
+  background-color: aliceblue;
+  color: var(--colorGreen);
 }
