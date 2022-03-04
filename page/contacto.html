@@ -83,7 +83,7 @@
     <div class="container">
       <div class="row align-items-center h-100">
         <div class="col-12 col-sm-7 col-lg-7 mx-auto">
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation" novalidate action="https://formspree.io/f/mqknblnw" method="POST">
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="name">Nombre(s)</label>
@@ -93,6 +93,7 @@
                   id="name"
                   placeholder="Marco"
                   required
+                  name="name"
                 />
                 <div class="valid-feedback">¡ok!</div>
               </div>
@@ -104,6 +105,7 @@
                   id="lastName"
                   placeholder="Perez"
                   required
+                  name="name"
                 />
                 <div class="valid-feedback">¡ok!</div>
               </div>
@@ -111,12 +113,12 @@
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="std">Estado</label>
-                <input type="text" class="form-control" id="std" required />
-                <div class="invalid-feedback">ingresa un estado valido.</div>
+                <input type="text" class="form-control" id="std" required name="city"/>
+                <div class="invalid-feedback">Ingresa un estado valido.</div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationCustom04">Lada</label>
-                <select class="custom-select" id="validationCustom04" required>
+                <select class="custom-select" id="validationCustom04" required name="telephone">
                   <option selected disabled value="">Escoger...</option>
                   <option>744</option>
                   <option>449</option>
@@ -218,7 +220,7 @@
                   <option>351</option>
                   <option>755</option>
                 </select>
-                <div class="invalid-feedback">Selecciona una LADA valida.</div>
+                <div class="invalid-feedback">Selecciona una LADA válida.</div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="telephone">Teléfono</label>
@@ -228,19 +230,21 @@
                   id="telephone"
                   placeholder="5555555555"
                   required
+                  name="telephone"
                 />
                 <div class="invalid-feedback">
-                  Igresa un numero telefonico valido
+                  Igresa un número telefónico válido
                 </div>
               </div>
               <div class="col-md-12 mb-12">
                 <label for="email">Correo</label>
                 <input
-                  type="number"
+                  type="email"
                   class="form-control"
                   id="email"
                   placeholder="ejemplo@gmail.com"
                   required
+                  name="email"
                 />
                 <div class="invalid-feedback">
                   Ingresa una dirección electrónica válida.
@@ -252,6 +256,7 @@
                     class="form-control"
                     id="mensaje"
                     rows="10"
+                    name="message"
                   ></textarea>
                 </div>
 
@@ -268,7 +273,7 @@
                       Acepta los términos y condiciones
                     </label>
                     <div class="invalid-feedback">
-                      Es necesario aceptlar los términos y condiciones para
+                      Es necesario aceptar los términos y condiciones para
                       enviar tu información.
                     </div>
                   </div>
@@ -276,7 +281,7 @@
               </div>
             </div>
             <hr />
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary" type="submit" onclick="sendEmail()">Enviar</button>
           </form>
         </div>
         <!-- col -->
@@ -296,7 +301,7 @@
       </div>
       <div class="col-sm-6">
           <fieldset>
-              <legend><i class="fa fa-envelope"></i> Contactanos</legend>
+              <legend><i class="fa fa-envelope"></i> Contáctanos</legend>
           </fieldset>
           <div><span><br /><strong>PSIC. DÁNIKA</strong><br /></span></div>
           <div><span>email@danika.com</span></div>
