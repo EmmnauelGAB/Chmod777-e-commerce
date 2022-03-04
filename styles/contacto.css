@@ -40,3 +40,9 @@
   background-color: aliceblue;
   color: var(--colorGreen);
   }
+
+
+.userStyle{
+  margin-top:100px;
+  margin-bottom:100px;
+  }
