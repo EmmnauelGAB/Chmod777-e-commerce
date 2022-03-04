@@ -1,7 +1,42 @@
 /* Estilos del jumbotron */ 
 .jumbotronInicio{
-    color: var(--ColorWhite);
-    letter-spacing: 3px;
-    background-image: url(/img/wall3.png);
-    border-radius: 0%;
-  }
+  color: var(--ColorWhite);
+  letter-spacing: 3px;
+  border-radius: 0%;
+  /*background-color: var(--colorBlueClear);*/
+
+  
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos/inicio.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 400px;
+
+}
+
+/*Le da formato al titulo de la Hero image*/
+
+.heroText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*Le da estilo al button de la Hero image*/
+
+.btnJB{
+background-color: var(--colorGreen);
+border-radius: none;
+color: var(--ColorWhite);
+}
+
+/*Le da estilo al button de la Hero image al pasar el puntero*/
+
+.btnJB:hover{
+background-color: aliceblue;
+color: var(--colorGreen);
+}
