@@ -65,7 +65,7 @@
 
 .button:hover{
   background-color: var(--colorBlueClear);
-  border-radius: 50px;
+  border-radius: 40px;
 }
 .icon{
     width: 45px;
@@ -142,4 +142,11 @@
 .btnJB:hover{
   background-color: aliceblue;
   color: var(--colorGreen);
+}
+
+/*Le da estilo al button de las redes sociales al pasar el puntero*/
+
+.iconStyle:hover{
+  background-color: var(--ColorWhite);
+  border-radius: 20px;
 }
