@@ -1,3 +1,23 @@
+
+.card-header-first{
+	margin-top:-70px;
+    height: 150px; 
+    width: auto;
+    background-color: transparent;
+}
+
+
+/*efecto shadows para todas las tarjetas*/
+.card-section{
+	box-shadow: 0 2px 20px 0 rgba(5, 4, 58, 0.609), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+/*Para el efecto sombra al pasar por encima el mouse*/
+.card-section:hover{
+	box-shadow:1px 1px 20px #08907a9d;
+}
+
+/*------------------------------------------------------------------------*/
+
 #centrador{
     display: flex;
     align-items: center;
@@ -5,8 +25,9 @@
   } 
 
 #imagen{  
-    border-radius: 24px;
+    border-radius: 20px;
     width: 180px;
+    box-shadow:1px 5px 15px #a2a2a2;
 }
 
 .card-style{
@@ -16,12 +37,47 @@
 }
 
 .text-muted{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .card-title{
     font-size: 30px;
 }
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon{
+    width: 45px;
+    height: 45px; 
+}
+
+#line{
+    background: #18BC9C;
+    border-width: 3px;
+}
+
+.card-text{
+    font-size: 22px;
+    color: rgba(46, 43, 43, 0.849);
+}
+
 /* Estilos del jumbotron */
 .jumbotronNosotros{
     color: var(--ColorWhite);
