@@ -58,10 +58,10 @@ let acerca =[
         title: "Emmanuel",
         desc : "Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y fomentar valores como los del compañerismo.",
         des2 : "Desarrolladora Java FullStack",
-        lk : `#`,
+        lk : `https://www.linkedin.com/in/egab/`,
         git : `https://github.com/EmmnauelGAB`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5561160225`,
+        email : `mailto:emmanuelgarciabarron0@gmail.com`,
        },
        //-------------ALINE-------------------
        {
@@ -93,8 +93,8 @@ let acerca =[
         des2 : "Desarrolladora Java FullStack",
         lk : `https://www.linkedin.com/in/fjcl/`,
         git : `https://github.com/FranciscoCL13`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5574047038`,
+        email : `mailto:fcontreras1311@gmail.com`,
        },
        //-------------NENEMY-------------------
        {
