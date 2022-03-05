@@ -46,17 +46,27 @@
 
 /* Estilos de los banner */
 
-.servicebanner{
-
-    color: #000;
-    border-radius: 14px;
-    text-align: center;
-    
+ .overlay {
+    background-image: url("../img/servicios/psicoterapia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    border-radius: 20px;
 }
 
-/* Estilos del banner therapy */
-
-.therapy{
-    background-image: url(https://media.istockphoto.com/photos/therapist-meeting-with-a-client-picture-id1350747996?k=20&m=1350747996&s=612x612&w=0&h=J2nVi-YbPJR3eK9hqZj710F9qxccn8UbmB1mG0Ze4a8=);
-    backdrop-filter: blur(60px);
+.mytext {
+    z-index: 20;
+    font-size: 60px;
+    color: black;
 }
+
+.overlaytaller {
+    background-image: url("../img/servicios/workshop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    border-radius: 20px;
+}
+
