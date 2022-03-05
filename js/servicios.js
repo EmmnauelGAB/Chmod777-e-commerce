@@ -3,7 +3,7 @@
 let servicios =[
     {
        src : `https://picsum.photos/${500}`,
-       title: "Psicoterapia individual",
+       title: "Psicoterapia Individual",
        desc : "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos."
     },
     {
@@ -85,17 +85,17 @@ let servicios =[
    let taller =[
     {
        srcT : `https://picsum.photos/${500}`,
-       titleT : "taller reflexivo madres",
+       titleT : "Taller reflexivo madres",
        descT : "DESCRIPCION"
     },
     {
       srcT : `https://picsum.photos/${500}`,
-      titleT : "taller parejas",
+      titleT : "Taller parejas",
       descT : "DESCRIPCION"
    },
    {
     srcT : `https://picsum.photos/${500}`,
-    titleT : "taller crianza positiva",
+    titleT : "Taller crianza positiva",
     descT : "DESCRIPCION"
   },
   {
