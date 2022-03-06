@@ -113,10 +113,10 @@ let acerca =[
         title: "Jocelin",
         desc : " Ingeniera Biomédica y estudiante de Ingeniería en Sistemas Computacionales, soy una persona dinámica, que le encantan los retos y estar en constante aprendizaje, con facilidad de trabajo en equipo y condiciones de alta presión.",
         des2 : "Desarrolladora Java FullStack",
-        linnk : `https://www.linkedin.com/in/jocelin-correa/`,
+        lk : `https://www.linkedin.com/in/jocelin-correa/`,
         git : `https://github.com/JocelinCorrea`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5519193970`,
+        email : `mailto:correajocelin8@gmail.com`,
        },
        //-------------EDUARDO-------------------
        {
@@ -133,7 +133,7 @@ let acerca =[
   
   ];
 
-  //crearCard Servicios
+  //crearCard Nosotros
   function crearCard(src,title,desc,des2,lk,git,wapp,email){
     let myCard= `<div class="row align-items-center h-100">
     <div class="col-lg-8 col-md-8 col-sm-8 mx-auto mt-5 pt-5 pb-5">
