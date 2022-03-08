@@ -1,0 +1,189 @@
+pub<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLATÍCALO CON PSIC. DÁNIKA</title>
+    <link rel="shortcut icon" href="../img/cardiograma 2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!--Fuente de la letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!--Main CSS3-->
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+     <!-- NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-dark navStyle">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img src="../img/cardiograma 2.png" width="30" height="30" alt="">
+              </a>
+          </li>
+              <a
+                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                type="submit"
+                href="../index.html"
+              >
+                INICIO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                type="submit"
+                href="./nosotros.html"
+              >
+                NOSOTROS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                type="submit"
+                href="./servicios.html"
+              >
+                SERVICIOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                type="submit"
+                href="./contacto.html"
+              >
+                CONTACTO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                type="submit"
+                href="./agendar_cita.html"
+              >
+                AGENDAR CITA
+              </a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
+                  type="submit"
+                  href="./serviciosAdd.html"
+                >
+                  AGREGAR SERVICIOS
+                </a>
+              </li>
+          </ul>
+        
+      </div>
+    </nav>
+    <!-- JUMBOTRON-->
+    <header class="jumbotron jumbotronCita">
+      <div class="heroText">
+        <h1 class="display-4 titulopagina font-weight-bold text-center">
+          AGREGAR SERVICIOS
+        </h1>
+        <hr class="my-4">
+      </div>
+    </header>
+
+    
+    <!--ADD PRUDUCTO-->
+    <div class="container  ">
+        <div class="row align-items-center h-100">
+            <div class="col-12 col-sm-7 col-lg-7 mx-auto">
+                <form> 
+                    <div class="form-row">
+                        
+                        <div class="col-md-6 mb-3">
+                            <label>Tipo se servico</label>
+                            <select class="custom-select" required >
+                            <option value="">Seleciona tipo de servicio.</option>
+                            <option value="1">Terapia</option>
+                            <option value="2">Taller</option>
+                            </select>
+                         </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="newService">
+                                <label for="newService">Nuevo servicio </label>
+                                <input type="text" class="form-control" id="newService" placeholder="Ingresa el nombre del servicio por agregar">
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div class="form-group">
+                        <label for="description">Descripción</label>
+                        <textarea
+                          class="form-control"id="description" rows="10"
+                          placeholder="Ingresa una breve descripción del servicio por agregar "
+                         ></textarea>
+                    </div>
+
+
+                    <div class="custom-file mb-3">
+
+                        <label class="fileadd" for="validatedCustomFile">Ingresa imagen alusiva al servicio</label> <br>
+                        <input type="file" class="fileAdd" id="validatedCustomFile" required>
+                    </div>
+                      
+                         <hr class="my-4">   
+                    <div>
+                        <button type="submit" class="btn btn-primary">Agregar Servicio</button>
+                    </div>
+                    <hr>
+            
+                  </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!--EDN ADD PRODUCTO-->
+    <!--Footer-->
+    <footer class="">
+      <div class="iconContStyle">
+        <a href= "mailto:danika.moreno@gmail.com" target="_blank">
+        <img src="../img/icons/blue/correo.png" alt="imagen email" width="35px" class="iconStyle"/>
+      </a>
+      <a href= "https://wa.me/message/KAK7AQLR7BU2F1" target="_blank">
+        <img src="../img/icons/blue/whatsapp.png" alt="imagen telefono" width="35px" class="iconStyle"/>
+      </a>
+      <a href= "https://instagram.com/platicaloconpsic.danika?r=nametag" target="_blank">
+        <img src="../img/icons/blue/instagram.png" alt="imagen instagram" width="35px" class="iconStyle"/>
+      </a>
+      <a href= "https://www.facebook.com/DanikaMorenoPsicologa" target="_blank">
+        <img src="../img/icons/blue/facebook.png" alt="imagen facebook" width="35px" class="iconStyle"/>
+      </a>
+      <a href= "www.linkedin.com/in/danikamoreno" target="_blank">
+        <img src="../img/icons/blue/linkedin.png" alt="imagen linkedln" width="35px" class="iconStyle"/>
+      </a>
+      </div>
+      <div class="footerStyle">
+        Hecho con 🤍 de Chmod 777 Copyright 2022 - Todos los derechos Reservados
+      </div>
+    </footer>
+    <!--Declaracion de Scripts-->
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

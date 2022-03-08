@@ -58,10 +58,10 @@ let acerca =[
         title: "Emmanuel",
         desc : "Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y fomentar valores como los del compañerismo.",
         des2 : "Desarrolladora Java FullStack",
-        lk : `#`,
+        lk : `https://www.linkedin.com/in/egab/`,
         git : `https://github.com/EmmnauelGAB`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5561160225`,
+        email : `mailto:emmanuelgarciabarron0@gmail.com`,
        },
        //-------------ALINE-------------------
        {
@@ -93,8 +93,8 @@ let acerca =[
         des2 : "Desarrolladora Java FullStack",
         lk : `https://www.linkedin.com/in/fjcl/`,
         git : `https://github.com/FranciscoCL13`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5574047038`,
+        email : `mailto:fcontreras1311@gmail.com`,
        },
        //-------------NENEMY-------------------
        {
@@ -104,8 +104,8 @@ let acerca =[
         des2 : "Desarrolladora Java FullStack",
         lk : `https://www.linkedin.com/in/brenda-nenemy-valdez-castro-a97057194/`,
         git : `https://github.com/NenemyVc`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5552528975`,
+        email : `mailto:nenemy28@gmail.com`,
        },
        //-------------JOCELIN-------------------
        {
@@ -113,10 +113,10 @@ let acerca =[
         title: "Jocelin",
         desc : " Ingeniera Biomédica y estudiante de Ingeniería en Sistemas Computacionales, soy una persona dinámica, que le encantan los retos y estar en constante aprendizaje, con facilidad de trabajo en equipo y condiciones de alta presión.",
         des2 : "Desarrolladora Java FullStack",
-        linnk : `https://www.linkedin.com/in/jocelin-correa/`,
+        lk : `https://www.linkedin.com/in/jocelin-correa/`,
         git : `https://github.com/JocelinCorrea`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5519193970`,
+        email : `mailto:correajocelin8@gmail.com`,
        },
        //-------------EDUARDO-------------------
        {
@@ -133,7 +133,7 @@ let acerca =[
   
   ];
 
-  //crearCard Servicios
+  //crearCard Nosotros
   function crearCard(src,title,desc,des2,lk,git,wapp,email){
     let myCard= `<div class="row align-items-center h-100">
     <div class="col-lg-8 col-md-8 col-sm-8 mx-auto mt-5 pt-5 pb-5">
