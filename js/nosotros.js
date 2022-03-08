@@ -104,8 +104,8 @@ let acerca =[
         des2 : "Desarrolladora Java FullStack",
         lk : `https://www.linkedin.com/in/brenda-nenemy-valdez-castro-a97057194/`,
         git : `https://github.com/NenemyVc`,
-        wapp : `#`,
-        email : `#`,
+        wapp : `https://api.whatsapp.com/send?phone=5552528975`,
+        email : `mailto:nenemy28@gmail.com`,
        },
        //-------------JOCELIN-------------------
        {
