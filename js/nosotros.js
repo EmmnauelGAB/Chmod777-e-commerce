@@ -1,21 +1,21 @@
 let acerca =[
-      //-------------SARA-------------------
-    {
-       src : `../img/fotos/Sara.png`,
-       title: "Sara",
-       desc : "Socióloga, amante de la tecnología, los idiomas y el diseño. Experiencia laboral como asistente administrativo senior, diplomado en enseñanza de idiomas y diseño; hablo alemán,ingles y español (nociones de francés).",
-       des2 : "Desarrolladora Java FullStack",
-       lk : `#`,
-       git : `https://github.com/saragami`,
-       wapp : `#`,
-       email : `#`,
-      },
+         //-------------JOCELIN-------------------
+         {
+          src : `../img/fotos/Joce.png`,
+          title: "Jocelin",
+          desc : " Ingeniera Biomédica y estudiante de Ingeniería en Sistemas Computacionales, soy una persona dinámica, que le encantan los retos y estar en constante aprendizaje, con facilidad de trabajo en equipo y condiciones de alta presión.",
+          des2 : "Desarrolladora Java FullStack",
+          lk : `https://www.linkedin.com/in/jocelin-correa/`,
+          git : `https://github.com/JocelinCorrea`,
+          wapp : `https://api.whatsapp.com/send?phone=5519193970`,
+          email : `mailto:correajocelin8@gmail.com`,
+         },
       //-------------EMMANUEL-------------------
       {
         src : `../img/fotos/Emmanuel.png`,
         title: "Emmanuel",
         desc : "Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y fomentar valores como los del compañerismo.",
-        des2 : "Desarrolladora Java FullStack",
+        des2 : "Desarrollador Java FullStack",
         lk : `https://www.linkedin.com/in/egab/`,
         git : `https://github.com/EmmnauelGAB`,
         wapp : `https://api.whatsapp.com/send?phone=5561160225`,
@@ -37,22 +37,11 @@ let acerca =[
         src : `../img/fotos/Victor.png`,
         title: "Victor",
         desc : "Estudiante de Ingeniería en Sistemas Computacionales. Me he desempeñado en puestos administrativos relacionados con la informática, pretendo un trabajo donde pueda desarrollar todo mi potencial tanto personal como profesional. Asistente de sistemas, Auxiliar administrativo, Monitorista GPS son algunos de los puestos más destacados que he desempeñado.",
-        des2 : "Desarrolladora Java FullStack",
+        des2 : "Desarrollador Java FullStack",
         lk : `https://www.linkedin.com/in/victor-toriz-90/`,
         git : `https://github.com/VictorToriz`,
         wapp : `https://api.whatsapp.com/send?phone=5536956659`,
         email : `mailto:victor.toriz.90@gmail.com`,  
-       },
-       //-------------FRANCISCO-------------------
-       {
-        src : `../img/fotos/Francisco.png`,
-        title: "Francisco",
-        desc : "Soy una persona creativa, en constante aprendizaje y desarrollo. Me gusta pensar de manera lógica y analítica, buscando siempre una mentalidad de crecimiento. He adquirido la habilidad de “solución de problemas” de manera eficaz, apoyándome en el trabajo en equipo, además de la retroalimentación de mis compañeros.",
-        des2 : "Desarrolladora Java FullStack",
-        lk : `https://www.linkedin.com/in/fjcl/`,
-        git : `https://github.com/FranciscoCL13`,
-        wapp : `https://api.whatsapp.com/send?phone=5574047038`,
-        email : `mailto:fcontreras1311@gmail.com`,
        },
        //-------------NENEMY-------------------
        {
@@ -65,23 +54,34 @@ let acerca =[
         wapp : `https://api.whatsapp.com/send?phone=5552528975`,
         email : `mailto:nenemy28@gmail.com`,
        },
-       //-------------JOCELIN-------------------
+       //-------------FRANCISCO-------------------
        {
-        src : `../img/fotos/Joce.png`,
-        title: "Jocelin",
-        desc : " Ingeniera Biomédica y estudiante de Ingeniería en Sistemas Computacionales, soy una persona dinámica, que le encantan los retos y estar en constante aprendizaje, con facilidad de trabajo en equipo y condiciones de alta presión.",
-        des2 : "Desarrolladora Java FullStack",
-        lk : `https://www.linkedin.com/in/jocelin-correa/`,
-        git : `https://github.com/JocelinCorrea`,
-        wapp : `https://api.whatsapp.com/send?phone=5519193970`,
-        email : `mailto:correajocelin8@gmail.com`,
+        src : `../img/fotos/Francisco.png`,
+        title: "Francisco",
+        desc : "Soy una persona creativa, en constante aprendizaje y desarrollo. Me gusta pensar de manera lógica y analítica, buscando siempre una mentalidad de crecimiento. He adquirido la habilidad de “solución de problemas” de manera eficaz, apoyándome en el trabajo en equipo, además de la retroalimentación de mis compañeros.",
+        des2 : "Desarrollador Java FullStack",
+        lk : `https://www.linkedin.com/in/fjcl/`,
+        git : `https://github.com/FranciscoCL13`,
+        wapp : `https://api.whatsapp.com/send?phone=5574047038`,
+        email : `mailto:fcontreras1311@gmail.com`,
        },
+      //-------------SARA-------------------
+       {
+       src : `../img/fotos/Sara.png`,
+       title: "Sara",
+       desc : "Socióloga, amante de la tecnología, los idiomas y el diseño. Experiencia laboral como asistente administrativo senior, diplomado en enseñanza de idiomas y diseño; hablo alemán, inglés y español (nociones de francés).",
+       des2 : "Desarrolladora Java FullStack",
+       lk : `#`,
+       git : `https://github.com/saragami`,
+       wapp : `#`,
+       email : `#`,
+      },
        //-------------EDUARDO-------------------
        {
         src : `../img/fotos/Eduardo.png`,
         title: "Eduardo",
-        desc : "Socióloga, amante de la tecnología, los idiomas y el diseño. Experiencia laboral como asistente administrativo senior, diplomado en enseñanza de idiomas y diseño; hablo alemán,ingles y español (nociones de francés).",
-        des2 : "Desarrolladora Java FullStack",
+        desc : "Actualmente estudio Ingeniería en Sistemas Computacionales, pertenezco a una academia enfocada al desarrollo de videojuegos y soy parte de diversos bootcamps de developers.  Me apasiona crear cosas por medio de la programación y el arte digital. Me gusta experimentar, innovar, resolver problemas de manera óptima y me fascina aprender cosas nuevas. Creo firmemente   que “El único límite es tu imaginación”",
+        des2 : "Desarrollador Java FullStack",
         lk : `https://www.linkedin.com/in/eduantvarmau/`,
         git : `https://github.com/eduantvarmau`,
         wapp : `https://api.whatsapp.com/send?phone=5579111838`,
@@ -90,6 +90,14 @@ let acerca =[
 
   
   ];
+
+  //Arreglos ordenados de forma aleatoria con el método sort https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+  //a, b sirve para comparar dos elementos del arreglo entre si, por ejemplo
+  // <  0  -> a esta en un índice menor que b .
+  // = 0 a y b son iguales.
+  // > 0 -> a esta en un índice mayor que b .
+  //El  -0.5 funciona para que el meto Math no nos devuelva un valor menor a 0 no evitara que no nos entregue los arreglos en el mismo orden
+  acerca.sort((a,b)=> Math.random(8)-0.5)
 
   //crearCard Nosotros
   function crearCard(src,title,desc,des2,lk,git,wapp,email){
