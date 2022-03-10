@@ -40,3 +40,9 @@ color: var(--ColorWhite);
 background-color: aliceblue;
 color: var(--colorGreen);
 }
+
+/*Estilo testimoneos*/
+
+.testimoniosJ{
+  width:100%;
+}
