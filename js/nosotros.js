@@ -1,45 +1,3 @@
-
-//Define la cantidad de numeros aleatorios.
-/*var cantidadNumeros = 8;
-var myArray = []
-while(myArray.length < cantidadNumeros ){
-  var numeroAleatorio = Math.ceil(Math.random()*cantidadNumeros);
-  var existe = false;
-  for(var i=0;i<myArray.length;i++){
-	if(myArray [i] == numeroAleatorio){
-        existe = true;
-        break;
-    }
-  }
-  if(!existe){
-    myArray[myArray.length] = numeroAleatorio;
-  }
-
-}
-
-
-//Recorre el arreiglo
-myArray.forEach(element => console.log(element));
-
-let id = myArray[0];
-let id1 = myArray[1];
-let id2 = myArray[2];
-let id3 = myArray[3];
-let id4 = myArray[4];
-let id5 = myArray[5];
-let id6 = myArray[6];
-let id7 = myArray[7];*/
-
-// console.log(id);
-// console.log(id1);
-// console.log(id2);
-// console.log(id3);
-// console.log(id4);
-// console.log(id5);
-// console.log(id6);
-// console.log(id7);
-
-
 let acerca =[
       //-------------SARA-------------------
     {
@@ -173,7 +131,7 @@ let acerca =[
         //dibujar una card(src,title,desc,des2,lk,git,wapp,email)
         //actualizar el elemento con lo que ya tenga mas la nueva card
         //Pueda mandar un solo elemento
-         anclaacerca = document.getElementById('nosotros'); //TRAER ELEMENTO
+        let anclaacerca = document.getElementById('nosotros'); //TRAER ELEMENTO
         let container = '';
 
         for(let i=0 ; i<acerca.length; i++){
