@@ -59,3 +59,13 @@ footer{
     margin:20px;
 }
 
+.nav-item{
+    padding-top: 10px;
+}
+#cerebrin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+/*display flex, align-items, justify-conter*/
