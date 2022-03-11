@@ -3,16 +3,12 @@
     color: var(--ColorWhite);
     letter-spacing: 3px;
     border-radius: 0%;
-    /*background-color: var(--colorBlueClear);*/
-
-    
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos/servicios.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 400px;
-  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos/servicios.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
   }
 
 /*Le da formato al titulo de la Hero image*/
@@ -26,25 +22,20 @@
     color: white;
   }
 
-/*Le da estilo al button de la Hero image*/
+  /*Le da estilo al button de la Hero image*/
+  .btnJB{
+    background-color: var(--colorGreen);
+    border-radius: none;
+    color: var(--ColorWhite);
+  }
 
-.btnJB{
-  background-color: var(--colorGreen);
-  border-radius: none;
-  color: var(--ColorWhite);
-}
+  /*Le da estilo al button de la Hero image al pasar el puntero*/
+  .btnJB:hover{
+    background-color: aliceblue;
+    color: var(--colorGreen);
+  }
 
-/*Le da estilo al button de la Hero image al pasar el puntero*/
-
-.btnJB:hover{
-  background-color: aliceblue;
-  color: var(--colorGreen);
-}
-
-
-
-
-/* Estilos de los banner */
+  /* Estilos de los banner */
 
  .overlay {
     background-image: url("../img/servicios/psicoterapia.jpg");
@@ -53,20 +44,81 @@
     background-size: cover;
     filter: blur(3px);
     border-radius: 20px;
-}
+  }
 
-.mytext {
-    z-index: 20;
-    font-size: 60px;
-    color: black;
-}
+  .mytext {
+      z-index: 20;
+      font-size: 60px;
+      color: black;
+  }
 
-.overlaytaller {
-    background-image: url("../img/servicios/workshop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(3px);
-    border-radius: 20px;
-}
+  .overlaytaller {
+      background-image: url("../img/servicios/workshop.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(3px);
+      border-radius: 20px;
+  }
+
+  .servicios{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: var(--colorBlueClear);
+    margin-top: 0px;
+  }
+
+  .servicioscards{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0px;
+  }
+
+  .card-titles{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card-texts{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .card-body{
+    height: 250px;
+    background-color: #25344455;
+  }
+
+  .card-img-top{
+    border-radius: 0px;
+  }
+
+  .card-button{
+    display: flex;
+    justify-content: center;
+    background-color: #25344455;
+  }
+
+  .titt{
+    color: white;
+    font-size: 50px;
+  }
+
+  .line{
+    background-color: #4f657e;
+    height: 3px;
+    width: 70%;
+  }
+
+  .btn-col{
+    background-color: var(--colorBlueDark);
+    margin-bottom: 35px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+  }
 
