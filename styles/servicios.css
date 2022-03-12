@@ -88,9 +88,16 @@
     text-align: justify;
   }
 
-  .card-body{
+  .card-bodyy{
     height: 250px;
     background-color: #25344455;
+  }
+
+  @media (max-width: 920px) {
+    .card-bodyy{
+      height: auto;
+      background-color: #25344455;
+    }
   }
 
   .card-img-top{
@@ -117,7 +124,7 @@
   .btn-col{
     background-color: var(--colorBlueDark);
     margin-bottom: 35px;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 18px;
     color: white;
   }
