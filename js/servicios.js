@@ -3,7 +3,7 @@
 let servicios =[
     {
        src : `../img/servicios/individual.jpg`,
-       title: "Psicoterapia Individual",
+       title: "Psicoterapia individual",
        desc : "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos."
     },
     {
@@ -13,13 +13,13 @@ let servicios =[
    },
    {
     src : `../img/servicios/adolescente.png`,
-    title: "Psicoterapia para adolescentes",
-    desc : " Las etapas de crecimiento de la vida son mejores cuando se tiene el espacio para poder experimentarlas y entenderlas; la adolescencia es una etapa crucial para el desarrollo tanto del paciente como de sus familiares. Investiguemos ¿cuál será nuestra línea de trabajo?."
+    title: "Psicoterapia de adolescentes",
+    desc : " Las etapas de crecimiento de la vida son mejores cuando se tiene el espacio para poder experimentarlas y entenderlas; la adolescencia es una etapa crucial para el desarrollo tanto del paciente como de sus familiares."
   },
   {
     src : `../img/servicios/grupal.jpg`,
     title: "Psicoterapia grupal",
-    desc : "El trabajo clínico de uno, se complementa a través de la experiencia y el trabajo de todos. Es así como el grupo es curativo en sí mismo, y qué mejor con la compañía de un especialista que puede guiarlos a descubrirse mejor."
+    desc : "El trabajo clínico de uno, se complementa a través de la experiencia y el trabajo de todos. Es así como el grupo es curativo en sí mismo, y qué mejor con la compañía de un especialista que puede guiarlos a descubrirse mucho mejor."
   },
   {
     src : `../img/servicios/mamas.jpg`,
@@ -38,7 +38,7 @@ let servicios =[
     <div class="col mb-4"
       <div class="card">
               <img src="${src}" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body card-bodyy">
               <h5 class="card-titles">${title}</h5>
               <p class="card-texts">${desc}</p>
             </div>
@@ -90,25 +90,25 @@ let servicios =[
     {
        srcT : `../img/servicios/terapiamujeres.jpg`,
        titleT : "Taller reflexivo madres",
-       descT : "Si va a tener su primer hijo, es muy probable que se sienta abrumada por las preguntas, los miedos o, simplemente, por no saber qué esperar. Por eso para muchos padres primerizos tomar clases de preparación para el parto les ayuda a calmar sus preocupaciones y responder a muchas preguntas."
+       descT : "Si va a tener su primer hijo, es muy probable que se sienta abrumada por las preguntas, los miedos o, simplemente, por no saber qué esperar. Por eso para muchos padres primerizos tomar clases de preparación para el parto les ayuda a calmar sus preocupaciones y responder a muchas preguntas, te ayudaré a resolver tus dudas."
     },
     {
       srcT : `../img/servicios/tallerpareja.jpeg`,
       titleT : "Taller parejas",
-      descT : "Los talleres de pareja tienen por objetivo apoyar a la pareja a conocerse mejor, a fin de que puedan comprenderse, humanizarse y apoyarse amorosamente en sus áreas disfuncionales, cada taller tiene una temática especial con el propósito de desarrollar diferentes habilidades a fin de potencializar el proceso terapéutico de la pareja."
+      descT : "Tienen por objetivo apoyar a la pareja a conocerse mejor, a fin de que puedan comprenderse, humanizarse y apoyarse amorosamente en sus áreas disfuncionales, cada taller tiene una temática especial con el propósito de desarrollar diferentes habilidades a fin de potencializar el proceso terapéutico de la pareja."
     },
     {
       srcT : `../img/servicios/crianza.jpg`,
       titleT : "Taller crianza positiva",
-      descT : "Charlas, conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Además, organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos."
+      descT : "Conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos."
     },
     {
       srcT : `../img/servicios/adicciones.jpg`,
       titleT : "Taller adicciones",
-      descT : "El inicio en el consumo se produce a edades muy tempranas, entre 13 y 16 años dependiendo de la sustancia. Por lo que el trabajo preventivo hay que empezarlo en edades anteriores. El alcohol, el tabaco y el cannabis son las sustancias más consumidas."
+      descT : "El inicio en el consumo se produce a edades muy tempranas, entre 13 y 16 años dependiendo de la sustancia. Por lo que el trabajo preventivo hay que empezarlo en edades anteriores. El alcohol, el tabaco y el cannabis son las sustancias más consumidas en la actualidad."
     },
     {
-      srcT : `../img/servicios/adicciones.jpg`,
+      srcT : `../img/servicios/educativo.jpg`,
       titleT : "Taller psicoeducativo",
       descT : "Dependiendo de las necesidades del grupo, se determinan las horas y número de sesiones para trabajar el tema. Este apartado está disponible para grupos de instituciones educativas u organizaciones."
     }
@@ -124,7 +124,7 @@ let servicios =[
     <div class="col mb-4"
       <div class="card">
               <img src="${srcT}" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body card-bodyy">
               <h5 class="card-titles">${titleT}</h5>
               <p class="card-texts">${descT}</p>
             </div>
