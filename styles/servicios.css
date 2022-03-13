@@ -120,12 +120,16 @@
     height: 3px;
     width: 70%;
   }
-
+/*Se usan variables de color ya prestablecidas en el main.*/
   .btn-col{
-    background-color: var(--colorBlueDark);
+    background-color: var(--colorGreen);
     margin-bottom: 35px;
     margin-top: 50px;
     font-size: 18px;
-    color: white;
+    color: var(--ColorWhite);
   }
-
+  /*hover cuando el usuario interactúa con el botón.*/
+  .btn-col:hover{
+    background-color: var(--ColorWhite);
+    color: var(--colorGreen);
+  }
