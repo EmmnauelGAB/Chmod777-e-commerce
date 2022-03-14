@@ -71,10 +71,10 @@ let acerca =[
        title: "Sara",
        desc : "Socióloga, amante de la tecnología, los idiomas y el diseño. Experiencia laboral como asistente administrativo senior, diplomado en enseñanza de idiomas y diseño; hablo alemán, inglés y español (nociones de francés).",
        des2 : "Desarrolladora Java FullStack",
-       lk : `#`,
+       lk : `https://www.linkedin.com/in/sara-leticia-gamino-p/`,
        git : `https://github.com/saragami`,
        wapp : `#`,
-       email : `#`,
+       email : `mailto:saragamninop@gmail.com`,
       },
        //-------------EDUARDO-------------------
        {
