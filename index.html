@@ -1,134 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PLATÍCALO CON PSIC. DÁNIKA</title>
     <link rel="shortcut icon" href="./img/logo/CEREBRIN.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
     <!--Fuente de la letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <!--Main CSS3-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="./styles/main.css"/>
-    
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/main.css" />
 
-  <body>
-    <div class="colorback">
-      <!-- NAVBAR-->
-      <nav class="navbar navbar-expand-lg navbar-dark navStyle">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="navbar-brand" href="#">
-                <img src="./img/logo/CEREBRIN.svg" width="40"  alt="">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
-                type="submit"
-                href="./index.html"
-              >
-                INICIO
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
-                type="submit"
-                href="./page/nosotros.html"
-              >
-                NOSOTROS
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
-                type="submit"
-                href="./page/servicios.html"
-              >
-                SERVICIOS
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
-                type="submit"
-                href="./page/contacto.html"
-              >
-                CONTACTO
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
-                type="submit"
-                href="./page/agendar_cita.html"
-              >
-                AGENDAR CITA
-              </a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLogin" style="border-radius: 16px 1px 1px 16px">
-              INGRESAR
-            </button>
-            <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 1px 16px 16px 1px">
-              REGISTRARSE
-            </button>
-          </form>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navStyle ">
+        <a class="navbar-brand affix" href="#">
+            <img src="./img/logo/CEREBRIN.svg" width="40" alt="">
+        </a>
+        <button class="navbar-toggler btn btn-outline-light my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse affix" id="navbarSupportedContent" data-offset-top="165" role="navigation">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill" type="submit" href="./index.html">
+              INICIO
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill" type="submit" href="./page/nosotros.html">
+              NOSOTROS
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill" type="submit" href="./page/servicios.html">
+              SERVICIOS
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill" type="submit" href="./page/contacto.html">
+              CONTACTO
+            </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill" type="submit" href="./page/agendar_cita.html">
+              AGENDAR CITA
+            </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 affix">
+                <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLogin" style="border-radius: 16px 1px 1px 16px">
+            INGRESAR
+          </button>
+                <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 1px 16px 16px 1px">
+            REGISTRARSE
+          </button>
+            </form>
         </div>
-      </nav>
-      <!-- JUMBOTRON-->
-      <header class="jumbotron jumbotronInicio">
-        <div class="heroText">
-          <img src="./img/logo/IMAGOTIPO_DANIKAPrueba.svg" width="570" alt="">
-          <!-- <h1 class="display-4 titulopagina font-weight-bold text-center">
+    </nav>
+    <!-- NAVBAR-->
+    <div class="colorback">
+        <!-- JUMBOTRON-->
+        <header class="jumbotron jumbotronInicio">
+            <div class="heroText">
+                <img src="./img/logo/IMAGOTIPO_DANIKAPrueba.svg" width="570" alt="">
+                <!-- <h1 class="display-4 titulopagina font-weight-bold text-center">
             PLATÍCALO CON PSIC. DÁNIKA
           </h1> -->
-          <hr class="my-4">
-          <p class="lead font-weight-light">Psicoterapia Talleres y Empresas</p>
-        </div>
-      </header>
-      <!--Modal Registro-->
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Registro</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <hr class="my-4">
+                <p class="lead font-weight-light">Psicoterapia Talleres y Empresas</p>
+            </div>
+        </header>
+        <!--Modal Registro-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Registro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              <!--formulario de registro-->
-              <form>
-                <div class="row">
-                  <div class="col">
-                    <label for="fullname">Nombre</label>
-                    <input type="text" class="form-control" placeholder="">
-                    <small id="fullnamehelp" class="form-text text-muted">Ingresa un Nombre Valido.</small>
-                  </div>
-                  <div class="col">
-                    <label for="fullname">Apellido</label>
-                    <input type="text" class="form-control" placeholder="">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="inputState">Estado</label>
-                    <select id="inputState" class="form-control">
+                    </div>
+                    <div class="modal-body">
+                        <!--formulario de registro-->
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="fullname">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <small id="fullnamehelp" class="form-text text-muted">Ingresa un Nombre Valido.</small>
+                                </div>
+                                <div class="col">
+                                    <label for="fullname">Apellido</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputState">Estado</label>
+                                    <select id="inputState" class="form-control">
                       <option selected>Selecciona...</option>
                       <option>...</option>
                       <option>	Aguascalientes 	</option>
@@ -166,21 +145,21 @@
 
 
                     </select>
-                  </div>
-                  <div class="col">
-                    <label for="inputCity">Ciudad/Municipio</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
+                                </div>
+                                <div class="col">
+                                    <label for="inputCity">Ciudad/Municipio</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
 
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Dirección</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="">
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="inputState">Lada</label>
-                    <select id="inputState" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Dirección</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputState">Lada</label>
+                                    <select id="inputState" class="form-control">
                       <option selected>Selecciona...</option>
                       <option>...</option>
                       <option>	33	</option>
@@ -285,486 +264,532 @@
                       <option>	999	</option>
                     
                     </select>
-                  </div>
-                  <div class="col">
-                    <label for="inputphone">Telefono</label>
-                    <input type="number" class="form-control" id="inputphone" maxlength="10">
-                  </div>
+                                </div>
+                                <div class="col">
+                                    <label for="inputphone">Telefono</label>
+                                    <input type="number" class="form-control" id="inputphone" maxlength="10">
+                                </div>
 
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Correo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Confirmar correo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="inputPassword">Contraseña</label>
-                    <input type="password" class="form-control" placeholder="">
-                  </div>
-                  <div class="col">
-                    <label for="inputPassword">Confirmar contraseña</label>
-                    <input type="password" class="form-control" placeholder="">
-                  </div>
-                </div>
-              
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Confirmar correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputPassword">Contraseña</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                </div>
+                                <div class="col">
+                                    <label for="inputPassword">Confirmar contraseña</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                </div>
+                            </div>
 
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
                       Aceptar el aviso de privacidad
                     </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
                       Aceptar terminos y condiciones
                     </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
                       Recibir noticias 
                     </label>
-                  </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+
+                        <!--fin de formulario reistro-->
+
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-primary" type="reset" value="Limpiar">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
                 </div>
-              
-                
-              </form>
-
-
-                <!--fin de formulario reistro-->
-                      
             </div>
-            <div class="modal-footer">
-              <input class="btn btn-primary" type="reset" value="Limpiar">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
-            </div>
-          </div>
         </div>
-      </div><!-- /.modal-content -->
-      <!--Modal Login-->
-      <div class="modal fade" id="exampleModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <!-- /.modal-content -->
+        <!--Modal Login-->
+        <div class="modal fade" id="exampleModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              
-              <div class="container">
-                <div class="row align-items-center h-100">
-                  <div class="col-12 col-sm-7 col-lg-7 mx-auto">
-          
-                    <form class="needs-validation" novalidate>
-                      <div class="form-row">
-                        <div class="col-md-12 mb-6">
-                          <label for="email">Correo</label>
-                          <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>
-                          <div class="valid-tooltip">
-                            ok!
-                          </div>
-                        </div>            
-                      </div>
-          
-                      <div class="form-row">
-                        <div class="col-md-12 mb-6">
-                          <label for="password">Contraseña</label>
-                          <input type="password" class="form-control" id="password"  required>
-                          <div class="invalid-tooltip">
-                            Ingresa una contraseña correcta.
-                          </div>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container">
+                            <div class="row align-items-center h-100">
+                                <div class="col-12 col-sm-7 col-lg-7 mx-auto">
+
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+                                            <div class="col-md-12 mb-6">
+                                                <label for="email">Correo</label>
+                                                <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>
+                                                <div class="valid-tooltip">
+                                                    ok!
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="col-md-12 mb-6">
+                                                <label for="password">Contraseña</label>
+                                                <input type="password" class="form-control" id="password" required>
+                                                <div class="invalid-tooltip">
+                                                    Ingresa una contraseña correcta.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </form>
+                                </div>
+                                <!--end container-->
+                            </div>
+                            <!--end row-->
                         </div>
-                      </div>
-                      <hr>
-                    </form>
-                  </div><!--end container-->
-                </div><!--end row-->
-              </div><!--col-->
-              
-              
-              <script>
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
-              (function() {
-                'use strict';
-                window.addEventListener('load', function() {
-                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                  var forms = document.getElementsByClassName('needs-validation');
-                  // Loop over them and prevent submission
-                  var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-              </script>
+                        <!--col-->
 
 
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function() {
+                                'use strict';
+                                window.addEventListener('load', function() {
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    var forms = document.getElementsByClassName('needs-validation');
+                                    // Loop over them and prevent submission
+                                    var validation = Array.prototype.filter.call(forms, function(form) {
+                                        form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        <button type="button" class="btn btn-primary">Enviar</button>
+
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              
-              <button type="button" class="btn btn-primary">Enviar</button>
-      
-            </div>
-          </div>
         </div>
-      </div><!-- /.modal-login -->
-      
+        <!-- /.modal-login -->
+
         <!--INICIO-->
         <!--ABOUT ME-->
         <div class="containerabout row">
-          <div class="titulos">
-            <h1 class="tit">ACERCA DE DANIKÁ</h1>
-            <hr>
-          </div>
-          <div class="jumbotron jumbotron-about row row-cols-1 row-cols-md-2"> 
-              <div class="container__card">
-                <div class="row">
-                  <div class="card__father">
-                    <div class="cardd">
-                      <div class="card__front" style="background-image: url(img/servicios/img2.jpg);">
-                        <div class="bg"></div>
-                          <div class="body__card_front">
-                            <h1>Te cuento un poco sobre mí:</h1>
-                          </div>
-                      </div>
-                      <div class="card__back">
-                        <div class="body__card_back">
-                          <h1>Dánika</h1>
-                            <p>Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica para adolescentes, adultos y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG.
-                              Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas, dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el enfoque psicoanalítico y psicodinámico.</p>                        
+            <div class="titulos">
+                <h1 class="tit">ACERCA DE DANIKÁ</h1>
+                <hr>
+            </div>
+            <div class="jumbotron jumbotron-about row row-cols-1 row-cols-md-2">
+                <div class="container__card">
+                    <div class="row">
+                        <div class="card__father">
+                            <div class="cardd">
+                                <div class="card__front" style="background-image: url(img/servicios/img2.jpg);">
+                                    <div class="bg"></div>
+                                    <div class="body__card_front">
+                                        <h1>Te cuento un poco sobre mí:</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <div class="body__card_back">
+                                        <h1>Dánika</h1>
+                                        <p>Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica para adolescentes, adultos y terapia de grupo, actualmente
+                                            estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG. Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas,
+                                            dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el enfoque psicoanalítico
+                                            y psicodinámico.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>  
-          </div>
+            </div>
         </div>
 
-        <!--COMO AYUDA-->    
+        <!--COMO AYUDA-->
         <div class="containerinicio row">
-          <div class="titulos">
-            <h1 class="tit">CUÁNDO PUEDE AYUDARTE LA PSICOTERAPIA EN LÍNEA</h1>
-            <hr>
-            <p>La psicoterapia en línea puede ayudarte en diferentes escenarios.</p>
-            <p>El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:</p>
-          </div>
-          <div class="jumbotron jumbotron-ayuda row row-cols-1 row-cols-lg-2 row-cols-md-1"> 
-            <div class="col">
-              <ul class="list-style">
-                <li class="list-group-item"><p class="textlist">Te sientes desconectada o desconectado de actividades que antes disfrutabas, como compañía de familiares, lugares favoritos, por mencionar algunas.</p></li>
-                <li class="list-group-item"><p class="textlist">Los días malos superan a los buenos. Sientes profunda tristeza que te impide llevar a cabo tus actividades diarias.</p></li>
-                <li class="list-group-item"><p class="textlist">Sientes nervios, pánico, temblores o cualquier otra sensación de nerviosismo, agitación o tensión.</p></li>
-                <li class="list-group-item"><p class="textlist">Has sufrido un trauma en el pasado y no puedes dejar de pensar en ello.</p></li> 
-                <li class="list-group-item"><p class="textlist">Relaciones dañadas con tu pareja, hijos, padres. Tienes dificultad para expresar lo que sientes.</p></li> 
-              </ul>
+            <div class="titulos">
+                <h1 class="tit">CUÁNDO PUEDE AYUDARTE LA PSICOTERAPIA EN LÍNEA</h1>
+                <hr>
+                <p>La psicoterapia en línea puede ayudarte en diferentes escenarios.</p>
+                <p>El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:</p>
             </div>
-            <div class="col mb-4 image">
-              <img class="image" src="img/servicios/ayuda.jpg" alt="ayuda">   
-            </div>           
-          </div>
-        </div>
-      
-        <!--TERAPIAS DISPONIBLES--> 
-        <div class="containerabout row">
-          <div class="titulos">
-            <h1 class="tit">TERAPIAS DISPONIBLES</h1>
-            <hr>
-            <p>A continuación conocerás los diferentes tipos de terapia en línea que puedo ofrecerte:</p>
-          </div>
-          <div class="jumbotron jumbotron-terapias row row-cols-1 row-cols-lg-1 row-cols-md-1"> 
-            <div class="col">
-              <div class="container__card">
-                <div class="row">
-                  <div class="card__father">
-                    <div class="cards">
-                      <div class="card__front" style="background-image: url(img/servicios/img1.jpg);">
-                        <div class="bg"></div>
-                          <div class="body__card_front">
-                            <h1>Talleres</h1>
-                          </div>
-                      </div>
-                      <div class="card__back">
-                        <div class="body__card_back">
-                          <h1>Talleres</h1>
-                          <p>Dependiendo de las necesidades del grupo, se determinan las horas y número de sesiones para trabajar el tema. Este apartado está disponible para grupos de instituciones educativas u organizaciones.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__father">
-                    <div class="cards">
-                      <div class="card__front" style="background-image: url(img/servicios/img3.jpg);">
-                        <div class="bg"></div>
-                        <div class="body__card_front">
-                          <h1>Servicios</h1>
-                        </div>
-                      </div>
-                      <div class="card__back">
-                        <div class="body__card_back">
-                          <h1>Servicios</h1>
-                            <p></p>
-                            <ul class="list-group">
-                              <li class="list-group-item">*Psicoterapia individual</li>
-                              <li class="list-group-item">*Psicoterapia de pareja</li>
-                              <li class="list-group-item">*Psicoterapia grupal</li>
-                              <li class="list-group-item">*Psicoterapia grupal para mamás</li>
-                              <li class="list-group-item">*Psicoterapia para adolescentes</li>
-                              <li class="list-group-item">*Grupos reflexivos</li> 
-                            </ul>                      
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="jumbotron jumbotron-ayuda row row-cols-1 row-cols-lg-2 row-cols-md-1">
+                <div class="col">
+                    <ul class="list-style">
+                        <li class="list-group-item">
+                            <p class="textlist">Te sientes desconectada o desconectado de actividades que antes disfrutabas, como compañía de familiares, lugares favoritos, por mencionar algunas.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Los días malos superan a los buenos. Sientes profunda tristeza que te impide llevar a cabo tus actividades diarias.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Sientes nervios, pánico, temblores o cualquier otra sensación de nerviosismo, agitación o tensión.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Has sufrido un trauma en el pasado y no puedes dejar de pensar en ello.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Relaciones dañadas con tu pareja, hijos, padres. Tienes dificultad para expresar lo que sientes.</p>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </div>           
-          </div>
+                <div class="col mb-4 image">
+                    <img class="image" src="img/servicios/ayuda.jpg" alt="ayuda">
+                </div>
+            </div>
+        </div>
+
+        <!--TERAPIAS DISPONIBLES-->
+        <div class="containerabout row">
+            <div class="titulos">
+                <h1 class="tit">TERAPIAS DISPONIBLES</h1>
+                <hr>
+                <p>A continuación conocerás los diferentes tipos de terapia en línea que puedo ofrecerte:</p>
+            </div>
+            <div class="jumbotron jumbotron-terapias row row-cols-1 row-cols-lg-1 row-cols-md-1">
+                <div class="col">
+                    <div class="container__card">
+                        <div class="row">
+                            <div class="card__father">
+                                <div class="cards">
+                                    <div class="card__front" style="background-image: url(img/servicios/img1.jpg);">
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                            <h1>Talleres</h1>
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                            <h1>Talleres</h1>
+                                            <p>Dependiendo de las necesidades del grupo, se determinan las horas y número de sesiones para trabajar el tema. Este apartado está disponible para grupos de instituciones educativas u organizaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__father">
+                                <div class="cards">
+                                    <div class="card__front" style="background-image: url(img/servicios/img3.jpg);">
+                                        <div class="bg"></div>
+                                        <div class="body__card_front">
+                                            <h1>Servicios</h1>
+                                        </div>
+                                    </div>
+                                    <div class="card__back">
+                                        <div class="body__card_back">
+                                            <h1>Servicios</h1>
+                                            <p></p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">*Psicoterapia individual</li>
+                                                <li class="list-group-item">*Psicoterapia de pareja</li>
+                                                <li class="list-group-item">*Psicoterapia grupal</li>
+                                                <li class="list-group-item">*Psicoterapia grupal para mamás</li>
+                                                <li class="list-group-item">*Psicoterapia para adolescentes</li>
+                                                <li class="list-group-item">*Grupos reflexivos</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--BENEFICIOS-->
         <div class="containerinicio row">
-          <div class="titulos">
-            <h1 class="tit">BENEFICIOS DE LA PSICOTERAPIA EN LÍNEA</h1>
-            <hr>
-            <p>La psicoterapia puede tener diferentes beneficios en tu vida:</p>
-          </div>
-          <div class="jumbotron jumbotron-beneficios row row-cols-1 row-cols-lg-2 row-cols-md-1"> 
-            <div class="col">
-              <ul class="list-style">
-                <li class="list-group-item"><p class="textlist">Ayuda a manejar las emociones.</p></li>
-                <li class="list-group-item"><p class="textlist">Analizar problemas y encontrar soluciones.</p></li>
-                <li class="list-group-item"><p class="textlist">Encontrar un sentido a lo que se está haciendo.</p></li> 
-                <li class="list-group-item"><p class="textlist">Ayuda a mejorar las relaciones con los demás.</p></li>
-                <li class="list-group-item"><p class="textlist">Conduce a nuevas oportunidades para aprender modos diferentes de pensar, sentir y actuar.</p></li> 
-              </ul>
+            <div class="titulos">
+                <h1 class="tit">BENEFICIOS DE LA PSICOTERAPIA EN LÍNEA</h1>
+                <hr>
+                <p>La psicoterapia puede tener diferentes beneficios en tu vida:</p>
             </div>
-          <div class="col mb-4 image">
-            <img class="image" src="img/servicios/beneficios.jpg" alt="ayuda">   
-          </div>           
-          </div>
+            <div class="jumbotron jumbotron-beneficios row row-cols-1 row-cols-lg-2 row-cols-md-1">
+                <div class="col">
+                    <ul class="list-style">
+                        <li class="list-group-item">
+                            <p class="textlist">Ayuda a manejar las emociones.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Analizar problemas y encontrar soluciones.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Encontrar un sentido a lo que se está haciendo.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Ayuda a mejorar las relaciones con los demás.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Conduce a nuevas oportunidades para aprender modos diferentes de pensar, sentir y actuar.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-4 image">
+                    <img class="image" src="img/servicios/beneficios.jpg" alt="ayuda">
+                </div>
+            </div>
         </div>
 
         <!--PROCESO DE TERAPIA EN LÍNEA-->
         <div class="containerlinea row">
-          <div class="jumbotron jumbotron-linea row row-cols-1"> 
+            <div class="jumbotron jumbotron-linea row row-cols-1">
 
-            <div class="col">
-              <h1 class="text-center">PROCESO DE LA TERAPIA EN LÍNEA</h1>
-              <br>
-              <h4 class="text-center">El proceso de confirmación es el siguiente:</h4>
-              <hr>
-              <ul class="list-style">
-                <li class="list-group-item"><p class="textlist">Primer mensaje y resolución de dudas</p></li>
-                <li class="list-group-item"><p class="textlist">Verificación de disponibilidad para terapia</p></li>
-                <li class="list-group-item"><p class="textlist">Confirmación y pago de terapia</p></li> 
-                <li class="list-group-item"><p class="textlist">Mensaje de confirmación</p></li>
-                <li class="list-group-item"><p class="textlist">Inicio de psicoterapia en línea</p></li> 
-              </ul>
-            </div> 
-          </div>         
+                <div class="col">
+                    <h1 class="text-center">PROCESO DE LA TERAPIA EN LÍNEA</h1>
+                    <br>
+                    <h4 class="text-center">El proceso de confirmación es el siguiente:</h4>
+                    <hr>
+                    <ul class="list-style">
+                        <li class="list-group-item">
+                            <p class="textlist">Primer mensaje y resolución de dudas</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Verificación de disponibilidad para terapia</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Confirmación y pago de terapia</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Mensaje de confirmación</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="textlist">Inicio de psicoterapia en línea</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      
+
         <!--TESTIMONIOS-->
         <div class="containertestimonios row row-cols-1">
-          <div class="titulos">
-            <h1 class="tit">TESTIMONIOS</h1>
-            <hr>
-          </div>
-          <div class="jumbotron jumbotron-testimonios"> 
-            <div class="container-xl">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-                  <!-- Carousel indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                  </ol>   
-                  <!-- Wrapper for carousel items -->
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="/img/icons/index/profilem.png" class="img-fluid" alt="profilem">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Javier García</h4>
-                              <p>La terapia ha sido de excepcional ayuda. Pudieron ayudarme en situaciones muy difíciles, me dieron calma y posteriormente me proporcionaron las herramientas necesarias para gestionar el motivo por el que contacté con Dánika. </p>
-                            </div>						
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Alexa Ruíz</h4>
-                              <p>Dánika es una excelente profesional, transmite confianza, calidez humana, y hace que todo sea fácil desde el principio. Te motiva y después de cada sesión estás deseando volver a la siguiente ¡Muchas gracias por todo!</p>
-                            </div>						
-                          </div>
-                        </div>				
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Dilan Cruz</h4>
-                              <p>Dánika, me ayudo a entender de dónde vienen mis problemas, comprenderme mejor y ser más amable conmigo mismo. Ha sido un largo camino de auto descubrimiento y crecimiento personal y emocional. Te estoy tremendamente agradecido.</p>
-                            </div>						
-                          </div>					
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Laura Ruíz</h4>
-                              <p>Una magnífica experiencia la terapia online 100% recomendable. Necesitaba un psicólogo on-line porque viajaba bastante y el método que sigue Dánika me ha encantado, yo misma agendo mis terapias según mis necesidades.</p>
-                            </div>						
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Alondra López</h4>
-                              <p>Gracias a Dánika conseguí ordenar los pensamientos de mi cabeza, aprendí a darle la importancia que merece a cada cosa y a quitarle hueco a esos pensamientos negativos que nos frenan y no nos dejan ser felices, gracias por toda la ayuda. </p>
-                            </div>						
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="thumb-wrapper">
-                            <div class="img-box">
-                              <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
-                            </div>
-                            <div class="thumb-content">
-                              <h4>Isaac Ponce</h4>
-                              <p>Llegué a la consulta sin saber manejar situaciones cotidianas, que me ocasionaban ataques de ansiedad. A las pocas semanas comencé a sentir cambios importantes y tengo que decir, que las sesiones han marcado un antes y un después en mi vida.</p>
-                            </div>						
-                          </div>					
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Carousel controls -->
-                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
-                  </a>
-                </div>
-                </div>
-              </div>
+            <div class="titulos">
+                <h1 class="tit">TESTIMONIOS</h1>
+                <hr>
             </div>
-       
-          </div>
+            <div class="jumbotron jumbotron-testimonios">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                                <!-- Carousel indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="/img/icons/index/profilem.png" class="img-fluid" alt="profilem">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Javier García</h4>
+                                                        <p>La terapia ha sido de excepcional ayuda. Pudieron ayudarme en situaciones muy difíciles, me dieron calma y posteriormente me proporcionaron las herramientas necesarias para gestionar el motivo por
+                                                            el que contacté con Dánika. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Alexa Ruíz</h4>
+                                                        <p>Dánika es una excelente profesional, transmite confianza, calidez humana, y hace que todo sea fácil desde el principio. Te motiva y después de cada sesión estás deseando volver a la siguiente ¡Muchas
+                                                            gracias por todo!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Dilan Cruz</h4>
+                                                        <p>Dánika, me ayudo a entender de dónde vienen mis problemas, comprenderme mejor y ser más amable conmigo mismo. Ha sido un largo camino de auto descubrimiento y crecimiento personal y emocional. Te
+                                                            estoy tremendamente agradecido.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Laura Ruíz</h4>
+                                                        <p>Una magnífica experiencia la terapia online 100% recomendable. Necesitaba un psicólogo on-line porque viajaba bastante y el método que sigue Dánika me ha encantado, yo misma agendo mis terapias según
+                                                            mis necesidades.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Alondra López</h4>
+                                                        <p>Gracias a Dánika conseguí ordenar los pensamientos de mi cabeza, aprendí a darle la importancia que merece a cada cosa y a quitarle hueco a esos pensamientos negativos que nos frenan y no nos dejan
+                                                            ser felices, gracias por toda la ayuda. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="thumb-wrapper">
+                                                    <div class="img-box">
+                                                        <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
+                                                    </div>
+                                                    <div class="thumb-content">
+                                                        <h4>Isaac Ponce</h4>
+                                                        <p>Llegué a la consulta sin saber manejar situaciones cotidianas, que me ocasionaban ataques de ansiedad. A las pocas semanas comencé a sentir cambios importantes y tengo que decir, que las sesiones
+                                                            han marcado un antes y un después en mi vida.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Carousel controls -->
+                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <!--PREGUNTAS FRECUENTES-->
 
         <div class="containerpreguntas row">
-          <div class="titulos">
-            <h1 class="tit">PREGUNTAS FRECUENTES</h1>
-            <hr>
-            <p>El proceso de confirmación es el siguiente:</p>
-          </div>
-          <div class="jumbotron jumbotron-preguntas row row-cols-1 row-cols-lg-1 row-cols-md-1"> 
-            <div class="col">
-              <ul class="list-style-cen">
-                <li class="list-group-item"><p>¿En dónde puedo tomar la terapia?</p></li>
-                <li class="list-group-item"><p>¿Cómo puedo resolver mis dudas?</p></li>
-                <li class="list-group-item"><p>¿Qué formas de pago se aceptan?</p></li> 
-                <li class="list-group-item"><p>Mensaje de confirmación</p></li>
-                <li class="list-group-item"><p>Si vivo fuera de la Ciudad de México, ¿puedo tomar terapia?</p></li> 
-              </ul>
-            </div>          
-          </div>
+            <div class="titulos">
+                <h1 class="tit">PREGUNTAS FRECUENTES</h1>
+                <hr>
+                <p>El proceso de confirmación es el siguiente:</p>
+            </div>
+            <div class="jumbotron jumbotron-preguntas row row-cols-1 row-cols-lg-1 row-cols-md-1">
+                <div class="col">
+                    <ul class="list-style-cen">
+                        <li class="list-group-item">
+                            <p>¿En dónde puedo tomar la terapia?</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>¿Cómo puedo resolver mis dudas?</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>¿Qué formas de pago se aceptan?</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Mensaje de confirmación</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Si vivo fuera de la Ciudad de México, ¿puedo tomar terapia?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      
+
 
         <!--COMIENZA AHORA-->
         <div class="containercontac row">
-          <div class="jumbotron jumbotron-contac row row-cols-1"> 
-            <div class="col">
-              <h1 class="tit">SOLICITA TU PRIMER TERAPIA EN LÍNEA</h1>
-              <hr>
-              <p>Accede a una terapia en línea segura, privada y accesible. Sin importar la situación por la que estés pasando, estaré encantada de poder ayudarte.</p>
-              <button type="button" class="btn btn-col">CONTACTAR</button>
-            </div> 
-          </div>         
+            <div class="jumbotron jumbotron-contac row row-cols-1">
+                <div class="col">
+                    <h1 class="tit">SOLICITA TU PRIMER TERAPIA EN LÍNEA</h1>
+                    <hr>
+                    <p>Accede a una terapia en línea segura, privada y accesible. Sin importar la situación por la que estés pasando, estaré encantada de poder ayudarte.</p>
+                    <button type="button" class="btn btn-col">CONTACTAR</button>
+                </div>
+            </div>
         </div>
-      
 
-        
-      <!--Footer-->
-      <footer class="">
-        <div class="iconContStyle">
-          <a href= "mailto:danika.moreno@gmail.com" target="_blank">
-          <img src="./img/icons/blue/correo.png" alt="imagen email" width="35px" class="iconStyle"/>
-        </a>
-        <a href= "https://wa.me/message/KAK7AQLR7BU2F1" target="_blank">
-          <img src="./img/icons/blue/whatsapp.png" alt="imagen telefono" width="35px" class="iconStyle"/>
-        </a>
-        <a href= "https://instagram.com/platicaloconpsic.danika?r=nametag" target="_blank">
-          <img src="./img/icons/blue/instagram.png" alt="imagen instagram" width="35px" class="iconStyle"/>
-        </a>
-        <a href= "https://www.facebook.com/DanikaMorenoPsicologa" target="_blank">
-          <img src="./img/icons/blue/facebook.png" alt="imagen facebook" width="35px" class="iconStyle"/>
-        </a>
-        <a href= "www.linkedin.com/in/danikamoreno" target="_blank">
-          <img src="./img/icons/blue/linkedin.png" alt="imagen linkedln" width="35px" class="iconStyle"/>
-        </a>
-        </div>
-        <div class="footerStyle">
-          Hecho con 🤍 de Chmod 777 Copyright 2022 - Todos los derechos Reservados
-        </div>
-      </footer>
-      <!--Declaracion de Scripts-->
-      <!--Bootstrap-->
-      <script
-        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="carrusel.js"></script>
+
+
+        <!--Footer-->
+        <footer class="">
+            <div class="iconContStyle">
+                <a href="mailto:danika.moreno@gmail.com" target="_blank">
+                    <img src="./img/icons/blue/correo.png" alt="imagen email" width="35px" class="iconStyle" />
+                </a>
+                <a href="https://wa.me/message/KAK7AQLR7BU2F1" target="_blank">
+                    <img src="./img/icons/blue/whatsapp.png" alt="imagen telefono" width="35px" class="iconStyle" />
+                </a>
+                <a href="https://instagram.com/platicaloconpsic.danika?r=nametag" target="_blank">
+                    <img src="./img/icons/blue/instagram.png" alt="imagen instagram" width="35px" class="iconStyle" />
+                </a>
+                <a href="https://www.facebook.com/DanikaMorenoPsicologa" target="_blank">
+                    <img src="./img/icons/blue/facebook.png" alt="imagen facebook" width="35px" class="iconStyle" />
+                </a>
+                <a href="www.linkedin.com/in/danikamoreno" target="_blank">
+                    <img src="./img/icons/blue/linkedin.png" alt="imagen linkedln" width="35px" class="iconStyle" />
+                </a>
+            </div>
+            <div class="footerStyle">
+                Hecho con 🤍 de Chmod 777 Copyright 2022 - Todos los derechos Reservados
+            </div>
+        </footer>
+        <!--Declaracion de Scripts-->
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="carrusel.js"></script>
     </div>
-  </body>
+</body>
+
 </html>
