@@ -46,3 +46,7 @@ color: var(--colorGreen);
 .testimoniosJ{
   width:100%;
 }
+
+.parrafoCardM{
+  display: none;
+}
