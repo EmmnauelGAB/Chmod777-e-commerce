@@ -471,3 +471,19 @@
     width: 50%;
     margin-top: 20px;
 }
+
+.carousel-test {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+@media (max-width: 850px){
+    .carousel-test {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    }
