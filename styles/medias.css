@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+
+.jumbotronInicio{
+    height: 200px;
+}
+.jumbotronNosotros{
+    height: 200px;
+}
+.jumbotronServicios{
+    height: 200px;
+}
+.jumbotronContacto{
+    height: 200px;
+}
+.jumbotronCita{
+    height: 200px;
+}
+.tituloJB{
+    font-size: 30px;
+}
+.parrafoJB{
+    font-size: 18px;
+}
+}
