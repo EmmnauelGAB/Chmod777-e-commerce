@@ -21,4 +21,17 @@
 .parrafoJB{
     font-size: 18px;
 }
+.containerabout, .jumbotron-about, .container__card, .card__father, .cardd {
+    width: 400px;
+    height: 400px;  
+}
+.parrafoCard{
+    display: none;
+}
+.parrafoCardM{
+    display: inline-block;
+}
+.containerabout{
+    background: none;
+}
 }
