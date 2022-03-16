@@ -6,13 +6,15 @@ function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
     let telefonoValor = telephone.value;
     let correoValor = correo.value;
     let mensajeValor = mensaje.value;
+
+
+  
     // Validar Nombre
     var text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     if (nombreValor === "" || nombreValor.length <= 3 || !text.test(nombreValor)) {
         nombre.classList.add("is-invalid");
     } else {
         nombre.classList.add("is-valid");
-    }
     // Validar Apellido
     if (apellidoValor === "" || apellidoValor.length <= 2 || !text.test(apellidoValor)) {
         apellido.classList.add("is-invalid");
@@ -46,6 +48,9 @@ function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
     } else {
         mensaje.classList.add("is-valid");
     }
+    do{
+
+    }while(nombre === true && mensaje === true )
 }
 //** Se declara la const del form */
 const formAddProduct = document.getElementById("sendinfo");
