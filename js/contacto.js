@@ -1,84 +1,62 @@
-"use strict"
-
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("sendinfo").addEventListener('submit', validarFormulario);
-});
-
-function validarFormulario(evento) {
-    evento.preventDefault();
-    /** Validar Nombre */
-    var nombre = document.getElementById('name').value;
-    if (nombre == "") {
-        alert("Por favor, Introduce tu nombre valido.");
-        return;
+//** se valida cada uno de los campos y se anexo expreciones regulares */
+function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
+    let nombreValor = nombre.value;
+    let apellidoValor = apellido.value;
+    let estadoValor = estado.value;
+    let telefonoValor = telephone.value;
+    let correoValor = correo.value;
+    let mensajeValor = mensaje.value;
+    // Validar Nombre
+    var text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+    if (nombreValor === "" || nombreValor.length <= 3 || !text.test(nombreValor)) {
+        nombre.classList.add("is-invalid");
     } else {
-        if (nombre.length >= 2) {
-            console.log(nombre);
-            return;
-        }
+        nombre.classList.add("is-valid");
     }
-    /** Validar Apellidos */
-    var apellidos = document.getElementById('lasName').value;
-    if (apellidos.length == "") {
-        alert("Por favor, Introduce tu apellido");
-        return;
+    // Validar Apellido
+    if (apellidoValor === "" || apellidoValor.length <= 2 || !text.test(apellidoValor)) {
+        apellido.classList.add("is-invalid");
     } else {
-        if (apellidos.length >= 3) {
-            return;
-        }
+        apellido.classList.add("is-valid");
     }
-    /** Validar Estado */
-    var estado = document.getElementById('std');
-    if (estado == "") {
-        alert("Por favor, Introduce tu estado");
-        return;
+    // Validar Estado
+    if (estadoValor === "" || estadoValor.length <= 3 || !text.test(estadoValor)) {
+        estado.classList.add("is-invalid");
+    } else {
+        estado.classList.add("is-valid");
     }
-    /**Validar Telefone */
-    var telefono = document.getElementById('telephone');
-    if (telefono == "") {
-        alert("Por favor, Introduce tu nombre");
-        return;
+    // Validar Telefono
+    var num = /[^+\d]/g;
+    if (telefonoValor === "" || num.test(telefonoValor)) {
+        telephone.classList.add("is-invalid");
+    } else {
+        telephone.classList.add("is-valid");
     }
-    /**Validar Correo */
-    var correo = document.getElementById('telephone');
-    if (correo == "") {
-        alert("Por favor, Introduce tu correo");
-        return;
+    // Validar Correo
+    var email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    if (correoValor === "" || !email.test(correoValor)) {
+        correo.classList.add("is-invalid");
+    } else {
+        correo.classList.add("is-valid");
     }
-    /**Validar mensaje */
-    var mensaje = document.getElementById('telephone');
-    if (mensaje == "") {
-        alert("Por favor, Introduce tu mensaje");
-        return;
+    // Validar Mensaje
+    var msg = /^[a-zA-ZÀ-ÿ\s]{1,1000}$/;
+    if (mensajeValor === "" || !msg.test(mensajeValor)) {
+        mensaje.classList.add("is-invalid");
+    } else {
+        mensaje.classList.add("is-valid");
     }
 }
-
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-// (function() {
-//     window.addEventListener(
-//         "load",
-//         function() {
-//             // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//             var forms = document.getElementsByClassName("needs-validation");
-//             // Loop over them and prevent submission
-//             var validation = Array.prototype.filter.call(
-//                 forms,
-//                 function(form) {
-//                     form.addEventListener(
-//                         "submit",
-//                         function(event) {
-//                             if (form.checkValidity() === false) {
-//                                 event.preventDefault();
-//                                 event.stopPropagation();
-//                             }
-//                             form.classList.add("was-validated");
-//                         },
-//                         false
-//                     );
-//                 }
-//             );
-//         },
-//         false
-//     );
-// })();
+//** Se declara la const del form */
+const formAddProduct = document.getElementById("sendinfo");
+//** Hacemos una funcion que escucha al boton enviar mediante el evente */
+formAddProduct.addEventListener("submit", (evento) => {
+    let apellido = document.getElementById("lastName");
+    let nombre = document.getElementById("name");
+    let estado = document.getElementById("std");
+    let telefono = document.getElementById("telephone");
+    let correo = document.getElementById("email");
+    let mensaje = document.getElementById("mensaje");
+    evento.preventDefault();
+    validacionForm(nombre, apellido, estado, telefono, correo, mensaje);
+})
