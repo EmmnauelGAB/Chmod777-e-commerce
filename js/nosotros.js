@@ -22,17 +22,6 @@ let acerca =[
         wapp : `https://api.whatsapp.com/send?phone=5561160225`,
         email : `mailto:emmanuelgarciabarron0@gmail.com`,
        },
-       //-------------ALINE-------------------
-       {
-        src : `../img/fotos/Aline.png`,
-        title: "Aline",
-        desc : "Soy psicóloga y me gusta aprender cosas nuevas que me ayuden a darle una perspectiva nueva a mis conocimientos. Me considero una persona alegre, tranquila y que siempre gusta de enfrentar nuevos desafíos.",
-        des2 : "Desarrolladora Java FullStack",
-        lk : `#`,
-        git : `#`,
-        wapp : `#`,
-        email : `#`,
-       },
        //-------------VICTOR-------------------
        {
         src : `../img/fotos/Victor.png`,
@@ -54,17 +43,6 @@ let acerca =[
         git : `https://github.com/NenemyVc`,
         wapp : `https://api.whatsapp.com/send?phone=5552528975`,
         email : `mailto:nenemy28@gmail.com`,
-       },
-       //-------------FRANCISCO-------------------
-       {
-        src : `../img/fotos/Francisco.png`,
-        title: "Francisco",
-        desc : "Soy una persona creativa, en constante aprendizaje y desarrollo. Me gusta pensar de manera lógica y analítica, buscando siempre una mentalidad de crecimiento. He adquirido la habilidad de “solución de problemas” de manera eficaz, apoyándome en el trabajo en equipo, además de la retroalimentación de mis compañeros.",
-        des2 : "Desarrollador Java FullStack",
-        lk : `https://www.linkedin.com/in/fjcl/`,
-        git : `https://github.com/FranciscoCL13`,
-        wapp : `https://api.whatsapp.com/send?phone=5574047038`,
-        email : `mailto:fcontreras1311@gmail.com`,
        },
       //-------------SARA-------------------
        {

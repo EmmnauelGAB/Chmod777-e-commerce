@@ -26,13 +26,15 @@
     <div class="colorback">
       <!-- NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-dark navStyle">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="#">
+            <img src="../img/logo/CEREBRIN.svg" id="cerebrin" width="40" alt="">
+        </a>
+
+        <button class="navbar-toggler btn btn-outline-light my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse affix" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="navbar-brand" href="#">
-                <img src="./img/logo/CEREBRIN.svg" width="40"  alt="">
-              </a>
-            </li>
             <li class="nav-item">
               <a
                 class="btn btn-outline-light my-2 my-sm-0 border-0 rounded-pill"
@@ -79,7 +81,7 @@
               </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0 affix">
             <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModalLogin" style="border-radius: 16px 1px 1px 16px">
               INGRESAR
             </button>
@@ -449,21 +451,8 @@
                       <div class="card__back">
                         <div class="body__card_back">
                           <h1>Dánika</h1>
-                          <p class="parrafoCard">Soy psicóloga clínica, con formación en la UNAM. 
-                            Parte de mi formación clínica consta de licenciatura en Psicología, 
-                            así como un Posgrado en la atención clínica para adolescentes, adultos
-                             y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis 
-                             y Género, por parte de la AMPAG.
-                            Tengo experiencia trabajando en instituciones gubernamentales para la elaboración 
-                            del expediente clínico y de baterías psicológicas, dependiendo las necesidades de 
-                            cada perfil psicológico, también realizando intervención en crisis, atención 
-                            psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el 
-                            enfoque psicoanalítico y psicodinámico.</p> 
-                            <p class="parrafoCardM">Soy psicóloga clínica, con formación en la UNAM. 
-                              Parte de mi formación clínica consta de licenciatura en Psicología, 
-                              así como un Posgrado en la atención clínica para adolescentes, adultos
-                               y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis 
-                               y Género, por parte de la AMPAG.</p>                    
+                            <p>Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica para adolescentes, adultos y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG.
+                              Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas, dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el enfoque psicoanalítico y psicodinámico.</p>                        
                         </div>
                       </div>
                     </div>
@@ -617,7 +606,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="row">
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="/img/icons/index/profilem.png" class="img-fluid" alt="profilem">
@@ -628,7 +617,7 @@
                             </div>						
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
@@ -639,7 +628,7 @@
                             </div>						
                           </div>
                         </div>				
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
@@ -654,7 +643,7 @@
                     </div>
                     <div class="carousel-item">
                       <div class="row">
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
@@ -665,7 +654,7 @@
                             </div>						
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="img/icons/index/profilef.png" class="img-fluid" alt="profilef">
@@ -676,7 +665,7 @@
                             </div>						
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="carousel-test">
                           <div class="thumb-wrapper">
                             <div class="img-box">
                               <img src="img/icons/index/profilem.png" class="img-fluid" alt="profilem">
@@ -734,7 +723,7 @@
               <h1 class="tit">SOLICITA TU PRIMER TERAPIA EN LÍNEA</h1>
               <hr>
               <p>Accede a una terapia en línea segura, privada y accesible. Sin importar la situación por la que estés pasando, estaré encantada de poder ayudarte.</p>
-              <button type="button" class="btn btn-col">CONTACTAR</button>
+              <a type="button" class="btn btn-col" href="./page/contacto.html">CONTACTAR</a>
             </div> 
           </div>         
         </div>
