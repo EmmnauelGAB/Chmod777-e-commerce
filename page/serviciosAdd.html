@@ -136,12 +136,14 @@
                     <div class="custom-file mb-3">
 
                         <label class="fileadd titleFormat" for="validatedCustomFile">Ingresa imagen referente al servicio:</label> <br>
-                        <input type="file" class="fileAdd" id="validatedCustomFile" required>
+                        <!--<input type="file" class="fileAdd" id="validatedCustomFile" required>-->
+                        <button  id = "upload_widget"  class = "cloud" > Subir archivo </button>
+
                     </div>
                       
                          <hr class="my-4">   
                     <div>
-                        <button type="submit" class="btn btn-primary botonAgregar">Agregar servicio</button>
+                        <button type="submit" class="btn btnAdd">Agregar servicio</button>
                         <!-- <div id="alertaSI" class="alert alert-primary" role="alert">Servicio Agregado</div>
                         <div id="alertaNO" class="alert alert-primary" role="alert">Completa todos los campos</div> -->
                         <br>
@@ -200,7 +202,10 @@
         $("#alertaNO").hide();
       });
     </script> -->
-
+    <!--JS SCRIPTS -->
     <script src="./../js/alertas.js"></script>
+     <!--CLOUDINARY--> 
+     <script  src = " https://upload-widget.cloudinary.com/global/all.js "  type = " text/javascript " > </script>
+     <script src="./js/cloud.js"></script>    
   </body>
 </html>

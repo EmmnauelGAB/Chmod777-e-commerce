@@ -1,18 +1,25 @@
-.botonAgregar {
-    float: right;
-    border-radius: 15px;
-}
-
-.botonAgregar:hover {
-    transform: scale(1.1);
-    background: #0cebeb;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsl(164, 100%, 58%), #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: black;
-    border-color: #0cebeb;
-}
 
 .titleFormat{
     font-size: 19px;
     font-weight: bold;
+}
+
+    
+
+
+.btnAdd{
+    background-color: var(--colorGreen);
+    color: var(--ColorWhite);
+    border-radius: 15px;
+    float: right;
+}
+
+.cloud{
+    background-color: var(--colorBlueClear);
+    color: var(--ColorWhite);
+    border: none;
+    border-radius: 15px;
+    width: 110px;
+    height: 35px;
+
 }

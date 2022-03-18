@@ -34,4 +34,23 @@
 .containerabout{
     background: none;
 }
+.jumbotron-about{
+    background: none;
 }
+
+.jumbotron-terapias{
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+.container__card, .body__card_front{
+    width: 400px;
+    height: 400px;
+}
+.containerBeneficios{
+    margin: 50px;
+}
+}
+
+
+
