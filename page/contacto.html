@@ -59,13 +59,13 @@
     <!-- JUMBOTRON-->
     <header class="jumbotron jumbotronContacto">
 
-      <div class="heroText">
-        <h1 class="display-4 titulopagina font-weight-bold text-center tituloJB">
-          CONTACTO
-        </h1>
-        <hr class="my-4">
-        <p class="lead font-weight-light parrafoJB">Agendemos una charla</p>
-      </div>
+        <div class="heroText">
+            <h1 class="display-4 titulopagina font-weight-bold text-center tituloJB">
+                CONTACTO
+            </h1>
+            <hr class="my-4">
+            <p class="lead font-weight-light parrafoJB">Agendemos una charla</p>
+        </div>
     </header>
     <!--Imagen user-->
     <img src="../img/user.png" alt="user" class="rounded mx-auto d-block userStyle">
@@ -78,42 +78,71 @@
                     <div class="form-row ">
                         <div class="col-md-6 mb-3">
                             <label for="name" class="formulario__label">Nombre(s)</label>
-                            <input type="text" class="form-control formulario__input" id="name" placeholder="Marco" required name="name" />
-                            <div class="invalid-feedback">Ingresa un nombre valido</div>
+                            <input type="text" class="form-control " id="name" placeholder="Marco" required name="name" />
+                            <div id="nameDemo"></div>
                         </div>
                         <!--Apellido-->
                         <div class="col-md-6 mb-3 ">
                             <label for="lastName">Apellidos</label>
                             <input type="text" class="form-control" id="lastName" placeholder="Perez" required name="lastName" />
-                            <div class="invalid-feedback">Ingresa un apellido valido.</div>
+                            <div class="invalid-feedback">Ingresa un apellido válido.</div>
+                            <div id="lastNameDemo"></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="std">Estado</label>
-                            <input type="text" class="form-control" id="std" required name="city" />
-                            <div class="invalid-feedback">Ingresa un estado valido.</div>
+                            <select id="std" class="form-control" required name="city">
+                                <option></option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="CDMX">Ciudad de México</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option>
+                            </select>
+                            <div id="stdDemo"></div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="telephone">Teléfono</label>
                             <input type="tel" class="form-control" id="telephone" placeholder="55-55-55-55-55" required name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
-                            <div class="invalid-feedback">
-                                Igresa un número telefónico válido
-                            </div>
+                            <div id="telephoneDemo"></div>
                         </div>
                         <div class="col-md-12 mb-12">
                             <label for="email">Correo</label>
                             <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com" required name="email" />
-                            <div class="invalid-feedback">
-                                Ingresa una dirección electrónica válida.
-                            </div>
+                            <div id="emailDemo"></div>
 
                             <div class="form-group">
                                 <label for="mensaje">Mensaje</label>
                                 <textarea class="form-control" id="mensaje" rows="10" name="message"></textarea>
-                                <div class="invalid-feedback">
-                                    Ingresa un mensaje para mas informacion
-                                </div>
+                                <div id="mensajeDemo"></div>
                             </div>
 
                             <div class="form-group">
@@ -122,21 +151,21 @@
                                     <label class="form-check-label" for="validationFormCheck1"> Acepta los <a
                                             style="color:blue;" data-toggle="modal"
                                             data-target="#staticBackdrop">Términos y Condiciones</a></label>
-                                    <div class="invalid-feedback"> Es necesario aceptar los términos y condiciones para enviar tu información.</div>
+                                    <div class="invalid-feedback "> Es necesario aceptar los términos y condiciones para enviar tu información. 😲</div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <hr />
-                    <button class="btn  botonAgregar" type="submit" value="Entrar">Enviar</button>
+                    <button class="col-md-3 col-12 btn btn-col" type="submit" value="Entrar">Enviar</button>
                 </form>
                 <!-- Modal  Terminos y condiciones-->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close btn-col" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
@@ -185,7 +214,7 @@
                                 <p>Estas terminos y condiciones se han generado en&nbsp;<a href="http://terminosycondicionesdeusoejemplo.com/" target="_blank">terminosycondicionesdeusoejemplo.com</a>.</p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn  botonAgregar" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
