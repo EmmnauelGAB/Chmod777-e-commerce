@@ -1,20 +1,23 @@
+//**Inicialización de Local Storage */
+let newServicio =[
+    {
+       "_id": 0,
+       "titulo": "Terapia individual",
+       "tipo": "Terapia",
+       "descripcion": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
+       "imagen": "terapia-individual.png"
+   }
+   ];
 
+let recoverData = localStorage.getItem("servicios")
+if(recoverData == null){
+    let jsonServicios = JSON.stringify(newServicio);
+    localStorage.setItem("servicios",jsonServicios);
+}else{
 
-let servicios =[
- {
-    "_id": 0,
-    "titulo": "Terapia individual",
-    "tipo": "Terapia",
-    "descripcion": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
-    "imagen": "terapia-individual.png"
 }
-];
-
-let jsonServicios = JSON.stringify(servicios);
-localStorage.setItem("servicios",jsonServicios);
 
 //**valida cada uno de los campos del form */
-
 function serviciosAdd(titulo, tipo, description, imagen) {
     let tituloValor = titulo.value;
     let tipoValor = tipo.value;
@@ -22,7 +25,6 @@ function serviciosAdd(titulo, tipo, description, imagen) {
     let imagenValor = imagen.value;
 
     // valida titulo
-
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
     let condicion = true;
@@ -35,7 +37,6 @@ function serviciosAdd(titulo, tipo, description, imagen) {
     document.getElementById("serviceDemo").innerHTML = textName;
 
     // valida tipo
-
     if (tipoValor === "") {
         textName = `<div class="alert alert-danger" role="alert">¡Elige un tipo de servicio! </div>`;
         condicion = false;
@@ -60,42 +61,40 @@ function serviciosAdd(titulo, tipo, description, imagen) {
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Imagen válida!</div>`;
     }
-
     document.getElementById("imagenDemo").innerHTML = textName;
 
-    if (condicion === true) {
-        let nuevoServicio = {
-            "_id": arrayServicios.length,
-            "titulo": titulo.value,
-            "tipo": tipo.value,
-            "descripcion": description.value,
-            "imagen": imagen.value
-        };
-        arrayServicios.push(nuevoServicio);
-        let jsonServicios = JSON.stringify(arrayServicios);
-        localStorage.setItem("servicios", jsonServicios);
-        titulo.value = "";
-        tipo.value = "";
-        description.value = "";
-        imagen.value = "";
-        Swal.fire({
-            icon: 'success',
-            title: '¡Éxito!',
-            text: '¡Se agregó el servicio!',
-            footer: '<a href="./servicios.html">Ir a servicios</a>'
-        })
-    }else{
-        Swal.fire({
-            icon: 'error',
-            title: '¡Falló!',
-            text: '¡No se agregó el servicio!',
-        })
+    
+
+        if (condicion === true) {
+            let nuevoServicio = {
+                "_id": arrayServicios.length + 1,
+                "titulo": titulo.value,
+                "tipo": tipo.value,
+                "descripcion": description.value,
+                "imagen": imagen.value
+            };
+            arrayServicios.push(nuevoServicio);
+            let jsonServicios = JSON.stringify(arrayServicios);
+            localStorage.setItem("servicios", jsonServicios);
+            
+            Swal.fire({
+                icon: 'success',
+                title: '¡Éxito!',
+                text: '¡Se agregó el servicio!',
+                footer: '<a href="./servicios.html">Ir a servicios</a>'
+            })
+        }else{  
+            Swal.fire({
+                icon: 'error',
+                title: '¡Falló!',
+                text: '¡No se agregó el servicio!',
+            })
+        }
     }
-}
 
 let serviciosStorage = localStorage.getItem("servicios");
-let arrayServicios = JSON.parse(serviciosStorage);
-console.log(arrayServicios);
+arrayServicios = JSON.parse(serviciosStorage);
+console.log(arrayServicios);  
 
 //(Borra todo lo de Local Storage)
 //window.localStorage.removeItem("servicios")   
