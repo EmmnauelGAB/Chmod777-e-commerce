@@ -15,6 +15,23 @@ height: 400px;
 
 }
 
+/* Estilos del jumbotron 404 */ 
+.jumbotron404{
+  color: var(--ColorWhite);
+  letter-spacing: 3px;
+  border-radius: 0%;
+  /*background-color: var(--colorBlueClear);*/
+
+  
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/servicios/404.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 400px;
+
+}
+
 /*Le da formato al titulo de la Hero image*/
 
 .heroText {
