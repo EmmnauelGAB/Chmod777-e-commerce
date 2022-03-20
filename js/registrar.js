@@ -1,4 +1,5 @@
-let usuarios = [
+//**Inicialización de Local Storage */
+let newUsuario = [
     {
         "_id": 0,
         "nombre": "Emmanuel",
@@ -10,12 +11,15 @@ let usuarios = [
     }
 ];
 
-/**/
-let jsonUsuarios = JSON.stringify(usuarios);
-localStorage.setItem("usuarios", jsonUsuarios);
+let recoverDatar = localStorage.getItem("usuarios")
+if(recoverDatar == null){
+    let jsonUsuarios = JSON.stringify(newUsuario);
+    localStorage.setItem("usuarios",jsonUsuarios);
+}else{
+
+}
 
 //**valida cada uno de los campos del form */
-
 function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, confirmacion) {
     let nombreValor = nombre.value;
     let apellidoValor = apellido.value;
@@ -138,7 +142,7 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
         };
         arrayUsuarios.push(nuevoUsuario);
         let jsonUsuarios = JSON.stringify(arrayUsuarios);
-        localStorage.setItem("servicios", jsonUsuarios);
+        localStorage.setItem("usuarios", jsonUsuarios);
         nombre.value = "";
         apellido.value = "";
         telefono.value = "";
@@ -165,7 +169,7 @@ let arrayUsuarios = JSON.parse(usuariosStorage);
 console.log(arrayUsuarios);
 
 //(Borra todo lo de Local Storage)
-//window.localStorage.removeItem("servicios")   
+//window.localStorage.removeItem("usuarios")   
 
 let formAddUsuario = document.getElementById("form-registro");
 
