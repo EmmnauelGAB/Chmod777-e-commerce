@@ -2,7 +2,7 @@
 
 let servicios =[
  {
-    "_id": 1,
+    "_id": 0,
     "titulo": "Terapia individual",
     "tipo": "Terapia",
     "descripcion": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
@@ -63,9 +63,9 @@ function serviciosAdd(titulo, tipo, description, imagen) {
 
     document.getElementById("imagenDemo").innerHTML = textName;
 
-    if (condicion = true) {
+    if (condicion === true) {
         let nuevoServicio = {
-            "_id": arrayServicios.length + 1,
+            "_id": arrayServicios.length,
             "titulo": titulo.value,
             "tipo": tipo.value,
             "descripcion": description.value,
@@ -82,6 +82,7 @@ function serviciosAdd(titulo, tipo, description, imagen) {
             icon: 'success',
             title: '¡Éxito!',
             text: '¡Se agregó el servicio!',
+            footer: '<a href="./servicios.html">Ir a servicios</a>'
         })
     }else{
         Swal.fire({
