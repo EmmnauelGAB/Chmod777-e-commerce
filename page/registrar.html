@@ -75,26 +75,29 @@
     <div class="container">
         <div class="row align-items-center h-100">
             <div class="col-12 col-sm-7 col-lg-7 mx-auto">
-                <form>
+                <form id="form-registro">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="nombreR">Nombre</label>
-                            <input type="text" class="form-control" id="nombreR" placeholder="">
+                            <input type="text" class="form-control" id="nombreR" placeholder="Ingrese su nombre">
+                            <div id="nombreDemo"></div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="apellidoR">Apellido</label>
-                            <input type="text" class="form-control" id="apellidoR" placeholder="">
+                            <input type="text" class="form-control" id="apellidoR" placeholder="Ingrese sus apellidos">
+                            <div id="apellidoDemo"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="telefonoR">Telefono</label>
-                            <input type="text" class="form-control" id="telefonoR" placeholder="">
+                            <input type="text" class="form-control" id="telefonoR" placeholder="Ingrese su teléfono">
+                            <div id="telefonoDemo"></div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="estadoR">Estado</label>
                             <select id="estadoR" class="form-control">
-                                <option></option>
+                                <option selected></option>
                                 <option value="Aguascalientes">Aguascalientes</option>
                                 <option value="Baja California">Baja California</option>
                                 <option value="Baja California Sur">Baja California Sur</option>
@@ -128,21 +131,26 @@
                                 <option value="Yucatán">Yucatán</option>
                                 <option value="Zacatecas">Zacatecas</option>
                             </select>
+                            <div id="estadoDemo"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="emailR">Correo</label>
-                        <input type="email" class="form-control" id="emailR" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="emailR" aria-describedby="emailHelp" placeholder="Ingrese su correo">
+                        <div id="correoDemo"></div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="passR">Contraseña</label>
-                            <input type="password" class="form-control" id="passR" placeholder="">
+                            <span class="badge badge-pill badge-light">(Mayor de 8 caractéres)</span>  
+                            <input type="password" class="form-control" id="passR" placeholder="Ingrese su contraseña">
+                            <div id="contraseñaDemo"></div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="passR2">Confirmar contraseña</label>
-                            <input type="password" class="form-control" id="passR2" placeholder="">
+                            <input type="password" class="form-control" id="passR2" placeholder="Repita su contraseña">
+                            <div id="confirmacionDemo"></div>
                         </div>
                     </div>
                     <hr>
@@ -160,8 +168,8 @@
                     </div>
 
                     <input type="reset" class="col-md-3 col-12 btn btn-col" value="Limpiar">
-                    <button type="button" class="col-md-3 col-12 btn btn-col" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="col-md-3 col-12 btn btn-col">Registrar</button>
+                    <a href="../index.html" type="button" class="col-md-3 col-12 btn btn-col" data-dismiss="modal">Cancelar</a>
+                    <button type="submit" class="col-md-3 col-12 btn btn-col">Registrar</button>
                 </form>
                 <!-- Modal  Terminos y condiciones-->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -251,7 +259,8 @@
         </div>
     </footer>
     <!--Declaracion de Scripts-->
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="../js/registrar.js"></script>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
