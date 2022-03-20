@@ -6,11 +6,9 @@
 @import url(./contacto.css);
 @import url(./cita.css);
 @import url(./map.css);
-@import url(./404.css);
 @import url(./serviciosAdd.css);
 @import url(./index.css);
 @import url(./medias.css);
-
 /* Variables */
 
 :root {
@@ -18,7 +16,6 @@
     --ColorWhite: #ffffff;
     --ColorBlack: #000000;
     --colorBlueClear: #253444;
-    ;
     --colorBlueDark: #1A252F;
     --colorGreen: #18BC9C;
 }
