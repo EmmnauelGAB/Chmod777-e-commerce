@@ -44,17 +44,6 @@ let acerca =[
         wapp : `https://api.whatsapp.com/send?phone=5552528975`,
         email : `mailto:nenemy28@gmail.com`,
        },
-      //-------------SARA-------------------
-       {
-       src : `../img/fotos/Sara.png`,
-       title: "Sara",
-       desc : "Socióloga, amante de la tecnología, los idiomas y el diseño. Experiencia laboral como asistente administrativo senior, diplomado en enseñanza de idiomas y diseño; hablo alemán, inglés y español (nociones de francés).",
-       des2 : "Desarrolladora Java FullStack",
-       lk : `#`,
-       git : `https://github.com/saragami`,
-       wapp : `#`,
-       email : `#`,
-      },
        //-------------EDUARDO-------------------
        {
         src : `../img/fotos/Eduardo.png`,
