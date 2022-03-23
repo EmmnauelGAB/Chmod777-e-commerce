@@ -10,3 +10,23 @@
     justify-content: center;
     align-items: center;
 }
+/* Estilos botones*/
+.btnClean{
+    background-color: var(--colorBlueLight);
+    color: var(--colorWhite);
+}
+.btnClean:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorBlueLight);
+    
+}
+
+.btnCancel{
+    background-color: var(--colorBlueClear);
+    color: var(--colorWhite);
+}
+.btnCancel:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorBlueClear);
+    
+}

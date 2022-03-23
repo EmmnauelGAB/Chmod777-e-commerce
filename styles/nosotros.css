@@ -38,7 +38,7 @@
 #imagen{  
     border-radius: 20px;
     width: 180px;
-    box-shadow:1px 5px 15px #a2a2a2;
+    box-shadow:1px 5px 15px #000000;
 }
 
 .card-style{
@@ -160,4 +160,46 @@
 .iconStyle:hover{
   background-color: var(--ColorWhite);
   border-radius: 20px;
+}
+
+/* ICONOS DINAMISCOS*/
+
+/*FOOTER*/
+.footerStyle{
+  background: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.footerStyleCard ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  
+  
+}
+.footerStyleCard ul li a{
+  display: block;
+  padding: 0 10px;
+  background-color: var(--colorGreen);
+  border-radius: 50px;
+  color: var(--colorWhite);
+  line-height: 50px;
+  font-size: 23px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+  transition: .2s;
+}
+
+.footerStyleCard ul li a:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
+.footerStyleCard ul li .icon:hover{
+  background-color: var(--colorWhite);
+  color: var(--colorGreen);
 }
