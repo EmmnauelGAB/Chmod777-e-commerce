@@ -38,12 +38,12 @@ let servicios =[
     <div class="col mb-4"
       <div class="card">
               <img src="${src}" class="card-img-top alt="...">
-            <div class="card-body card-bodyy">
-              <h5 class="card-titles">${title}</h5>
+            <div class="card-body card-bodyy ">
+              <h5 class="card-titles titleStyleCard">${title}</h5>
               <p class="card-texts">${desc}</p>
             </div>
             <div class="card-button">
-              <a href="#" class="btn btn-col">Agendar</a>
+              <a href="#" class="btn btn-col btnDef">Agendar</a>
             </div>
       </div>      
     </div>`;
@@ -129,7 +129,7 @@ let servicios =[
               <p class="card-texts">${descT}</p>
             </div>
             <div class="card-button">
-              <a href="#" class="btn btn-col">Agendar</a>
+              <a href="#" class="btn btn-col btnDef">Agendar</a>
             </div>
       </div>      
     </div>`;

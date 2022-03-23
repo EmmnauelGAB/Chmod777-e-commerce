@@ -10,6 +10,7 @@
 @import url(./index.css);
 @import url(./medias.css);
 
+
 /*Nuevo*/
 @import url(./chmod.css);
 @import url(./admin.css);
@@ -135,4 +136,15 @@ body{
 }
 .parrafStyle{
     color: var(--colorBlueClear);
+}
+
+/*STYLE BTN DEFAULT */
+.btnDef{
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+}
+.btnDef:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorGreen);
+    
 }

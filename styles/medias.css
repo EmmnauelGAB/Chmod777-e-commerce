@@ -34,4 +34,77 @@
 .containerabout{
     background: none;
 }
+/*MEDIAS INDEX */
+
+.jbIndex{
+    height: 250px; 
 }
+.container1-0{
+    display: flex;
+    flex-direction: column;
+}
+.container1-1{
+    width: 400px;
+    margin-bottom: 50px;
+
+}
+.container1-2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100px;
+    height: 100px; 
+}
+
+.container2-0{
+    display: flex;
+    margin-left: -50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    background: none;
+    box-shadow: none;
+    
+}
+.container2-1{
+    width: 400px;
+    color: var(--colorBlack);
+    margin-bottom: 50px;
+    
+}
+.container2-2{
+    width: 400px;
+    color: var(--colorBlack);
+    margin-bottom: 50px;
+    
+}
+.container2-3{
+    margin-left: -300px;
+    
+}
+.container4-0{
+    display: flex;
+    margin-left: -50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    background: none;
+    box-shadow: none;
+}
+.container4-1{
+    width: 400px;
+    color: var(--colorBlack);
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+.container4-2{
+    width: 400px;
+    color: var(--colorBlack);
+    margin-bottom: 50px;
+    margin-left: 55px;
+}
+.container4-3{
+    margin-left: -300px;
+}
+}
+
+
