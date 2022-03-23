@@ -1,21 +1,19 @@
 //**Inicialización de Local Storage */
-let newUsuario = [
-    {
-        "_id": 0,
-        "nombre": "Emmanuel",
-        "apellido": "García",
-        "telefono": "5519845653",
-        "estado": "CDMX",
-        "correo": "emma@gmail.com",
-        "contraseña": "emmaylalo_<3",
-    }
-];
+let newUsuario = [{
+    "_id": 0,
+    "nombre": "Emmanuel",
+    "apellido": "García",
+    "telefono": "5519845653",
+    "estado": "CDMX",
+    "correo": "emma@gmail.com",
+    "contraseña": "emmaylalo_<3",
+}];
 
 let recoverDatar = localStorage.getItem("usuarios")
-if(recoverDatar == null){
+if (recoverDatar == null) {
     let jsonUsuarios = JSON.stringify(newUsuario);
-    localStorage.setItem("usuarios",jsonUsuarios);
-}else{
+    localStorage.setItem("usuarios", jsonUsuarios);
+} else {
 
 }
 
@@ -34,8 +32,11 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
     let condicion = true;
-    if (nombreValor === "" || nombreValor.length <= 3 || !text.test(nombreValor)) {
+    if (nombreValor === "" || !text.test(nombreValor)) {
         textName = `<div class="alert alert-danger" role="alert">¡Nombre inválido!</div>`;
+        condicion = false;
+    } else if (nombreValor.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Nombre menor a 4 caracteres!</div>`;
         condicion = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Nombre válido!</div>`;
@@ -44,8 +45,11 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
 
     // valida apellido
 
-    if (apellidoValor === "" || apellidoValor.length <= 2 || !text.test(apellidoValor)) {
+    if (apellidoValor === "" || !text.test(apellidoValor)) {
         textName = `<div class="alert alert-danger" role="alert">¡Apellido inválido!</div>`;
+        condicion = false;
+    }else if (nombreValor.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Apellido menor a 4 caracteres!</div>`;
         condicion = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Apellido inválido!</div>`;
@@ -57,14 +61,20 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
     if (telefonoValor === "" || num.test(telefonoValor)) {
         textName = `<div class="alert alert-danger" role="alert">¡Telefóno inválido!</div>`;
         condicion = false;
+    } else if (telefonoValor.length <= 9) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno menor a 10 dígitos!</div>`;
+        condicion = false;
+    } else if (telefonoValor.length >= 11) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno mayor a 10 dígitos!</div>`;
+        condicion = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Teléfono válido!</div>`;
     }
     document.getElementById("telefonoDemo").innerHTML = textName;
 
     // Validar Estado
-    if (estadoValor === "") {
-        textName = `<div class="alert alert-danger" role="alert">¡Estado inválido!</div>`;
+    if (estadoValor === null || estadoValor == 0) {
+        textName = `<div class="alert alert-danger" role="alert">¡Estado no seleccionado!</div>`;
         condicion = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Estado válido!</div>`;
@@ -90,7 +100,7 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
         if (pass1Valor.charAt(cont) == " ")
             espacios = true;
         cont++;
-       textName = `<div class="alert alert-success" role="alert">¡Contraseña válida!</div>`;
+        textName = `<div class="alert alert-success" role="alert">¡Contraseña válida!</div>`;
     }
     document.getElementById("contraseñaDemo").innerHTML = textName;
 
@@ -112,7 +122,7 @@ function usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, co
     if (pass1Valor != pass2Valor) {
         textName = `<div class="alert alert-danger" role="alert">¡Las contraseñas no coinciden!</div>`;
         condicion = false;
-    } else if(pass1Valor === pass2Valor && pass2Valor.length != 0 && pass2Valor.charAt(cont) == " ") {
+    } else if (pass1Valor === pass2Valor && pass2Valor.length != 0 && pass2Valor.charAt(cont) == " ") {
         textName = `<div class="alert alert-success" role="alert">¡Todo correcto!</div>`;
     }
     document.getElementById("confirmacionDemo").innerHTML = textName;
@@ -168,9 +178,6 @@ let usuariosStorage = localStorage.getItem("usuarios");
 let arrayUsuarios = JSON.parse(usuariosStorage);
 console.log(arrayUsuarios);
 
-//(Borra todo lo de Local Storage)
-//window.localStorage.removeItem("usuarios")   
-
 let formAddUsuario = document.getElementById("form-registro");
 
 formAddUsuario.addEventListener("submit", function (evento) {
@@ -182,6 +189,5 @@ formAddUsuario.addEventListener("submit", function (evento) {
     let contraseña = document.getElementById("passR");
     let confirmacion = document.getElementById("passR2")
     evento.preventDefault();
-    usuariosAdd(nombre,apellido, telefono, estado,correo,contraseña,confirmacion);
+    usuariosAdd(nombre, apellido, telefono, estado, correo, contraseña, confirmacion);
 });
-
