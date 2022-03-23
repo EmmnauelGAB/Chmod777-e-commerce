@@ -1,0 +1,41 @@
+.jbAgen{
+  background-image: url(../img/agendar.png);
+  margin-bottom: 0%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Se usan variables de color ya prestablecidas en el main.*/
+.btn-addservices{
+    background-color: var(--colorBlueDark);
+    margin-bottom: 35px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--ColorWhite);
+  }
+  /*hover cuando el usuario interactúa con el botón.*/
+  .btn-addservices:hover{
+    background-color: var(--ColorWhite);
+    color: var(--colorBlueDark);
+    border-color: var(--colorBlueDark);
+  }
+
+.botonAgregar:hover {
+    transform: scale(1.1);
+    background: #0cebeb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(164, 100%, 58%), #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    border-color: #0cebeb;
+}
+
+.titleFormat{
+    font-size: 19px;
+    font-weight: bold;
+}

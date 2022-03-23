@@ -1,0 +1,73 @@
+.jbHelp{
+    background-image: url(../img/help.png);
+    margin-bottom: 0%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ask{
+    margin-bottom: 100px;
+}
+.containerAsk{
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+
+.askStyleH{
+    background: none;
+}
+.askStyleT{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.ask2{
+    margin-top: 100px;
+}
+
+/*Le da formato al titulo de la Hero image*/
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/*Le da estilo al button de la Hero image*/
+
+.btnJB {
+    background-color: var(--colorGreen);
+    border-radius: none;
+    color: var(--ColorWhite);
+}
+
+
+/*Le da estilo al button de la Hero image al pasar el puntero*/
+
+.btnJB:hover {
+    background-color: aliceblue;
+    color: var(--colorGreen);
+}
+
+.userStyle {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/*Estilo Validacion*/
+
+.is-invalid {
+    color: red;
+}
+
+.is-valid {
+    color: #18BC9C;
+}
