@@ -65,7 +65,6 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    background: var(--colorBlueClear);
     margin-top: 0px;
   }
 
@@ -111,7 +110,7 @@
   }
 
   .titt{
-    color: white;
+    color: var(--colorBlueClear);
     font-size: 50px;
   }
 

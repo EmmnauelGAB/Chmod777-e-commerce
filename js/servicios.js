@@ -2,27 +2,27 @@
 
 let servicios =[
     {
-       src : `../img/servicios/terapia-individual.jpg`,
+       src : `../img/servicios/PsicoTerapia individual.png`,
        title: "Psicoterapia individual",
        desc : "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos."
     },
     {
-      src : `../img/servicios/terapia-parejas.jpg`,
+      src : `../img/servicios/Psicoterapia de pareja.png`,
       title: "Psicoterapia de pareja",
       desc : "Las dificultades en la pareja son una etapa en toda relación, acudir a terapia puede representar la oportunidad de escucharse y entenderse desde una comunicación que les permita verse más allá de lo que viven en el presente."
    },
    {
-    src : `../img/servicios/terapia-adolescentes.jpg`,
+    src : `../img/servicios/Psicoterapia de adolescentes.png`,
     title: "Psicoterapia de adolescentes",
     desc : " Las etapas de crecimiento de la vida son mejores cuando se tiene el espacio para poder experimentarlas y entenderlas; la adolescencia es una etapa crucial para el desarrollo tanto del paciente como de sus familiares."
   },
   {
-    src : `../img/servicios/terapia-grupal.jpg`,
+    src : `../img/servicios/Psicoterapia grupal.png`,
     title: "Psicoterapia grupal",
     desc : "El trabajo clínico de uno, se complementa a través de la experiencia y el trabajo de todos. Es así como el grupo es curativo en sí mismo, y qué mejor con la compañía de un especialista que puede guiarlos a descubrirse mucho mejor."
   },
   {
-    src : `../img/servicios/terapia-grupal-mamas.jpg`,
+    src : `../img/servicios/Psicoterapia grupal para mamás.png`,
     title: "Psicoterapia grupal para mamás",
     desc : "Es un espacio diseñado para el trabajo clínico de la maternidad y de lo que implica ser y vivirse como madres y mujeres; se trabaja con las vivencias, aprendizajes y dificultades que el maternar conlleva. "
   }
@@ -88,27 +88,27 @@ let servicios =[
    // OBJETO TALLER
    let taller =[
     {
-       srcT : `../img/servicios/terapiamujeres.jpg`,
+       srcT : `../img/servicios/Taller reflexivo madres.png`,
        titleT : "Taller reflexivo madres",
        descT : "Si va a tener su primer hijo, es muy probable que se sienta abrumada por las preguntas, los miedos o, simplemente, por no saber qué esperar. Por eso para muchos padres primerizos tomar clases de preparación para el parto les ayuda a calmar sus preocupaciones y responder a muchas preguntas, te ayudaré a resolver tus dudas."
     },
     {
-      srcT : `../img/servicios/taller-parejas.jpg`,
+      srcT : `../img/servicios/Taller parejas.png`,
       titleT : "Taller parejas",
       descT : "Tienen por objetivo apoyar a la pareja a conocerse mejor, a fin de que puedan comprenderse, humanizarse y apoyarse amorosamente en sus áreas disfuncionales, cada taller tiene una temática especial con el propósito de desarrollar diferentes habilidades a fin de potencializar el proceso terapéutico de la pareja."
     },
     {
-      srcT : `../img/servicios/crianza-positiva.jpg`,
+      srcT : `../img/servicios/Taller crianza positiva.png`,
       titleT : "Taller crianza positiva",
       descT : "Conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos."
     },
     {
-      srcT : `../img/servicios/adicciones.jpg`,
+      srcT : `../img/servicios/Taller adicciones.png`,
       titleT : "Taller adicciones",
       descT : "El inicio en el consumo se produce a edades muy tempranas, entre 13 y 16 años dependiendo de la sustancia. Por lo que el trabajo preventivo hay que empezarlo en edades anteriores. El alcohol, el tabaco y el cannabis son las sustancias más consumidas en la actualidad."
     },
     {
-      srcT : `../img/servicios/taller-psicoeducativo.jpg`,
+      srcT : `../img/servicios/Taller psicoeducativo.png`,
       titleT : "Taller psicoeducativo",
       descT : "Dependiendo de las necesidades del grupo, se determinan las horas y número de sesiones para trabajar el tema. Este apartado está disponible para grupos de instituciones educativas u organizaciones."
     }
