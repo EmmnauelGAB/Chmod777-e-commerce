@@ -1,18 +1,32 @@
-/* Estilos del jumbotron */
-
-.jumbotronContacto {
-    color: var(--ColorWhite);
-    letter-spacing: 3px;
-    border-radius: 0%;
-    /*background-color: var(--colorBlueClear);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos/contacto.png");
-    background-position: top;
+.jbHelp{
+    background-image: url(../img/help.png);
+    margin-bottom: 0%;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ask{
+    margin-bottom: 100px;
+}
+.containerAsk{
+    margin-top: 85px;
+    margin-bottom: 100px;
 }
 
+.askStyleH{
+    background: none;
+}
+.askStyleT{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.ask2{
+    margin-top: 100px;
+}
 
 /*Le da formato al titulo de la Hero image*/
 
