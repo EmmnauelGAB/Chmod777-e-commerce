@@ -75,25 +75,19 @@ let acerca =[
         <div class="card-header-first rounded pb-5">
           <img id="imagen" src="${src}" alt="Sara" class="mx-auto d-block"  />
         </div>
-        <div class="card-body text-center">
+        <div class="card-body text-center cardStyleC">
             <h2 class="card-header-title pt-4">${title}</h2>
             <p class="card-text text-justify pt-2">${desc}</p>
             <p class="card-text text-center">${des2}</p>
             <hr id="line">
-            <div class="social-icons">
-            <a href="${lk}" target="_blank">
-              <button class="button"><img class="icon" src="../img/icons/blue/linkedin.png"/></button>
-              </a> 
-            <a href="${git}" target="_blank"> 
-              <button class="button"><img class="icon" src="../img/icons/blue/github.png"/></button>
-              </a>
-            <a href="${wapp}" target="_blank"> 
-              <button class="button"><img class="icon" src="../img/icons/blue/whatsapp.png"/></button>
-              </a>
-            <a href="${email}" target="_blank"> 
-              <button class="button"><img class="icon" src="../img/icons/blue/correo.png"/></button>
-              </a>
-            </div>      
+            <div class="footerStyleCard">
+            <ul>
+              <li><a href= "${lk}"  class="icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href= "${git}" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href= "${wapp}" class="icon"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href= "${email}" class="icon" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
