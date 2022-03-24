@@ -11,23 +11,29 @@ function validationForm(name, lastName, state, telephone, email, message) {
     // Validar Nombre
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
-    if (nameValue === "" || nameValue.length <= 3 || !text.test(nameValue)) {
+    if (nameValue === "" || !text.test(nameValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Nombre inválido! </div>`;
+    } else if (nameValue.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Nombre menor a 4 caracteres!</div>`;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Nombre válido!</div>`;
 
     }
     document.getElementById("nameDemo").innerHTML = textName;
     // Validar Apellido
-    if (lastValue === "" || lastValue.length <= 2 || !text.test(lastValue)) {
+    if (lastValue === "" || !text.test(lastValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Apellido inválido! </div>`;
+    } else if (nameValue.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Apellido menor a 4 caracteres!</div>`;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Apellido válido!</div>`;
     }
     document.getElementById("lastNameDemo").innerHTML = textName;
     // Validar Estado
     if (stateValue === "") {
-        textName = `<div class="alert alert-danger" role="alert">¡Estado inválido! </div>`;
+        textName = `<div class="alert alert-danger" role="alert">¡Estado no seleccionado! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Estado válido!</div>`;
     }
