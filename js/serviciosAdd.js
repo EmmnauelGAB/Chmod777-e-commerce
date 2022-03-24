@@ -1,81 +1,81 @@
 //**Inicialización de Local Storage */
-let newServicio =[
+let newService =[
     {
        "_id": 0,
-       "titulo": "Terapia individual",
-       "tipo": "Terapia",
-       "descripcion": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
-       "imagen": "terapia-individual.png"
+       "title": "Terapia individual",
+       "tipe": "Terapia",
+       "description": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
+       "image": "terapia-individual.png"
    }
    ];
 
-let recoverData = localStorage.getItem("servicios")
+let recoverData = localStorage.getItem("services")
 if(recoverData == null){
-    let jsonServicios = JSON.stringify(newServicio);
-    localStorage.setItem("servicios",jsonServicios);
+    let jsonServices = JSON.stringify(newService);
+    localStorage.setItem("servicios",jsonServices);
 }else{
 
 }
 
 //**valida cada uno de los campos del form */
-function serviciosAdd(titulo, tipo, description, imagen) {
-    let tituloValor = titulo.value;
-    let tipoValor = tipo.value;
-    let descriptionValor = description.value;
-    let imagenValor = imagen.value;
+function servicesAdd(title, tipe, description, image) {
+    let titleValue = title.value;
+    let tipeValue = tipe.value;
+    let descriptionValue = description.value;
+    let imageValue = image.value;
 
     // valida titulo
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
-    let condicion = true;
-    if (tituloValor === "" || tituloValor.length <= 10 || !text.test(tituloValor)) {
+    let condition = true;
+    if (titleValue === "" || titleValue.length <= 10 || !text.test(titleValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Título inválido! </div>`;
-        condicion = false;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Título válido!</div>`;  
     }
     document.getElementById("serviceDemo").innerHTML = textName;
 
     // valida tipo
-    if (tipoValor === "") {
+    if (tipeValue === "") {
         textName = `<div class="alert alert-danger" role="alert">¡Elige un tipo de servicio! </div>`;
-        condicion = false;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Tipo de servicio válido!</div>`;
     }
-    document.getElementById("tipoDemo").innerHTML = textName;
+    document.getElementById("tipeDemo").innerHTML = textName;
 
     // valida Descripcion
-    if (descriptionValor === "" || descriptionValor.length <= 20 || /^\s+$/.test(description)) {
+    if (descriptionValue === "" || descriptionValue.length <= 20 || /^\s+$/.test(description)) {
         textName = `<div class="alert alert-danger" role="alert">¡Ingresa una descripción! </div>`;
-        condicion = false;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Descripción válida!</div>`;
     }
     document.getElementById("descriptionDemo").innerHTML = textName;
 
     // valida imagen
-    if (imagenValor === "") {
+    if (imageValue === "") {
         textName = `<div class="alert alert-danger" role="alert">¡Agrega una imagen! </div>`;
-        condicion = false;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Imagen válida!</div>`;
     }
-    document.getElementById("imagenDemo").innerHTML = textName;
+    document.getElementById("imageDemo").innerHTML = textName;
 
     
 
-        if (condicion === true) {
-            let nuevoServicio = {
+        if (condition === true) {
+            let newService = {
                 "_id": arrayServicios.length + 1,
-                "titulo": titulo.value,
-                "tipo": tipo.value,
-                "descripcion": description.value,
-                "imagen": imagen.value
+                "title": title.value,
+                "tipe": tipe.value,
+                "description": description.value,
+                "image": image.value
             };
-            arrayServicios.push(nuevoServicio);
-            let jsonServicios = JSON.stringify(arrayServicios);
-            localStorage.setItem("servicios", jsonServicios);
+            arrayService.push(newService);
+            let jsonServices = JSON.stringify(arrayService);
+            localStorage.setItem("services", jsonServices);
             
             Swal.fire({
                 icon: 'success',
@@ -92,21 +92,18 @@ function serviciosAdd(titulo, tipo, description, imagen) {
         }
     }
 
-let serviciosStorage = localStorage.getItem("servicios");
-arrayServicios = JSON.parse(serviciosStorage);
-console.log(arrayServicios);  
+let servicesStorage = localStorage.getItem("services");
+arrayServices = JSON.parse(servicesStorage);
+  
 
-//(Borra todo lo de Local Storage)
-//window.localStorage.removeItem("servicios")   
+let formAddService = document.getElementById("form-service");
 
-let formAddServicio = document.getElementById("form-servicio");
-
-formAddServicio.addEventListener("submit", function (evento) {
-    let titulo = document.getElementById("newService");
-    let tipo = document.getElementById("servicioTipo");
+formAddService.addEventListener("submit", function (event) {
+    let title = document.getElementById("newService");
+    let tipe = document.getElementById("serviceTipe");
     let description = document.getElementById("description");
-    let imagen = document.getElementById("validatedCustomFile");
-    evento.preventDefault();
-    serviciosAdd(titulo, tipo, description, imagen);
+    let image = document.getElementById("validatedCustomFile");
+    event.preventDefault();
+    servicesAdd(title, tipe, description, image);
 });
 
