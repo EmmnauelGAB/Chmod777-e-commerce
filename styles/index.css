@@ -653,3 +653,15 @@
     }
 }
 
+.container_user_img{
+    display: flex;
+    justify-content: center;
+}
+
+.user_img{
+    height: 30%;
+    width: 30%;
+    margin-top: 20px;
+
+}
+
