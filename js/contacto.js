@@ -1,18 +1,17 @@
 //** se valida cada uno de los campos y se anexo expreciones regulares */
-function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
-    let nombreValor = nombre.value;
-    let apellidoValor = apellido.value;
-    let estadoValor = estado.value;
-    let telefonoValor = telephone.value;
-    let correoValor = correo.value;
-    let mensajeValor = mensaje.value;
-
+function validationForm(name, lastName, state, telephone, email, message) {
+    let nameValue = name.value;
+    let lastValue = lastName.value;
+    let stateValue = state.value;
+    let phoneValue = telephone.value;
+    let emailValue = email.value;
+    let messageValue = message.value;
 
 
     // Validar Nombre
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
-    if (nombreValor === "" || nombreValor.length <= 3 || !text.test(nombreValor)) {
+    if (nameValue === "" || nameValue.length <= 3 || !text.test(nameValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Nombre inválido! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Nombre válido!</div>`;
@@ -20,14 +19,14 @@ function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
     }
     document.getElementById("nameDemo").innerHTML = textName;
     // Validar Apellido
-    if (apellidoValor === "" || apellidoValor.length <= 2 || !text.test(apellidoValor)) {
+    if (lastValue === "" || lastValue.length <= 2 || !text.test(lastValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Apellido inválido! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Apellido válido!</div>`;
     }
     document.getElementById("lastNameDemo").innerHTML = textName;
     // Validar Estado
-    if (estadoValor === "") {
+    if (stateValue === "") {
         textName = `<div class="alert alert-danger" role="alert">¡Estado inválido! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Estado válido!</div>`;
@@ -35,39 +34,48 @@ function validacionForm(nombre, apellido, estado, telephone, correo, mensaje) {
     document.getElementById("stdDemo").innerHTML = textName;
     // Validar Telefono
     let num = /[^+\d]/g;
-    if (telefonoValor === "" || num.test(telefonoValor)) {
-        textName = `<div class="alert alert-danger" role="alert">¡Telefono inválido! </div>`;
+    if (phoneValue === "" || num.test(phoneValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno inválido!</div>`;
+        condition = false;
+    } else if (phoneValue.length <= 9) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno menor a 10 dígitos!</div>`;
+        condition = false;
+    } else if (phoneValue.length >= 11) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno mayor a 10 dígitos!</div>`;
+        condition = false;
     } else {
-        textName = `<div class="alert alert-success" role="alert">¡Telefono válido!</div>`;
+        textName = `<div class="alert alert-success" role="alert">¡Teléfono válido!</div>`;
     }
     document.getElementById("telephoneDemo").innerHTML = textName;
+    
     // Validar Correo
-    let email = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    if (correoValor === "" || !email.test(correoValor)) {
+    let emailVal = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    if (emailValue === "" || !emailVal.test(emailValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Correo inválido! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Correo válido!</div>`;
     }
     document.getElementById("emailDemo").innerHTML = textName;
-    // Validar Email
+
+    // Validar Message
     let msg = /^[a-zA-ZÀ-ÿ\s]{1,1000}$/;
-    if (mensajeValor === "" || !msg.test(mensajeValor)) {
+    if (messageValue === "" || !msg.test(messageValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Mensaje inválido! </div>`;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Mensaje válido!</div>`;
     }
-    document.getElementById("mensajeDemo").innerHTML = textName;
+    document.getElementById("menssageDemo").innerHTML = textName;
 }
 //** Se declara la const del form */
 const formAddProduct = document.getElementById("sendinfo");
 //** Hacemos una funcion que escucha al boton enviar mediante el evente */
-formAddProduct.addEventListener("submit", (evento) => {
-    let apellido = document.getElementById("lastName");
-    let nombre = document.getElementById("name");
-    let estado = document.getElementById("std");
-    let telefono = document.getElementById("telephone");
-    let correo = document.getElementById("email");
-    let mensaje = document.getElementById("mensaje");
-    evento.preventDefault();
-    validacionForm(nombre, apellido, estado, telefono, correo, mensaje);
+formAddProduct.addEventListener("submit", (event) => {
+    let lastName = document.getElementById("lastName");
+    let name = document.getElementById("name");
+    let state = document.getElementById("std");
+    let phone = document.getElementById("telephone");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    event.preventDefault();
+    validationForm(name, lastName, state, phone, email, message);
 })
