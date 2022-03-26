@@ -17,6 +17,10 @@
 @import url(./registrar.css);
 /* Variables */
 
+html {
+    scroll-behavior: smooth;
+  }
+ 
 *{
     margin: 0;
     padding: 0;
@@ -32,19 +36,20 @@
     --colorGreen: #18BC9C;
     --colorBone: #f8f6f1;
     --colorSkye: #6fc3c5;
-    --colorPurple: rgb(197, 69, 223);
+    --colorSkyeBlack: #51A0A1;
 }
 
 body{
-    background-color: #9dc1e2;
+    background-color: #e6f7f8;
 
 }
 
 
 .navStyle{
     
-    background-color: var(--colorBlueDark);
+    background-color: var(--colorSkye);
 }
+
 
 .btnNav{
     color: var(--colorWhite);
@@ -52,28 +57,82 @@ body{
 }
 
 .btnNav:hover{
-    color: var(--colorGreen);
+    color: var(--colorBlack);
 }
-.btnUser{
+.btnUserReg{
     color: var(--colorWhite);
-    border-color: var(--colorGreen);
+    border-color: var(--colorWhite);
 }
-.btnUser:hover{
-    background-color: var(--colorGreen);
+.btnUserReg:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorSkye);
+    border-color: var(--colorWhite);
+    
+}
+.btnUserLog{
+    background-color: var(--colorWhite);
+    color: var(--colorSkye);
+    border-color: var(--colorWhite);
+}
+.btnUserLog:hover{
+    background-color: transparent;
     color: var(--colorWhite);
-    border:none;
+    border-color: var(--colorWhite);
 }
 
 .ulNavStyle{
     font-weight: bold;
     
 }
+.active{
+    color: var(--colorBlack);
+}
+
+/*Efecto glass navbar-scrolling */
+nav.down{
+    background-color: #6fc4c5d8;
+}
+
+/* Scroll color */
+body::-webkit-scrollbar{
+    width: 12px;
+    background: var(--colorWhite);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--colorSkye);
+    border-radius: 25px;
+}
+.btn-scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: var(--colorSkye);
+    color: var(--colorWhite);
+    border: 1px solid var(--colorWhite);
+    border-radius: 100%;
+    cursor: pointer;
+    /*transform: translateY(100px);*/
+    transform: scale(0);
+    transition: 0.3s;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
 
 
+}
+.btn-scrolltop-on{
+   /*transform: translateY(0);*/
+    transform: scale(1);
 
-
+}
+.btn-scrolltop:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorSkye);
+    border-color: var(--colorSkyeBlack);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
 .titleFooter{
-    background-color: var(--colorBlueClear);
+    background-color: var(--colorSkye);
     color: var(--colorWhite);
     margin-bottom: 0px;
     height: 70px;
@@ -84,7 +143,7 @@ body{
 }
 /*FOOTER*/
 .footerStyle{
-    background-color: var(--colorBlueClear);
+    background-color: var(--colorSkye);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -104,9 +163,9 @@ body{
 .footerStyle ul li a{
     display: block;
     padding: 0 10px;
-    background-color: var(--colorGreen);
+    background-color: var(--colorWhite);
     border-radius: 50px;
-    color: var(--colorWhite);
+    color: var(--colorSkye);
     line-height: 50px;
     font-size: 23px;
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
@@ -118,13 +177,13 @@ body{
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
 }
 .footerStyle ul li .icon:hover{
-    background-color: var(--colorWhite);
-    color: var(--colorGreen);
+    background-color: var(--colorSkyeBlack);
+    color: var(--colorWhite);
 }
 
 
 .footerStyleD{
-    background-color: var(--colorBlueDark);
+    background-color: var( --colorSkyeBlack);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -141,11 +200,12 @@ body{
 
 /*STYLE BTN DEFAULT */
 .btnDef{
-    background-color: var(--colorGreen);
+    background-color: var(--colorSkye);
     color: var(--colorWhite);
+    border: none;
 }
 .btnDef:hover{
     background-color: var(--colorWhite);
-    color: var(--colorGreen);
-    
+    color: var(--colorSkye);
+    border: none;
 }

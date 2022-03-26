@@ -24,7 +24,7 @@
 }
 /*Para el efecto sombra al pasar por encima el mouse*/
 .card-section:hover{
-	box-shadow:1px 1px 20px #08907a9d;
+	box-shadow:2px 2px 40px #6fc4c5d8;
 }
 
 /*------------------------------------------------------------------------*/
@@ -84,7 +84,7 @@
 }
 
 #line{
-    background: var(--colorGreen);
+    background: var(--colorSkye);
     border-width: 3px;
 }
 
@@ -186,7 +186,7 @@
 .footerStyleCard ul li a{
   display: block;
   padding: 0 10px;
-  background-color: var(--colorGreen);
+  background-color: var(--colorSkye);
   border-radius: 50px;
   color: var(--colorWhite);
   line-height: 50px;
@@ -201,5 +201,5 @@
 }
 .footerStyleCard ul li .icon:hover{
   background-color: var(--colorWhite);
-  color: var(--colorGreen);
+  color: var(--colorSkye);
 }

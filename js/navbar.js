@@ -1,6 +1,6 @@
 //Declara los elementos del navbar
 //logo
-const log = `../img/logo.png`
+const log = `../img/baner.png`
 //Enlaces
 const inc = `Inicio`;
 const inc1 = `../index.html`;
@@ -26,7 +26,7 @@ const imgModal = `../img/user_2.png`;
 
 //Crear el navbar
 let myNavbar = `<a class="navbar-brand" href="#" href="../index.html">
-  <img src="${log}" alt="" width="40px">
+  <img src="${log}" alt="" width="150px">
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,35 +34,35 @@ let myNavbar = `<a class="navbar-brand" href="#" href="../index.html">
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto ulNavStyle">
-    <li>
+    <li class="nav-item " id="tab-index">
       <a class="btn btnNav rounded-pill" href="${inc1}">${inc}</a>
     </li>
-    <li>
+    <li class="nav-item " id="tab-nosotros">
       <a class="btn btnNav rounded-pill" href="${nos1}">${nos}</a>
     </li>
-    <li>
+    <li class="nav-item " id="tab-servicios">
       <a class="btn btnNav rounded-pill" href="${ser1}">${ser}</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item " id="tab-agendar">
       <a class="btn btnNav rounded-pill" href="${age1}">${age}</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item " id="tab-ayuda">
       <a class="btn btnNav rounded-pill" href="${ayu1}">${ayu}</a>
     </li>
-    <li>
+    <li class="nav-item " id="tab-chmod">
       <a class="btn btnNav rounded-pill" href="${chm1}">${chm}</a>
     </li>
-    <li>
+    <li class="nav-item " id="tab-admin">
       <a class="btn btnNav rounded-pill" href="${adm1}">${adm}</a>
     </li>
   </ul>
   </ul>
   <form class="form-inline my-2 my-lg-0 affix ">
-          <button type="button" class="btn btnUser  my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" class="btn btnUserLog  my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal"
             style="border-radius: 16px 1px 1px 16px">
             ${ing}
           </button>
-          <a type="button" class="btn btnUser  my-2 my-sm-0" style="border-radius: 1px 16px 16px 1px"
+          <a type="button" class="btn btnUserReg  my-2 my-sm-0" style="border-radius: 1px 16px 16px 1px"
             href="${reg1}">
             ${reg}
           </a>
@@ -122,3 +122,19 @@ let myNavbar = `<a class="navbar-brand" href="#" href="../index.html">
 
 //Muestra el footer en pantalla
 anclaNavbar.innerHTML = myNavbar;
+
+//Cambia el color de la nav-bar cuando se da scroll
+window.addEventListener("scroll", function(){
+  let header = document.querySelector("#anclaNavbar");
+  header.classList.toggle("down",window.scrollY>0);
+})
+
+//Item selected nav-bar
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLenght = menuItem.length
+for (let i=0; i < menuLenght; i++){
+  if(menuItem[i].href === currentLocation){
+    menuItem[i].className = "active"
+  }
+}

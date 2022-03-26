@@ -20,7 +20,11 @@
    </div>
     <div class="footerStyleD">
       <small>${des}</small>
-    </div>`
+    </div>
+    <!--Botón arriba-->
+    <button class="btn-scrolltop" id="btn_scrolltop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>`
 
     
 //Muestra el footer en pantalla
