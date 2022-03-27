@@ -25,14 +25,14 @@ const titleModal = `Ingresar`;
 const imgModal = `../img/user_2.png`;
 
 //Crear el navbar
-let myNavbar = `<a class="navbar-brand" href="#" href="../index.html">
+let myNavbar = `<a class="navbar-brand " href="#" href="../index.html">
   <img src="${log}" alt="" width="150px">
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="collapse navbar-collapse affix" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto ulNavStyle">
     <li class="nav-item " id="tab-index">
       <a class="btn btnNav rounded-pill" href="${inc1}">${inc}</a>
