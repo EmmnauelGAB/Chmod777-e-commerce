@@ -11,29 +11,12 @@
   align-items: center;
 }
 
-/*Le da formato al titulo de la Hero image*/
-
-  .heroText {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-
-  /*Le da estilo al button de la Hero image*/
-  .btnJB{
-    background-color: var(--colorGreen);
-    border-radius: none;
-    color: var(--ColorWhite);
-  }
-
-  /*Le da estilo al button de la Hero image al pasar el puntero*/
-  .btnJB:hover{
-    background-color: aliceblue;
-    color: var(--colorGreen);
-  }
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   /* Estilos de los banner */
 
@@ -89,13 +72,13 @@
 
   .card-bodyy{
     height: 250px;
-    background-color: #25344455;
+    background-color: #6fc4c531;
   }
 
   @media (max-width: 920px) {
     .card-bodyy{
       height: auto;
-      background-color: #25344455;
+      background-color: #6fc4c531;
     }
   }
 
@@ -106,10 +89,12 @@
   .card-button{
     display: flex;
     justify-content: center;
-    background-color: #25344455;
+    background-color: #6fc4c531
+    ;
   }
 
   .titt{
+   
     color: var(--colorBlueClear);
     font-size: 50px;
   }

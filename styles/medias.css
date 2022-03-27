@@ -105,6 +105,18 @@
 .container4-3{
     margin-left: -300px;
 }
+.imgSize{
+    width: 350px;
 }
+}
+
+/* Carrusel*/
+@media (max-width: 850px){
+    .carousel-test {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 

@@ -1,6 +1,5 @@
 /* Estilos */
 
-@import url(./inicio.css);
 @import url(./nosotros.css);
 @import url(./servicios.css);
 @import url(./ayuda.css);
@@ -208,4 +207,11 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--colorWhite);
     color: var(--colorSkye);
     border: none;
+}
+
+/* Centrar NavBar Responsiva mobile*/
+
+.affix {
+    text-align: center;
+    justify-content: center;
 }
