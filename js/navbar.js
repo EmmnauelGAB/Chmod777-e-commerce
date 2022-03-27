@@ -58,7 +58,7 @@ let myNavbar = `<a class="navbar-brand " href="#" href="../index.html">
   </ul>
   </ul>
   <form class="form-inline my-2 my-lg-0 affix ">
-          <button type="button" class="btn btnUserLog  my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" class="btn btnUserLog my-2 my-lg-0" data-toggle="modal" data-target="#exampleModal"
             style="border-radius: 16px 1px 1px 16px">
             ${ing}
           </button>
