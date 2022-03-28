@@ -21,8 +21,7 @@ const ing = `INGRESAR`;
 const reg1 = `../page/registrar.html`;
 const reg = `REGISTRARSE`;
 //Modal
-const titleModal = `Ingresar`;
-const imgModal = `../img/user_2.png`;
+
 
 //Crear el navbar
 let myNavbar = `<a class="navbar-brand " href="#" href="../index.html">
@@ -67,57 +66,7 @@ let myNavbar = `<a class="navbar-brand " href="#" href="../index.html">
             ${reg}
           </a>
         </form>
-      </div> 
-      <!--modal login-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">${titleModal}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form class="formsLogin" novalidate>
-                <div class="form-group">
-  
-                  <div class="container_user_img">
-                    <img class="user_img" src="${imgModal}">
-                  </div>
-                  <hr>
-                  <label for="exampleInputEmail1">Correo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Ingrese su correo" required>
-                  <div class="invalid-feedback">
-                    Por favor, introduce una dirección de correo electrónico válida
-                  </div>
-                  <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie.
-                  </small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1"
-                    placeholder="Ingrese su contraseña" required>
-                  <div class="invalid-feedback">
-                    Por favor ingrese una contraseña.
-                  </div>
-                </div>
-                <hr>
-                <a href="/page/registrar.html">¿Aún no tienes cuenta?</a>
-                <hr>
-                <button type="submit" class="btn btn-primary">Ingresar</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!--fin modal login-->`
+      </div>`
 
 
 //Muestra el footer en pantalla
