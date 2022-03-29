@@ -1,0 +1,5 @@
+INSERT INTO client (fristName,email,role,cellphone,password,lastName) VALUES ('Jocelin','corrcarr98@gmail.com','cliente','5519193970','jcc0192837465#','Correa');
+INSERT INTO client (fristName,email,role,cellphone,password,lastName) VALUES ('David','dav54@gmail.com','cliente','5523652201','Dav0215$v','Vázquez');
+INSERT INTO client (fristName,email,role,cellphone,password,lastName) VALUES ('Emiliano','emiiher7@hotmail.com','cliente','5526640102','EmiLIano05)','Hernández');
+INSERT INTO client (fristName,email,role,cellphone,password,lastName) VALUES ('Lucy','lucy02@live.com','cliente','5525631523','LucY#0202','Ponce');
+INSERT INTO client (fristName,email,role,cellphone,password,lastName) VALUES ('Andrés','andrescruz@gmail.com','cliente','5523302201','Andres23C=','Cruz');
