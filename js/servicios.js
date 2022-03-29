@@ -98,7 +98,7 @@ let servicios =[
       descT : "Los talleres tienen como objetivo brindar herramientas a las parejas para la vinculación positiva: conocerse mejor, comprenderse, apoyarse desde un enfoque terapeutico."
     },
     {
-      srcT : `../img/serv/tallerPsicoeducativo.jpg`,
+      srcT : `../img/serv/TallercrianzaPositiva.jpg`,
       titleT : "Taller crianza positiva",
       descT : "Conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos."
     },

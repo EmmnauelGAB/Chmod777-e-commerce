@@ -93,9 +93,10 @@ let myHelp= `<!--Form-->
             </div>
 
             <h1 class="text-center ask2">${cTitle}</h1>
+            <section class="containerColorC">
             <form class="sendinfo " id="sendinfo" novalidate action="https://formspree.io/f/mqknblnw" method="POST">
                 <!--Nombre-->
-                <section class="containerColorC">
+                
                 <div class="form-row ">
                     <div class="col-md-6 mb-3">
                         <label for="name" class="formulario__label">Nombre(s)</label>

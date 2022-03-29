@@ -5,10 +5,10 @@ const dTitle = `ACERCA DE DÁNIKA`;
 const dDes = `Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica para adolescentes, adultos y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG. Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas, dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el enfoque psicoanalítico y psicodinámico.`;
 const dImg = `./img/indexImg/danuka.jpg`;
 //CUANDO PUEDE AYUDARTE
-const cpaTitle = `CUÁNDO PUEDE AYUDARTE LA PSICOTERAPIA EN LÍNEA`;
+const cpaTitle = `¿CUANDO PUEDE AYUDARTE LA PSICOTERAPIA EN LÍNEA?`;
 const cpaDes = `La psicoterapia en línea puede ayudarte en diferentes escenarios. El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:`;
 const cpaList = `<ul> <li>Te sientes desconectada o desconectado de actividades que antes disfrutabas, como compañía de familiares, lugares favoritos, por mencionar algunas.</li> <li>Los días malos superan a los buenos. Sientes profunda tristeza que te impide llevar a cabo tus actividades diarias.</li> <li>Sientes nervios, pánico, temblores o cualquier otra sensación de nerviosismo, agitación o tensión.</li> <li>Has sufrido un trauma en el pasado y no puedes dejar de pensar en ello.</li> <li>Relaciones dañadas con tu pareja, hijos, padres. Tienes dificultad para expresar lo que sientes.</li> </ul>`;
-const cpaImg = `../img/indexImg/cuandoAyurte.jpg`;
+const cpaImg = `../img/indexImg/terapeuta.webp`;
 //PROCESO DE TERAPIA EN LÍNEA
 const ptlTitle = `PROCESO DE LA TERAPIA EN LÍNEA`;
 const ptlDes = `El proceso de confirmación es el siguiente:`;
@@ -17,7 +17,7 @@ const ptlList = `<li class="liStyle">Primer mensaje y resolución de dudas</li> 
 const bTitle = `BENEFICIOS DE LA PSICOTERAPIA EN LÍNEA`;
 const bDes = `La psicoterapia en línea puede ayudarte en diferentes escenarios. El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:`;
 const bList = `<li>Conduce a nuevas oportunidades para aprender modos diferentes de pensar, sentir y actuar.</li> <li>Encontrar un sentido a lo que se está haciendo.</li> <li>Ayuda a mejorar las relaciones con los demás.</li> <li>Analizar problemas y encontrar soluciones.</li> <li>Ayuda a manejar las emociones.</li>`;
-const bImg = `./img/indexImg/terapiabeneficios.jpg`;
+const bImg = `./img/indexImg/hombrehablando.webp`;
 //TESTIMONIOS
 const tTitle = `TESTIMONIOS`;
 const tImgMas = `img/icons/index/profilem.png`; 
