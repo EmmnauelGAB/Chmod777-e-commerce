@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `chmod777_db`.`Client` (
   `fristName` VARCHAR(45) NOT NULL,
   `email` VARCHAR(25) NOT NULL,
   `role` VARCHAR(15) NOT NULL,
-  `cellphone` INT NOT NULL,
+  `cellphone` VARCHAR(20) NOT NULL,
   `password` VARCHAR(25) NOT NULL,
   `lastName` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idClient`))
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `chmod777_db`.`Admin` (
   `fristName` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `role` VARCHAR(45) NOT NULL,
-  `cellphone` INT NOT NULL,
+  `cellphone` VARCHAR(20) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `lastName` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idAdmin`))
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `chmod777_db`.`Contact` (
   `idContact` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NOT NULL,
   `email` VARCHAR(150) NOT NULL,
-  `cellphone` INT NOT NULL,
+  `cellphone` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`idContact`))
 ENGINE = InnoDB;
 
