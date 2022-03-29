@@ -2,29 +2,29 @@
 
 let servicios =[
     {
-       src : `../img/servicios/PsicoTerapia individual.png`,
+       src : `../img/serv/terapiaIndividual.jpg`,
        title: "Psicoterapia individual",
-       desc : "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos."
+       desc : "En Danika encontrarás un espacio terapéutico, que impulsará tu crecimiento  y redescubrimiento personal"
     },
     {
-      src : `../img/servicios/Psicoterapia de pareja.png`,
+      src : `../img/serv/TerapiaPArejas.jpg`,
       title: "Psicoterapia de pareja",
-      desc : "Las dificultades en la pareja son una etapa en toda relación, acudir a terapia puede representar la oportunidad de escucharse y entenderse desde una comunicación que les permita verse más allá de lo que viven en el presente."
+      desc : "Las dificultades en la pareja son una etapa en toda relación. En Danika la terapia es una oportunidad de escucha y entendimiento a través de un acompañamiento profesional con un enfoque de terapia."
    },
    {
-    src : `../img/servicios/Psicoterapia de adolescentes.png`,
+    src : `../img/serv/terapiaAdolecentes.jpg`,
     title: "Psicoterapia de adolescentes",
-    desc : " Las etapas de crecimiento de la vida son mejores cuando se tiene el espacio para poder experimentarlas y entenderlas; la adolescencia es una etapa crucial para el desarrollo tanto del paciente como de sus familiares."
+    desc : "En Danika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares."
   },
   {
-    src : `../img/servicios/Psicoterapia grupal.png`,
+    src : `../img/serv/Psicoterapia grupal.jpg`,
     title: "Psicoterapia grupal",
-    desc : "El trabajo clínico de uno, se complementa a través de la experiencia y el trabajo de todos. Es así como el grupo es curativo en sí mismo, y qué mejor con la compañía de un especialista que puede guiarlos a descubrirse mucho mejor."
+    desc : "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Danika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos.."
   },
   {
-    src : `../img/servicios/Psicoterapia grupal para mamás.png`,
+    src : `../img/serv/terapiaMadres.jpg`,
     title: "Psicoterapia grupal para mamás",
-    desc : "Es un espacio diseñado para el trabajo clínico de la maternidad y de lo que implica ser y vivirse como madres y mujeres; se trabaja con las vivencias, aprendizajes y dificultades que el maternar conlleva. "
+    desc : "Es un espacio para el descubrimiento de la maternidad, sus implicaciones, vivencias, aprendizajes y dificultades a través de un acompañamiento cercano y profesional. "
   }
 
   
@@ -88,29 +88,29 @@ let servicios =[
    // OBJETO TALLER
    let taller =[
     {
-       srcT : `../img/servicios/Taller reflexivo madres.png`,
+       srcT : `../img/serv/tellerMamas.jpg`,
        titleT : "Taller reflexivo madres",
-       descT : "Si va a tener su primer hijo, es muy probable que se sienta abrumada por las preguntas, los miedos o, simplemente, por no saber qué esperar. Por eso para muchos padres primerizos tomar clases de preparación para el parto les ayuda a calmar sus preocupaciones y responder a muchas preguntas, te ayudaré a resolver tus dudas."
+       descT : "En Danika ofrecemos un espacio para abordar preguntas, miedos, preocupaciones sobre temas relacionados a la concepción, crianza y otros temas relacionados con la experiencia de ser madres."
     },
     {
-      srcT : `../img/servicios/Taller parejas.png`,
+      srcT : `../img/serv/tallerParejas.jpg`,
       titleT : "Taller parejas",
-      descT : "Tienen por objetivo apoyar a la pareja a conocerse mejor, a fin de que puedan comprenderse, humanizarse y apoyarse amorosamente en sus áreas disfuncionales, cada taller tiene una temática especial con el propósito de desarrollar diferentes habilidades a fin de potencializar el proceso terapéutico de la pareja."
+      descT : "Los talleres tienen como objetivo brindar herramientas a las parejas para la vinculación positiva: conocerse mejor, comprenderse, apoyarse desde un enfoque terapeutico."
     },
     {
-      srcT : `../img/servicios/Taller crianza positiva.png`,
+      srcT : `../img/serv/tallerPsicoeducativo.jpg`,
       titleT : "Taller crianza positiva",
       descT : "Conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos."
     },
     {
-      srcT : `../img/servicios/Taller adicciones.png`,
+      srcT : `../img/serv/TallerAdicciones.jpg`,
       titleT : "Taller adicciones",
-      descT : "El inicio en el consumo se produce a edades muy tempranas, entre 13 y 16 años dependiendo de la sustancia. Por lo que el trabajo preventivo hay que empezarlo en edades anteriores. El alcohol, el tabaco y el cannabis son las sustancias más consumidas en la actualidad."
+      descT : "El consumo de sustancias inicia en edades tempranas. En Danika ofrecemos talleres psicoeducativos sobre adicciones, sus consecuencias y tratamientos ya que el trabajo preventivo es uno de nuestros objetivos principales."
     },
     {
-      srcT : `../img/servicios/Taller psicoeducativo.png`,
+      srcT : `../img/serv/tallerPsicoeducativo.jpg`,
       titleT : "Taller psicoeducativo",
-      descT : "Dependiendo de las necesidades del grupo, se determinan las horas y número de sesiones para trabajar el tema. Este apartado está disponible para grupos de instituciones educativas u organizaciones."
+      descT : "Son talleres dirigidos a grupos, instituciones educativa y organizaciones. En Danika nos preocupamos por ofrecer temáticas actualizadas y que se ajustan a las necesidades del cliente."
     }
     ];
   

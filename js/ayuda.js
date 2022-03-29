@@ -95,6 +95,7 @@ let myHelp= `<!--Form-->
             <h1 class="text-center ask2">${cTitle}</h1>
             <form class="sendinfo " id="sendinfo" novalidate action="https://formspree.io/f/mqknblnw" method="POST">
                 <!--Nombre-->
+                <section class="containerColorC">
                 <div class="form-row ">
                     <div class="col-md-6 mb-3">
                         <label for="name" class="formulario__label">Nombre(s)</label>
@@ -186,6 +187,7 @@ let myHelp= `<!--Form-->
                 <hr />
                 <button class="col-md-3 col-12 btn btn-col btnDef" type="submit" value="Entrar">Enviar</button>
             </form>
+            </section>
             <!-- Modal  Terminos y condiciones-->
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
