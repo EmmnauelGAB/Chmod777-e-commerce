@@ -34,7 +34,9 @@
 .containerabout{
     background: none;
 }
+
 /*MEDIAS INDEX */
+
 
 .jbIndex{
     height: 250px; 
@@ -125,6 +127,43 @@
     padding-left: 15px;
 }
 
+/*media nosotro*/
+.jbNos{
+    height: 250px; 
 }
+/*media Servicios*/
+.jbServ{
+    height: 250px; 
+}
+/*media Agendar*/
+.jbAgen{
+    height: 250px; 
+}
+/*media Ayuda*/
+.jbHelp{
+    height: 250px; 
+}
+/*media chmood*/
+.jbTeam{
+    height: 250px; 
+}
+/*media Administrador*/
+.jbAdm{
+    height: 250px; 
+}
+/*media index*/
+.jbIndex{
+    height: 250px; 
+}
+/*media registro*/
+.jbReg{
+    height: 250px; 
+}
+
+
+
+}
+
+
 
 
