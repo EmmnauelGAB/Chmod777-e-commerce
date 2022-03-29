@@ -1,0 +1,7 @@
+insert into contact (idContact, name, email, cellphone) values ('01','Eduardo Vargas', 'lalo@gmail.com', '5585230778');
+insert into contact (idContact, name, email, cellphone) values ('02','Emmanuel Garcia', 'emma@gmail.com', '5585890668');
+insert into contact (idContact, name, email, cellphone) values ('03','Victor Toriz', 'victor@gmail.com', '5541230238');
+insert into contact (idContact, name, email, cellphone) values ('04','Jocelin Correa', 'jocelin@gmail.com', '5795230628');
+insert into contact (idContact, name, email, cellphone) values ('05','Nenemy Vasquez', 'nenemy@gmail.com', '5585200769');
+
+select * from contact;
