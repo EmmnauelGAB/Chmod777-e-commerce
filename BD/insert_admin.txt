@@ -1,0 +1,8 @@
+
+
+INSERT into admin (idAdmin, fristName, email, role, cellphone, password, lastName) values ('01','Dannae','dannae.ruiz@gmail.com','admi','5553547895','Pa$$w0rd','Ruiz');
+
+INSERT into admin (idadmin, fristName, email, role, cellphone, password, lastName) values ('02','Arturo','arturo.vargas@gmail.com','admi','5553849567','Pa$$w0rd2','Vargas');
+INSERT into admin (idadmin, fristName, email, role, cellphone, password, lastName) values ('03','Alice','alice.castro@gmail.com','admi','5547568932','Pa$$w0rd3','castro');
+INSERT into admin (idadmin, fristName, email, role, cellphone, password, lastName) values ('04','Evelyn','evelyn.valdez@gmail.com','admi','5543567852','Pa$$w0rd4','valdez');
+INSERT into admin (idadmin, fristName, email, role, cellphone, password, lastName) values ('05','Daniel','daniel.mejia@gmail.com','admi','5565845689','Pa$$w0rd5','mejia');
