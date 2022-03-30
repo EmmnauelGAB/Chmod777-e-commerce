@@ -15,9 +15,9 @@ const cTitle = `Contacto`;
 const mUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.3628635562754!2d-99.16677768558075!3d19.353434648223487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc3b6b0d33b%3A0x4bb4804107bb08c4!2sC.%20Paris%20150%2C%20Del%20Carmen%2C%20Coyoac%C3%A1n%2C%2004100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1646336231261!5m2!1ses-419!2smx`;
 
 //Crear el contenido de ayuda
-let myHelp= `<!--Form-->
+let myHelp = `<!--Form-->
 <div class="containerAsk ">
-    <div class="col align-items-center">
+    <div class="col">
         <div class="col-12 col-sm-7 col-lg-7 mx-auto ">
             <h1 class="text-center ask">"${pfTitle}"</h1>
 
@@ -180,7 +180,7 @@ let myHelp= `<!--Form-->
                                         style="color:blue;" data-toggle="modal"
                                         data-target="#staticBackdrop">Términos y Condiciones</a></label>
                                 <div class="invalid-feedback "> Es necesario aceptar los términos y condiciones para
-                                    enviar tu información. 😲</div>
+                                    enviar tu información. </div>
                             </div>
 
                         </div>
@@ -331,3 +331,89 @@ let myHelp= `<!--Form-->
 
 //Muestra el contenido ayuda en pantalla
 anclaHelp.innerHTML = myHelp;
+//** se valida cada uno de los campos y se anexo expreciones regulares */
+function validationForm(name, lastName, state, telephone, email, message) {
+    let nameValue = name.value;
+    let lastValue = lastName.value;
+    let stateValue = state.value;
+    let phoneValue = telephone.value;
+    let emailValue = email.value;
+    let messageValue = message.value;
+
+
+    // Validar Nombre
+    let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+    let textName;
+    if (nameValue === "" || !text.test(nameValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Nombre inválido! </div>`;
+    } else if (nameValue.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Nombre menor a 4 caracteres!</div>`;
+        condition = false;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Nombre válido!</div>`;
+
+    }
+    document.getElementById("nameDemo").innerHTML = textName;
+    // Validar Apellido
+    if (lastValue === "" || !text.test(lastValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Apellido inválido! </div>`;
+    } else if (nameValue.length <= 3) {
+        textName = `<div class="alert alert-danger" role="alert">¡Apellido menor a 4 caracteres!</div>`;
+        condition = false;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Apellido válido!</div>`;
+    }
+    document.getElementById("lastNameDemo").innerHTML = textName;
+    // Validar Estado
+    if (stateValue === "") {
+        textName = `<div class="alert alert-danger" role="alert">¡Estado no seleccionado! </div>`;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Estado válido!</div>`;
+    }
+    document.getElementById("stdDemo").innerHTML = textName;
+    // Validar Telefono
+    let num = /[^+\d]/g;
+    if (phoneValue === "" || num.test(phoneValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno inválido!</div>`;
+        condition = false;
+    } else if (phoneValue.length <= 9) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno menor a 10 dígitos!</div>`;
+        condition = false;
+    } else if (phoneValue.length >= 11) {
+        textName = `<div class="alert alert-danger" role="alert">¡Telefóno mayor a 10 dígitos!</div>`;
+        condition = false;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Teléfono válido!</div>`;
+    }
+    document.getElementById("telephoneDemo").innerHTML = textName;
+
+    // Validar Correo
+    let emailVal = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    if (emailValue === "" || !emailVal.test(emailValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Correo inválido! </div>`;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Correo válido!</div>`;
+    }
+    document.getElementById("emailDemo").innerHTML = textName;
+
+    // Validar Message
+    if (messageValue === "" || /^\s+$/.test(messageValue)) {
+        textName = `<div class="alert alert-danger" role="alert">¡Mensaje inválido! </div>`;
+    } else {
+        textName = `<div class="alert alert-success" role="alert">¡Mensaje válido!</div>`;
+    }
+    document.getElementById("menssageDemo").innerHTML = textName;
+}
+//** Se declara la const del form */
+const formAddProduct = document.getElementById("sendinfo");
+//** Hacemos una funcion que escucha al boton enviar mediante el evente */
+formAddProduct.addEventListener("submit", (event) => {
+    let lastName = document.getElementById("lastName");
+    let name = document.getElementById("name");
+    let state = document.getElementById("std");
+    let phone = document.getElementById("telephone");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    event.preventDefault();
+    validationForm(name, lastName, state, phone, email, message);
+})
