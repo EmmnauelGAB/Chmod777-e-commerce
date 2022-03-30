@@ -28,7 +28,7 @@ let login = `
           <div class="form-group">
           <br>
             <label class="titleFormat" for="userPassword">Contraseña</label>
-            <input type="text" class="form-control txtpass" id="userPassword"
+            <input type="password" class="form-control txtpass" id="userPassword"
               placeholder="Ingrese su contraseña" >
               <div class="passwordDemo"></div>
             <div>

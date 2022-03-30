@@ -180,14 +180,14 @@ let arrayUsers = JSON.parse(usersStorage);
 
 let formAddUsers = document.getElementById("form-registro");
 
-formAddUsers.addEventListener("submit", function (evento) {
-    let name = document.getElementById("nombreR");
-    let lastname = document.getElementById("apellidoR");
-    let phone = document.getElementById("telefonoR");
-    let state = document.getElementById("estadoR");
-    let email = document.getElementById("emailR");
-    let password = document.getElementById("passR");
-    let passwordTwo = document.getElementById("passR2")
-    evento.preventDefault();
-    UserAdd(name, lastname, phone, state, email, password, passwordTwo);
-});
+formAddUsers.addEventListener("submit", (evento) => {
+        let name = document.getElementById("nombreR");
+        let lastname = document.getElementById("apellidoR");
+        let phone = document.getElementById("telefonoR");
+        let state = document.getElementById("estadoR");
+        let email = document.getElementById("emailR");
+        let password = document.getElementById("passR");
+        let passwordTwo = document.getElementById("passR2");
+        evento.preventDefault();
+        UserAdd(name, lastname, phone, state, email, password, passwordTwo);
+    });
