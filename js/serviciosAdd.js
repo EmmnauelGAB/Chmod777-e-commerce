@@ -12,7 +12,7 @@ let newService =[
 let recoverData = localStorage.getItem("services")
 if(recoverData == null){
     let jsonServices = JSON.stringify(newService);
-    localStorage.setItem("servicios",jsonServices);
+    localStorage.setItem("services",jsonServices);
 }else{
 
 }
@@ -63,11 +63,9 @@ function servicesAdd(title, tipe, description, image) {
     }
     document.getElementById("imageDemo").innerHTML = textName;
 
-    
-
         if (condition === true) {
             let newService = {
-                "_id": arrayServicios.length + 1,
+                "_id": arrayService.length + 1,
                 "title": title.value,
                 "tipe": tipe.value,
                 "description": description.value,
@@ -93,7 +91,7 @@ function servicesAdd(title, tipe, description, image) {
     }
 
 let servicesStorage = localStorage.getItem("services");
-arrayServices = JSON.parse(servicesStorage);
+let arrayService = JSON.parse(servicesStorage);
   
 
 let formAddService = document.getElementById("form-service");

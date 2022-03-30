@@ -17,6 +17,10 @@
     background-color: transparent;
 }
 
+.containerAsk{
+  color: var(--colorBlueDark);
+}
+
 
 /*efecto shadows para todas las tarjetas*/
 .card-section{
@@ -89,7 +93,7 @@
 
 .card-text{
     font-size: 22px;
-    color: rgba(46, 43, 43, 0.849);
+    color: var(--colorBlueDark)
 }
 
 /* Estilos de imagen */

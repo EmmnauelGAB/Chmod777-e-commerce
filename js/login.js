@@ -21,12 +21,13 @@ let login = `
               <img class="user_img" src="${imgModal}">
             </div>
             <hr>
-            <label for="userRigister">Correo</label>
+            <label class="titleFormat" for="userRigister">Correo</label>
             <input type="email" class="form-control" id="userRigister" aria-describedby="emailHelp"
               placeholder="Ingrese su correo" >
             <div id="userDemo"></div>
           <div class="form-group">
-            <label for="userPassword">Contraseña</label>
+          <br>
+            <label class="titleFormat" for="userPassword">Contraseña</label>
             <input type="password" class="form-control" id="userPassword"
               placeholder="Ingrese su contraseña" >
               <div id="passwordDemo"></div>
@@ -35,11 +36,11 @@ let login = `
           <hr>
           <a href="/page/registrar.html">¿Aún no tienes cuenta?</a>
           <hr>
-          <button type="submit" class="btn btn-primary">Ingresar</button>
+          <div class="center">
+            <button type="submit" class="btn btnDef">Ingresar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -121,13 +122,13 @@ function userValid(user, password) {
         Swal.fire({
             icon: 'success',
             title: '¡Éxito!',
-            text: '¡Usuario registrado!',
+            text: '¡Sesión iniciada!',
             footer: '<a href="../index.html">Volver al inicio</a>'
         })
     } else {
         Swal.fire({
             icon: 'error',
-            title: '¡Falló!',
+            title: '¡Falló el inicio de sesión!',
             text: '¡Reintenta de nuevo!',
         })
     }

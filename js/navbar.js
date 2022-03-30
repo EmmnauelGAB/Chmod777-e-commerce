@@ -17,9 +17,9 @@ const chm1 = `../page/chmod.html`;
 const adm = `Administrador`;
 const adm1 = `../page/admin.html`;
 //Botones INGRESAR REGISTRO
-const ing = `INGRESAR`;
+const ing = `Ingresar`;
 const reg1 = `../page/registrar.html`;
-const reg = `REGISTRARSE`;
+const reg = `Registrarse`;
 //Modal
 
 
@@ -61,10 +61,10 @@ let myNavbar = `<a class="navbar-brand " href="#" href="../index.html">
             style="border-radius: 16px 1px 1px 16px">
             ${ing}
           </button>
-          <a type="button" class="btn btnUserReg  my-2 my-sm-0" style="border-radius: 1px 16px 16px 1px"
-            href="${reg1}">
+          <botton type="button" class="btn btnUserReg  my-2 my-sm-0" style="border-radius: 1px 16px 16px 1px"
+          onclick="location.href='${reg1}'">
             ${reg}
-          </a>
+          </botton>
         </form>
       </div>`
 
