@@ -1,3 +1,62 @@
+
+//Crear el elementos html nosotros
+let myAdmin = `<div class="container">
+<div class="row align-items-center h-100">
+    <div class="col-12 col-sm-7 col-lg-7 mx-auto">
+        <div class="">
+            <h1 class="titt text-center titAdm">Agregar servicio</h1>
+            <hr />
+            <form id="form-service">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label class="titleFormat" for="newService">Nombre del servicio</label>
+                        <input type="text" class="form-control" id="newService"
+                            placeholder="Ingresa el nombre del servicio" />
+                        <div id="serviceDemo"></div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="titleFormat" for="servicioTipo">Tipo de servicio</label>
+                        <select id="serviceTipe" class="form-control">
+                            <option selected></option>
+                            <option>Taller</option>
+                            <option>Terapia</option>
+                        </select>
+                        <div id="tipeDemo"></div>
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label class="titleFormat" for="description">Descripción del servicio</label>
+                    <textarea class="form-control" id="description" rows="10"
+                        placeholder="Ingresa la descripción del servicio"></textarea>
+                    <div id="descriptionDemo"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="custom-file mb-3">
+                        <label class="titleFormat" for="validatedCustomFil">Ingresa imagen referente al
+                            servicio:</label>
+                        <br />
+                        <input type="file" class="fileAdd" id="validatedCustomFile" required />
+
+                        <div id="imageDemo"></div>
+                    </div>
+                </div>
+                <button class="btn btn-addservices btnDef float-right" type="submit" value="add">
+                    Agregar Servicio
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>`
+
+
+//Muestra el footer en pantalla
+anclaAdmin.innerHTML = myAdmin;
+
+
 //**Inicialización de Local Storage */
 let newService =[
     {
@@ -104,4 +163,3 @@ formAddService.addEventListener("submit", function (event) {
     event.preventDefault();
     servicesAdd(title, tipe, description, image);
 });
-

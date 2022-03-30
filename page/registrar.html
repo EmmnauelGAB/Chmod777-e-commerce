@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -24,8 +24,8 @@
 
     <!--Ancla Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navStyle" id="anclaNavbar"></nav>
-      <!--Ancla Modal Login-->
-      <div id="modalLogin"></div>
+    <!--Ancla Modal Login-->
+    <div id="modalLogin"></div>
     <!-- JUMBOTRON REGISTRAR-->
     <div class="jumbotron jumbotron-fluid jbReg text-center">
     </div>
@@ -33,246 +33,274 @@
     <!--Registro-->
     <section class="containerColorR">
         <!--Imagen user-->
-    <img src="../img/user.png" alt="user" class="rounded mx-auto d-block userStyle">
-    
-    <div class="container">
-    
-        <div class="row align-items-center h-100">
-            <div class="col-12 col-sm-7 col-lg-7 mx-auto">
-                <form id="form-registro">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="nombreR">Nombre</label>
-                            <input type="text" class="form-control" id="nombreR" placeholder="Ingrese su nombre">
-                            <div id="nombreDemo"></div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="apellidoR">Apellido</label>
-                            <input type="text" class="form-control" id="apellidoR" placeholder="Ingrese sus apellidos">
-                            <div id="apellidoDemo"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="telefonoR">Teléfono</label>
-                            <input type="text" class="form-control" id="telefonoR" placeholder="Ingrese su teléfono">
-                            <div id="telefonoDemo"></div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="estadoR">Estado</label>
-                            <select id="estadoR" class="form-control">
-                                <option selected></option>
-                                <option value="Aguascalientes">Aguascalientes</option>
-                                <option value="Baja California">Baja California</option>
-                                <option value="Baja California Sur">Baja California Sur</option>
-                                <option value="Campeche">Campeche</option>
-                                <option value="Chiapas">Chiapas</option>
-                                <option value="Chihuahua">Chihuahua</option>
-                                <option value="CDMX">Ciudad de México</option>
-                                <option value="Coahuila">Coahuila</option>
-                                <option value="Colima">Colima</option>
-                                <option value="Durango">Durango</option>
-                                <option value="Estado de México">Estado de México</option>
-                                <option value="Guanajuato">Guanajuato</option>
-                                <option value="Guerrero">Guerrero</option>
-                                <option value="Hidalgo">Hidalgo</option>
-                                <option value="Jalisco">Jalisco</option>
-                                <option value="Michoacán">Michoacán</option>
-                                <option value="Morelos">Morelos</option>
-                                <option value="Nayarit">Nayarit</option>
-                                <option value="Nuevo León">Nuevo León</option>
-                                <option value="Oaxaca">Oaxaca</option>
-                                <option value="Puebla">Puebla</option>
-                                <option value="Querétaro">Querétaro</option>
-                                <option value="Quintana Roo">Quintana Roo</option>
-                                <option value="San Luis Potosí">San Luis Potosí</option>
-                                <option value="Sinaloa">Sinaloa</option>
-                                <option value="Sonora">Sonora</option>
-                                <option value="Tabasco">Tabasco</option>
-                                <option value="Tamaulipas">Tamaulipas</option>
-                                <option value="Tlaxcala">Tlaxcala</option>
-                                <option value="Veracruz">Veracruz</option>
-                                <option value="Yucatán">Yucatán</option>
-                                <option value="Zacatecas">Zacatecas</option>
-                            </select>
-                            <div id="estadoDemo"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class= "titleFormat" for="emailR">Correo</label>
-                        <input type="email" class="form-control" id="emailR" aria-describedby="emailHelp"
-                            placeholder="Ingrese su correo">
-                        <div id="correoDemo"></div>
-                    </div>
+        <img src="../img/user.png" alt="user" class="rounded mx-auto d-block userStyle">
 
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="passR">Contraseña</label>
-                            <span class="badge badge-pill badge-light">(Mayor de 8 caractéres)</span>
-                            <input type="password" class="form-control" id="passR" placeholder="Ingrese su contraseña">
-                            <div id="contraseñaDemo"></div>
+        <div class="container">
+
+            <div class="row align-items-center h-100">
+                <div class="col-12 col-sm-7 col-lg-7 mx-auto">
+                    <form id="form-registro">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="nombreR">Nombre</label>
+                                <input type="text" class="form-control" id="nombreR" placeholder="Ingrese su nombre">
+                                <div id="nombreDemo"></div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="apellidoR">Apellido</label>
+                                <input type="text" class="form-control" id="apellidoR"
+                                    placeholder="Ingrese sus apellidos">
+                                <div id="apellidoDemo"></div>
+                            </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label class= "titleFormat" for="passR2">Confirmar contraseña</label>
-                            <input type="password" class="form-control" id="passR2" placeholder="Repita su contraseña">
-                            <div id="confirmacionDemo"></div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="telefonoR">Teléfono</label>
+                                <input type="text" class="form-control" id="telefonoR"
+                                    placeholder="Ingrese su teléfono">
+                                <div id="telefonoDemo"></div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="estadoR">Estado</label>
+                                <select id="estadoR" class="form-control">
+                                    <option selected></option>
+                                    <option value="Aguascalientes">Aguascalientes</option>
+                                    <option value="Baja California">Baja California</option>
+                                    <option value="Baja California Sur">Baja California Sur</option>
+                                    <option value="Campeche">Campeche</option>
+                                    <option value="Chiapas">Chiapas</option>
+                                    <option value="Chihuahua">Chihuahua</option>
+                                    <option value="CDMX">Ciudad de México</option>
+                                    <option value="Coahuila">Coahuila</option>
+                                    <option value="Colima">Colima</option>
+                                    <option value="Durango">Durango</option>
+                                    <option value="Estado de México">Estado de México</option>
+                                    <option value="Guanajuato">Guanajuato</option>
+                                    <option value="Guerrero">Guerrero</option>
+                                    <option value="Hidalgo">Hidalgo</option>
+                                    <option value="Jalisco">Jalisco</option>
+                                    <option value="Michoacán">Michoacán</option>
+                                    <option value="Morelos">Morelos</option>
+                                    <option value="Nayarit">Nayarit</option>
+                                    <option value="Nuevo León">Nuevo León</option>
+                                    <option value="Oaxaca">Oaxaca</option>
+                                    <option value="Puebla">Puebla</option>
+                                    <option value="Querétaro">Querétaro</option>
+                                    <option value="Quintana Roo">Quintana Roo</option>
+                                    <option value="San Luis Potosí">San Luis Potosí</option>
+                                    <option value="Sinaloa">Sinaloa</option>
+                                    <option value="Sonora">Sonora</option>
+                                    <option value="Tabasco">Tabasco</option>
+                                    <option value="Tamaulipas">Tamaulipas</option>
+                                    <option value="Tlaxcala">Tlaxcala</option>
+                                    <option value="Veracruz">Veracruz</option>
+                                    <option value="Yucatán">Yucatán</option>
+                                    <option value="Zacatecas">Zacatecas</option>
+                                </select>
+                                <div id="estadoDemo"></div>
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="form-group">
                         <div class="form-group">
-                            <div class="form-check mb-3 was-validated">
-                                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required />
-                                <label class="form-check-label" for="validationFormCheck1"> Acepta los <a
-                                        style="color:blue;" data-toggle="modal" data-target="#staticBackdrop">Términos y
-                                        Condiciones</a></label>
-                                <div class="invalid-feedback "> Es necesario aceptar los términos y condiciones para
-                                    enviar tu información.</div>
-                            </div>
-
+                            <label class="titleFormat" for="emailR">Correo</label>
+                            <input type="email" class="form-control" id="emailR" aria-describedby="emailHelp"
+                                placeholder="Ingrese su correo">
+                            <div id="correoDemo"></div>
                         </div>
-                    </div>
 
-                    <input type="reset" class="col-md-3 col-12 btn btn-col btnClean " value="Limpiar"
-                        onclick="document.location.reload();">
-                    <a href="../index.html" type="button" class="col-md-3 col-12 btn btn-col btnCancel"
-                        data-dismiss="modal">Cancelar</a>
-                    <button type="submit" class="col-md-3 col-12 btn btn-col btnDef float-right">Registrar</button>
-                </form>
-                <!-- Modal  Terminos y condiciones-->
-                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close btn-col" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="passR">Contraseña</label>
+                                <span class="badge badge-pill badge-light">(Mayor de 8 caractéres)</span>
+                                <input type="password" class="form-control" id="passR"
+                                    placeholder="Ingrese su contraseña">
+                                <div id="contraseñaDemo"></div>
                             </div>
-                            <div class="modal-body">
-                                <h2 style="text-align: center;"><strong>Términos y Condiciones de Uso</strong></h2>
-                                <p>&nbsp;</p>
-                                <p><strong>INFORMACIÓN RELEVANTE</strong></p>
-                                <p>Es requisito necesario para la adquisición de los productos que se ofrecen en este
-                                    sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se
-                                    redactan. El uso de nuestros servicios así como la compra
-                                    de nuestros productos implicará que usted ha leído y aceptado los Términos y
-                                    Condiciones de Uso en el presente documento. Todas los productos &nbsp;que son
-                                    ofrecidos por nuestro sitio web pudieran ser creadas, cobradas,
-                                    enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a
-                                    sus propios Términos y Condiciones. En algunos casos, para adquirir un producto,
-                                    será necesario el registro por parte del usuario, con
-                                    ingreso de datos personales fidedignos y definición de una contraseña.
-                                </p>
-                                <p>El usuario puede elegir y cambiar la clave para su acceso de administración de la
-                                    cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario
-                                    para la compra de alguno de nuestros productos. www.danika.com
-                                    no asume la responsabilidad en caso de que entregue dicha clave a terceros.</p>
-                                <p>Todas las compras y transacciones que se lleven a cabo por medio de este sitio web,
-                                    están sujetas a un proceso de confirmación y verificación, el cual podría incluir la
-                                    verificación del stock y disponibilidad de producto,
-                                    validación de la forma de pago, validación de la factura (en caso de existir) y el
-                                    cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En
-                                    algunos casos puede que se requiera una verificación
-                                    por medio de correo electrónico.</p>
-                                <p>Los precios de los productos ofrecidos en esta Tienda Online es válido solamente en
-                                    las compras realizadas en este sitio web.</p>
-                                <p><strong>LICENCIA</strong></p>
-                                <p>Danika&nbsp; a través de su sitio web concede una licencia para que los usuarios
-                                    utilicen&nbsp; los productos que son vendidos en este sitio web de acuerdo a los
-                                    Términos y Condiciones que se describen en este documento.</p>
-                                <p><strong>USO NO AUTORIZADO</strong></p>
-                                <p>En caso de que aplique (para venta de software, templetes, u otro producto de diseño
-                                    y programación) usted no puede colocar uno de nuestros productos, modificado o sin
-                                    modificar, en un CD, sitio web o ningún otro medio
-                                    y ofrecerlos para la redistribución o la reventa de ningún tipo.</p>
-                                <p><strong>PROPIEDAD</strong></p>
-                                <p>Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros
-                                    productos, modificado o sin modificar. Todos los productos son propiedad &nbsp;de
-                                    los proveedores del contenido. En caso de que no se especifique
-                                    lo contrario, nuestros productos se proporcionan&nbsp; sin ningún tipo de garantía,
-                                    expresa o implícita. En ningún esta compañía será &nbsp;responsables de ningún daño
-                                    incluyendo, pero no limitado a, daños directos,
-                                    indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del
-                                    uso o de la imposibilidad de utilizar nuestros productos.</p>
-                                <p><strong>POLÍTICA DE REEMBOLSO Y GARANTÍA</strong></p>
-                                <p>En el caso de productos que sean&nbsp; mercancías irrevocables no-tangibles, no
-                                    realizamos reembolsos después de que se envíe el producto, usted tiene la
-                                    responsabilidad de entender antes de comprarlo. &nbsp;Le pedimos
-                                    que lea cuidadosamente antes de comprarlo. Hacemos solamente excepciones con esta
-                                    regla cuando la descripción no se ajusta al producto. Hay algunos productos que
-                                    pudieran tener garantía y posibilidad de reembolso pero
-                                    este será especificado al comprar el producto. En tales casos la garantía solo
-                                    cubrirá fallas de fábrica y sólo se hará efectiva cuando el producto se haya usado
-                                    correctamente. La garantía no cubre averías o daños ocasionados
-                                    por uso indebido. Los términos de la garantía están asociados a fallas de
-                                    fabricación y funcionamiento en condiciones normales de los productos y sólo se
-                                    harán efectivos estos términos si el equipo ha sido usado correctamente.
-                                    Esto incluye:</p>
-                                <p>– De acuerdo a las especificaciones técnicas indicadas para cada producto.<br>– En
-                                    condiciones ambientales acorde con las especificaciones indicadas por el fabricante.
-                                    <br>– En uso específico para la función con que fue diseñado de fábrica.
-                                    <br>– En condiciones de operación eléctricas acorde con las especificaciones y
-                                    tolerancias indicadas.
-                                </p>
-                                <p><strong>COMPROBACIÓN ANTIFRAUDE</strong></p>
-                                <p>La compra del cliente puede ser aplazada para la comprobación antifraude. También
-                                    puede ser suspendida por más tiempo para una investigación más rigurosa, para evitar
-                                    transacciones fraudulentas.</p>
-                                <p><strong>PRIVACIDAD</strong></p>
-                                <p>Este www.danika.com garantiza que la <a href="https://noticias-fcbarcelona.es/"
-                                        target="_blank">fc barcelona noticias</a> información personal que usted envía
-                                    cuenta con la seguridad necesaria. Los datos ingresados por
-                                    usuario o en el caso de requerir una validación de los pedidos no serán entregados a
-                                    terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o
-                                    requerimientos legales.</p>
-                                <p>La suscripción a boletines de correos electrónicos publicitarios es voluntaria y
-                                    podría ser seleccionada al momento de crear su cuenta.</p>
-                                <p>Danika reserva los derechos de cambiar o de modificar estos términos sin previo
-                                    aviso.
-                                </p>
-                                <p>Estas terminos y condiciones se han generado en&nbsp;<a
-                                        href="http://terminosycondicionesdeusoejemplo.com/"
-                                        target="_blank">terminosycondicionesdeusoejemplo.com</a>.</p>
+                            <div class="col-md-6 mb-3">
+                                <label class="titleFormat" for="passR2">Confirmar contraseña</label>
+                                <input type="password" class="form-control" id="passR2"
+                                    placeholder="Repita su contraseña">
+                                <div id="confirmacionDemo"></div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-check mb-3 was-validated">
+                                    <input type="checkbox" class="form-check-input" id="validationFormCheck1"
+                                        required />
+                                    <label class="form-check-label" for="validationFormCheck1"> Acepta los <a
+                                            style="color:blue;" data-toggle="modal"
+                                            data-target="#staticBackdrop">Términos y
+                                            Condiciones</a></label>
+                                    <div class="invalid-feedback "> Es necesario aceptar los términos y condiciones para
+                                        enviar tu información.</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <input type="reset" class="col-md-3 col-12 btn btn-col btnClean " value="Limpiar"
+                            onclick="document.location.reload();">
+                        <a href="../index.html" type="button" class="col-md-3 col-12 btn btn-col btnCancel"
+                            data-dismiss="modal">Cancelar</a>
+                        <button type="submit" class="col-md-3 col-12 btn btn-col btnDef float-right">Registrar</button>
+                    </form>
+                    <!-- Modal  Terminos y condiciones-->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close btn-col" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 style="text-align: center;"><strong>Términos y Condiciones de Uso</strong></h2>
+                                    <p>&nbsp;</p>
+                                    <p><strong>INFORMACIÓN RELEVANTE</strong></p>
+                                    <p>Es requisito necesario para la adquisición de los productos que se ofrecen en
+                                        este
+                                        sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación
+                                        se
+                                        redactan. El uso de nuestros servicios así como la compra
+                                        de nuestros productos implicará que usted ha leído y aceptado los Términos y
+                                        Condiciones de Uso en el presente documento. Todas los productos &nbsp;que son
+                                        ofrecidos por nuestro sitio web pudieran ser creadas, cobradas,
+                                        enviadas o presentadas por una página web tercera y en tal caso estarían sujetas
+                                        a
+                                        sus propios Términos y Condiciones. En algunos casos, para adquirir un producto,
+                                        será necesario el registro por parte del usuario, con
+                                        ingreso de datos personales fidedignos y definición de una contraseña.
+                                    </p>
+                                    <p>El usuario puede elegir y cambiar la clave para su acceso de administración de la
+                                        cuenta en cualquier momento, en caso de que se haya registrado y que sea
+                                        necesario
+                                        para la compra de alguno de nuestros productos. www.danika.com
+                                        no asume la responsabilidad en caso de que entregue dicha clave a terceros.</p>
+                                    <p>Todas las compras y transacciones que se lleven a cabo por medio de este sitio
+                                        web,
+                                        están sujetas a un proceso de confirmación y verificación, el cual podría
+                                        incluir la
+                                        verificación del stock y disponibilidad de producto,
+                                        validación de la forma de pago, validación de la factura (en caso de existir) y
+                                        el
+                                        cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En
+                                        algunos casos puede que se requiera una verificación
+                                        por medio de correo electrónico.</p>
+                                    <p>Los precios de los productos ofrecidos en esta Tienda Online es válido solamente
+                                        en
+                                        las compras realizadas en este sitio web.</p>
+                                    <p><strong>LICENCIA</strong></p>
+                                    <p>Danika&nbsp; a través de su sitio web concede una licencia para que los usuarios
+                                        utilicen&nbsp; los productos que son vendidos en este sitio web de acuerdo a los
+                                        Términos y Condiciones que se describen en este documento.</p>
+                                    <p><strong>USO NO AUTORIZADO</strong></p>
+                                    <p>En caso de que aplique (para venta de software, templetes, u otro producto de
+                                        diseño
+                                        y programación) usted no puede colocar uno de nuestros productos, modificado o
+                                        sin
+                                        modificar, en un CD, sitio web o ningún otro medio
+                                        y ofrecerlos para la redistribución o la reventa de ningún tipo.</p>
+                                    <p><strong>PROPIEDAD</strong></p>
+                                    <p>Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros
+                                        productos, modificado o sin modificar. Todos los productos son propiedad
+                                        &nbsp;de
+                                        los proveedores del contenido. En caso de que no se especifique
+                                        lo contrario, nuestros productos se proporcionan&nbsp; sin ningún tipo de
+                                        garantía,
+                                        expresa o implícita. En ningún esta compañía será &nbsp;responsables de ningún
+                                        daño
+                                        incluyendo, pero no limitado a, daños directos,
+                                        indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes
+                                        del
+                                        uso o de la imposibilidad de utilizar nuestros productos.</p>
+                                    <p><strong>POLÍTICA DE REEMBOLSO Y GARANTÍA</strong></p>
+                                    <p>En el caso de productos que sean&nbsp; mercancías irrevocables no-tangibles, no
+                                        realizamos reembolsos después de que se envíe el producto, usted tiene la
+                                        responsabilidad de entender antes de comprarlo. &nbsp;Le pedimos
+                                        que lea cuidadosamente antes de comprarlo. Hacemos solamente excepciones con
+                                        esta
+                                        regla cuando la descripción no se ajusta al producto. Hay algunos productos que
+                                        pudieran tener garantía y posibilidad de reembolso pero
+                                        este será especificado al comprar el producto. En tales casos la garantía solo
+                                        cubrirá fallas de fábrica y sólo se hará efectiva cuando el producto se haya
+                                        usado
+                                        correctamente. La garantía no cubre averías o daños ocasionados
+                                        por uso indebido. Los términos de la garantía están asociados a fallas de
+                                        fabricación y funcionamiento en condiciones normales de los productos y sólo se
+                                        harán efectivos estos términos si el equipo ha sido usado correctamente.
+                                        Esto incluye:</p>
+                                    <p>– De acuerdo a las especificaciones técnicas indicadas para cada producto.<br>–
+                                        En
+                                        condiciones ambientales acorde con las especificaciones indicadas por el
+                                        fabricante.
+                                        <br>– En uso específico para la función con que fue diseñado de fábrica.
+                                        <br>– En condiciones de operación eléctricas acorde con las especificaciones y
+                                        tolerancias indicadas.
+                                    </p>
+                                    <p><strong>COMPROBACIÓN ANTIFRAUDE</strong></p>
+                                    <p>La compra del cliente puede ser aplazada para la comprobación antifraude. También
+                                        puede ser suspendida por más tiempo para una investigación más rigurosa, para
+                                        evitar
+                                        transacciones fraudulentas.</p>
+                                    <p><strong>PRIVACIDAD</strong></p>
+                                    <p>Este www.danika.com garantiza que la <a href="https://noticias-fcbarcelona.es/"
+                                            target="_blank">fc barcelona noticias</a> información personal que usted
+                                        envía
+                                        cuenta con la seguridad necesaria. Los datos ingresados por
+                                        usuario o en el caso de requerir una validación de los pedidos no serán
+                                        entregados a
+                                        terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o
+                                        requerimientos legales.</p>
+                                    <p>La suscripción a boletines de correos electrónicos publicitarios es voluntaria y
+                                        podría ser seleccionada al momento de crear su cuenta.</p>
+                                    <p>Danika reserva los derechos de cambiar o de modificar estos términos sin previo
+                                        aviso.
+                                    </p>
+                                    <p>Estas terminos y condiciones se han generado en&nbsp;<a
+                                            href="http://terminosycondicionesdeusoejemplo.com/"
+                                            target="_blank">terminosycondicionesdeusoejemplo.com</a>.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- col -->
             </div>
-            <!-- col -->
+            <!-- row -->
         </div>
-        <!-- row -->
-    </div>
     </section>
 
     <!--Ancla Footer-->
     <footer>
         <div id="anclaFooter"></div>
     </footer>
-   <!--sweetAlert-->
-   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
+    <!--sweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--Declaracion de Scripts-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="../js/registrar.js"></script>
-    <!--Bootstrap-->
+    <script src="../js/registrar.js"></script>
+    <!--SCRIPTS JS BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+    <!--SCRIPTS JS-->
     <!--JS footer-->
     <script src="../js/footer.js"></script>
     <!--JS navbar-->
     <script src="../js/navbar.js"></script>
     <!--JS ingresar-modal-->
-    <script type="text/javascript" src="../js/login.js"></script>
+    <script src="../js/login.js"></script>
     <!--JS Botón-->
-  <script src="../js/btn-up.js"></script>
+    <script src="../js/btn-up.js"></script>
 </body>
 
 </html>

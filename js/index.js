@@ -28,12 +28,12 @@ let myIndex = `<!--DANIKA-->
 <div class="container">
 <h1 class="text-center titleStyle">${dTitle}</h1>
 <hr>
-<section class="container1-0 row">
+<section class="container1-0">
   <div class="container1-1 col-12 col-md-8 col-lg-6">
     <p class="text-justify parrafStyle">${dDes}</p>
   </div>
   <div class="container1-2 col-12 col-md-4 col-lg-6">
-    <img src="${dImg}" alt="" width="500px">
+    <img src="${dImg}" alt="" width="450px">
   </div>
 </section>
 </div>

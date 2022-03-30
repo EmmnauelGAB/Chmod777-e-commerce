@@ -19,7 +19,7 @@
 
 .container1-0{
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
     color: var(--colorWhite);
 }
