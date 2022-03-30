@@ -2,24 +2,24 @@
 
 let servicios =[
     {
-       src : `../img/serv/terapiaIndividual.jpg`,
+       src : `../img/serv/terapia-individual.jpg`,
        title: "Psicoterapia individual",
-       desc : "En Danika encontrarás un espacio terapéutico, que impulsará tu crecimiento  y redescubrimiento personal"
+       desc : "En Dánika encontrarás un espacio terapéutico, que impulsará tu crecimiento  y redescubrimiento personal"
     },
     {
       src : `../img/serv/TerapiaPArejas.jpg`,
       title: "Psicoterapia de pareja",
-      desc : "Las dificultades en la pareja son una etapa en toda relación. En Danika la terapia es una oportunidad de escucha y entendimiento a través de un acompañamiento profesional con un enfoque de terapia."
+      desc : "Las dificultades en la pareja son una etapa en toda relación. En Dánika la terapia es una oportunidad de escucha y entendimiento a través de un acompañamiento profesional con un enfoque de terapia."
    },
    {
     src : `../img/serv/terapiaAdolecentes.jpg`,
     title: "Psicoterapia de adolescentes",
-    desc : "En Danika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares."
+    desc : "En Dánika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares."
   },
   {
     src : `../img/serv/Psicoterapia grupal.jpg`,
     title: "Psicoterapia grupal",
-    desc : "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Danika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos.."
+    desc : "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Dánika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos."
   },
   {
     src : `../img/serv/terapiaMadres.jpg`,
@@ -90,12 +90,12 @@ let servicios =[
     {
        srcT : `../img/serv/tellerMamas.jpg`,
        titleT : "Taller reflexivo madres",
-       descT : "En Danika ofrecemos un espacio para abordar preguntas, miedos, preocupaciones sobre temas relacionados a la concepción, crianza y otros temas relacionados con la experiencia de ser madres."
+       descT : "En Dánika ofrecemos un espacio para abordar preguntas, miedos, preocupaciones sobre temas relacionados a la concepción, crianza y otros temas relacionados con la experiencia de ser madres."
     },
     {
       srcT : `../img/serv/tallerParejas.jpg`,
       titleT : "Taller parejas",
-      descT : "Los talleres tienen como objetivo brindar herramientas a las parejas para la vinculación positiva: conocerse mejor, comprenderse, apoyarse desde un enfoque terapeutico."
+      descT : "Los talleres tienen como objetivo brindar herramientas a las parejas para la vinculación positiva: conocerse mejor, comprenderse, apoyarse desde un enfoque terapeútico."
     },
     {
       srcT : `../img/serv/TallercrianzaPositiva.jpg`,
@@ -105,12 +105,12 @@ let servicios =[
     {
       srcT : `../img/serv/TallerAdicciones.jpg`,
       titleT : "Taller adicciones",
-      descT : "El consumo de sustancias inicia en edades tempranas. En Danika ofrecemos talleres psicoeducativos sobre adicciones, sus consecuencias y tratamientos ya que el trabajo preventivo es uno de nuestros objetivos principales."
+      descT : "El consumo de sustancias inicia en edades tempranas. En Dánika ofrecemos talleres psicoeducativos sobre adicciones, sus consecuencias y tratamientos ya que el trabajo preventivo es uno de nuestros objetivos principales."
     },
     {
       srcT : `../img/serv/tallerPsicoeducativo.jpg`,
       titleT : "Taller psicoeducativo",
-      descT : "Son talleres dirigidos a grupos, instituciones educativa y organizaciones. En Danika nos preocupamos por ofrecer temáticas actualizadas y que se ajustan a las necesidades del cliente."
+      descT : "Son talleres dirigidos a grupos, instituciones educativa y organizaciones. En Dánika nos preocupamos por ofrecer temáticas actualizadas y que se ajustan a las necesidades del cliente."
     }
     ];
   

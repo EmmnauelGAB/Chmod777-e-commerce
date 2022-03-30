@@ -83,7 +83,22 @@ body{
     
 }
 .active{
-    color: var(--colorBlack);
+    color: black;
+}
+
+.container_user_img{
+    text-align: center;
+}
+.user_img{
+    width: 30%;
+}
+
+.modal-content{
+    background-color: #e6f7f8;
+}
+
+.center{
+    text-align: center;
 }
 
 /*Efecto glass navbar-scrolling */
@@ -194,6 +209,7 @@ body::-webkit-scrollbar-thumb{
 }
 .parrafStyle{
     color: var(--colorBlueClear);
+    font-size: 16px;
 }
 
 /*STYLE BTN DEFAULT */

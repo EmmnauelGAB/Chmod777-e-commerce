@@ -12,6 +12,7 @@
 }
 .ask{
     margin-bottom: 100px;
+    color: var(--colorBlueDark);
 }
 .containerAsk{
     margin-top: 85px;
@@ -26,6 +27,7 @@
 }
 .ask2{
     margin-top: 100px;
+    color: var(--colorBlueDark);
 }
 
 /*Le da formato al titulo de la Hero image*/

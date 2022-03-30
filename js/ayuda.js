@@ -99,14 +99,14 @@ let myHelp= `<!--Form-->
                 
                 <div class="form-row ">
                     <div class="col-md-6 mb-3">
-                        <label for="name" class="formulario__label">Nombre(s)</label>
+                        <label for="name" class="formulario__label titleFormat">Nombre(s)</label>
                         <input type="text" class="form-control " id="name" placeholder="Ingrese su nombre" required
                             name="name" />
                         <div id="nameDemo"></div>
                     </div>
                     <!--Apellido-->
                     <div class="col-md-6 mb-3 ">
-                        <label for="lastName">Apellidos</label>
+                        <label class="titleFormat" for="lastName">Apellidos</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Ingrese sus apellidos"
                             required name="lastName" />
                         <div class="invalid-feedback">Ingresa un apellido válido.</div>
@@ -115,7 +115,7 @@ let myHelp= `<!--Form-->
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="std">Estado</label>
+                        <label class="titleFormat" for="std">Estado</label>
                         <select id="std" class="form-control" required name="city">
                             <option></option>
                             <option value="Aguascalientes">Aguascalientes</option>
@@ -154,19 +154,20 @@ let myHelp= `<!--Form-->
                         <div id="stdDemo"></div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="telephone">Teléfono</label>
+                        <label class="titleFormat" for="telephone">Teléfono</label>
                         <input type="tel" class="form-control" id="telephone" placeholder="Ingrese su teléfono"
                             required name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
                         <div id="telephoneDemo"></div>
                     </div>
                     <div class="col-md-12 mb-12">
-                        <label for="email">Correo</label>
+                        <label class="titleFormat" for="email">Correo</label>
                         <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required
                             name="email" />
                         <div id="emailDemo"></div>
 
                         <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
+                        <hr>
+                            <label class="titleFormat" for="mensaje">Mensaje</label>
                             <textarea class="form-control" id="message" rows="10" name="message"></textarea>
                             <div id="menssageDemo"></div>
                         </div>
@@ -298,7 +299,7 @@ let myHelp= `<!--Form-->
 <!--Localizacion map-->
 <div class="col-md-8 offset-md-3">
     <fieldset>
-        <legend><i class="fa fa-location-arrow"></i>Nuestra ubicacion en el mapa</legend>
+        <legend><i class="fa fa-location-arrow"></i>Nuestra ubicación en el mapa</legend>
     </fieldset>
     <div class="row">
         <div class="col-md-9">
@@ -321,7 +322,7 @@ let myHelp= `<!--Form-->
             </fieldset>
             <div><span><strong>C. Paris 150</strong><br /></span></div>
             <div><span>C. Paris 150, Del Carmen,</span></div>
-            <div><span>Coyoacán,, CDMX<br />C.P. 04100<br /><br /><br /></span></div>
+            <div><span>Coyoacán, CDMX<br />C.P. 04100<br /><br /><br /></span></div>
             <div></div>
         </div>
     </div>

@@ -1,40 +1,42 @@
 //Declara los elementos del Index
 
 //DANIKA
-const dTitle = `ACERCA DE DÁNIKA`;
-const dDes = `Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica para adolescentes, adultos y terapia de grupo, actualmente estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG. Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas, dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica; todo mi trabajo está guiado y elaborado desde el enfoque psicoanalítico y psicodinámico.`;
+const dTitle = `Acerca de Dánika`;
+const dDes = `Soy psicóloga clínica, con formación en la UNAM. Parte de mi formación clínica consta de licenciatura en Psicología, así como un Posgrado en la atención clínica, estoy cursando un diplomado en Psicoanálisis y Género, por parte de la AMPAG. Tengo experiencia trabajando en instituciones gubernamentales para la elaboración del expediente clínico y de baterías psicológicas, dependiendo las necesidades de cada perfil psicológico, también realizando intervención en crisis, atención psicológica por vía telefónica.`;
 const dImg = `./img/indexImg/danuka.jpg`;
 //CUANDO PUEDE AYUDARTE
-const cpaTitle = `¿CUANDO PUEDE AYUDARTE LA PSICOTERAPIA EN LÍNEA?`;
+const cpaTitle = `¿Cúando puede ayudarte la psicoterapia en línea?`;
 const cpaDes = `La psicoterapia en línea puede ayudarte en diferentes escenarios. El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:`;
-const cpaList = `<ul> <li>Te sientes desconectada o desconectado de actividades que antes disfrutabas, como compañía de familiares, lugares favoritos, por mencionar algunas.</li> <li>Los días malos superan a los buenos. Sientes profunda tristeza que te impide llevar a cabo tus actividades diarias.</li> <li>Sientes nervios, pánico, temblores o cualquier otra sensación de nerviosismo, agitación o tensión.</li> <li>Has sufrido un trauma en el pasado y no puedes dejar de pensar en ello.</li> <li>Relaciones dañadas con tu pareja, hijos, padres. Tienes dificultad para expresar lo que sientes.</li> </ul>`;
+const cpaList = `<ul> <li>Te sientes desconectada o desconectado de actividades que antes disfrutabas, como compañía de familiares, lugares favoritos, por mencionar algunas.</li> <li>Los días malos superan a los buenos. Sientes profunda tristeza que te impide llevar a cabo tus actividades diarias.</li> <li>Sientes nervios, pánico, temblores o cualquier otra sensación de nerviosismo, agitación o tensión.</li></ul>;`;
 const cpaImg = `../img/indexImg/terapeuta.webp`;
 //PROCESO DE TERAPIA EN LÍNEA
-const ptlTitle = `PROCESO DE LA TERAPIA EN LÍNEA`;
+const ptlTitle = `Proceso de la terapia en línea`;
 const ptlDes = `El proceso de confirmación es el siguiente:`;
 const ptlList = `<li class="liStyle">Primer mensaje y resolución de dudas</li> <li class="liStyle">Verificación de disponibilidad para terapia</li> <li class="liStyle">Confirmación y pago de terapia</li> <li class="liStyle">Mensaje de confirmación</li> <li class="liStyle">Inicio de psicoterapia en línea</li>`;
 //BENEFICIOS
-const bTitle = `BENEFICIOS DE LA PSICOTERAPIA EN LÍNEA`;
+const bTitle = `Beneficios de la psicoterapía en línea`;
 const bDes = `La psicoterapia en línea puede ayudarte en diferentes escenarios. El objetivo principal es mejorar tu calidad de vida, obteniendo las herramientas que necesitas para tomar decisiones que contribuyan a vivir plenamente:`;
 const bList = `<li>Conduce a nuevas oportunidades para aprender modos diferentes de pensar, sentir y actuar.</li> <li>Encontrar un sentido a lo que se está haciendo.</li> <li>Ayuda a mejorar las relaciones con los demás.</li> <li>Analizar problemas y encontrar soluciones.</li> <li>Ayuda a manejar las emociones.</li>`;
 const bImg = `./img/indexImg/hombrehablando.webp`;
 //TESTIMONIOS
-const tTitle = `TESTIMONIOS`;
+const tTitle = `Testimonios`;
 const tImgMas = `img/icons/index/profilem.png`; 
 const tImgFem = `img/icons/index/profilef.png`;
 
 //Crear el index
 let myIndex = `<!--DANIKA-->
-<section class="container1-0">
-  <div class="container1-1">
-    <h1 class="text-center titleStyle">${dTitle}</h1>
-    <hr>
+<div class="container">
+<h1 class="text-center titleStyle">${dTitle}</h1>
+<hr>
+<section class="container1-0 row">
+  <div class="container1-1 col-12 col-md-8 col-lg-6">
     <p class="text-justify parrafStyle">${dDes}</p>
   </div>
-  <div class="container1-2">
+  <div class="container1-2 col-12 col-md-4 col-lg-6">
     <img src="${dImg}" alt="" width="500px">
   </div>
 </section>
+</div>
 <!--CUANDO PUEDE AYUDARTE-->
 <section class="container2-0">
   <div class="container2-1">
@@ -49,6 +51,7 @@ let myIndex = `<!--DANIKA-->
     <img src="${cpaImg}" alt="" width="450px">
   </div>
 </section>
+
 
 <!--PROCESO DE TERAPIA EN LÍNEA-->
 <section class="container3-0">

@@ -11,6 +11,7 @@
   align-items: center;
 }
 
+
 .titulos{
   display: flex;
   flex-direction: column;
@@ -32,7 +33,6 @@
   .mytext {
       z-index: 20;
       font-size: 60px;
-      color: black;
   }
 
   .overlaytaller {
@@ -94,8 +94,7 @@
   }
 
   .titt{
-   
-    color: var(--colorBlueClear);
+    color: var(--colorBlueDark);
     font-size: 50px;
   }
 
