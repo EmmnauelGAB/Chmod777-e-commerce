@@ -1,4 +1,3 @@
-
 //Crear el elementos html nosotros
 let myAdmin = `<div class="container">
 <div class="row align-items-center h-100">
@@ -38,12 +37,12 @@ let myAdmin = `<div class="container">
                         <label class="titleFormat" for="validatedCustomFil">Ingresa imagen referente al
                             servicio:</label>
                         <br />
-                        <input type="file" class="fileAdd" id="validatedCustomFile" required />
+                        <input type="file" class="fileAdd" id="validatedCustomFile" id="imgServ" />
 
                         <div id="imageDemo"></div>
                     </div>
                 </div>
-                <button class="btn btn-addservices btnDef float-right" type="submit" value="add">
+                <button class="btn btn-addservices btnDef float-right" type="submit" value="add" onclick="agregar();">
                     Agregar Servicio
                 </button>
             </form>
@@ -58,21 +57,19 @@ anclaAdmin.innerHTML = myAdmin;
 
 
 //**Inicialización de Local Storage */
-let newService =[
-    {
-       "_id": 0,
-       "title": "Terapia individual",
-       "tipe": "Terapia",
-       "description": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
-       "image": "terapia-individual.png"
-   }
-   ];
+let newService = [{
+    "_id": 0,
+    "title": "Terapia individual",
+    "tipe": "Terapia",
+    "description": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
+    "image": "terapia-individual.png"
+}];
 
 let recoverData = localStorage.getItem("services")
-if(recoverData == null){
+if (recoverData == null) {
     let jsonServices = JSON.stringify(newService);
-    localStorage.setItem("services",jsonServices);
-}else{
+    localStorage.setItem("services", jsonServices);
+} else {
 
 }
 
@@ -91,7 +88,7 @@ function servicesAdd(title, tipe, description, image) {
         textName = `<div class="alert alert-danger" role="alert">¡Título inválido! </div>`;
         condition = false;
     } else {
-        textName = `<div class="alert alert-success" role="alert">¡Título válido!</div>`;  
+        textName = `<div class="alert alert-success" role="alert">¡Título válido!</div>`;
     }
     document.getElementById("serviceDemo").innerHTML = textName;
 
@@ -122,40 +119,40 @@ function servicesAdd(title, tipe, description, image) {
     }
     document.getElementById("imageDemo").innerHTML = textName;
 
-        if (condition === true) {
-            let newService = {
-                "_id": arrayService.length + 1,
-                "title": title.value,
-                "tipe": tipe.value,
-                "description": description.value,
-                "image": image.value
-            };
-            arrayService.push(newService);
-            let jsonServices = JSON.stringify(arrayService);
-            localStorage.setItem("services", jsonServices);
-            
-            Swal.fire({
-                icon: 'success',
-                title: '¡Éxito!',
-                text: '¡Se agregó el servicio!',
-                footer: '<a href="./servicios.html">Ir a servicios</a>'
-            })
-        }else{  
-            Swal.fire({
-                icon: 'error',
-                title: '¡Falló!',
-                text: '¡No se agregó el servicio!',
-            })
-        }
+    if (condition === true) {
+        let newService = {
+            "_id": arrayService.length + 1,
+            "title": title.value,
+            "tipe": tipe.value,
+            "description": description.value,
+            "image": image.value
+        };
+        arrayService.push(newService);
+        let jsonServices = JSON.stringify(arrayService);
+        localStorage.setItem("services", jsonServices);
+
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '¡Se agregó el servicio!',
+            footer: '<a href="./servicios.html">Ir a servicios</a>'
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: '¡Falló!',
+            text: '¡No se agregó el servicio!',
+        })
     }
+}
 
 let servicesStorage = localStorage.getItem("services");
 let arrayService = JSON.parse(servicesStorage);
-  
+
 
 let formAddService = document.getElementById("form-service");
 
-formAddService.addEventListener("submit", function (event) {
+formAddService.addEventListener("submit", function(event) {
     let title = document.getElementById("newService");
     let tipe = document.getElementById("serviceTipe");
     let description = document.getElementById("description");

@@ -21,11 +21,11 @@ let myHelp = `<!--Form-->
         <div class="col-12 col-sm-7 col-lg-7 mx-auto ">
             <h1 class="text-center ask">"${pfTitle}"</h1>
 
-            <div class="accordion" id="accordionExample">
-                <div class="card">
+            <div class="accordion containerColapse" id="accordionExample">
+                <div class="card colapseSt ">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            <button class="btn text-left titleFormatColapse {                                " type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 ${pfQ1}
                             </button>
@@ -39,10 +39,10 @@ let myHelp = `<!--Form-->
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card colapseSt">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn text-left collapsed titleFormatColapse {                                " type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 ${pfQ2}
@@ -56,10 +56,10 @@ let myHelp = `<!--Form-->
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card colapseSt">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn text-left collapsed titleFormatColapse" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 ${pfQ3}
@@ -73,10 +73,10 @@ let myHelp = `<!--Form-->
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card colapseSt">
                     <div class="card-header" id="headingFour">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn  text-left collapsed titleFormatColapse" type="button"
                                 data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 ${pfQ4}
@@ -391,6 +391,7 @@ function validationForm(name, lastName, state, telephone, email, message) {
     let emailVal = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
     if (emailValue === "" || !emailVal.test(emailValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Correo inválido! </div>`;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Correo válido!</div>`;
     }
@@ -399,11 +400,30 @@ function validationForm(name, lastName, state, telephone, email, message) {
     // Validar Message
     if (messageValue === "" || /^\s+$/.test(messageValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Mensaje inválido! </div>`;
+        condition = false;
     } else {
         textName = `<div class="alert alert-success" role="alert">¡Mensaje válido!</div>`;
     }
     document.getElementById("menssageDemo").innerHTML = textName;
+
+
 }
+if (condition === true) {
+    Swal.fire({
+        icon: 'success',
+        title: '¡Éxito!',
+        text: '¡Correo Enviado!',
+        footer: '<a href="../index.html">Volver al inicio</a>'
+    })
+} else {
+    Swal.fire({
+        icon: 'error',
+        title: '¡Falló!',
+        text: '¡Reintenta de nuevo!',
+    })
+}
+
+
 //** Se declara la const del form */
 const formAddProduct = document.getElementById("sendinfo");
 //** Hacemos una funcion que escucha al boton enviar mediante el evente */

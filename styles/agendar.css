@@ -1,33 +1,46 @@
-.jbAgen{
-  background-image: url(../img/imgJbtm/agendar.jpg);
-  margin-bottom: 0%;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.jbAgen {
+    background-image: url(../img/imgJbtm/agendar.jpg);
+    margin-bottom: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 /*Se usan variables de color ya prestablecidas en el main.*/
-.btn-addservices{
+
+.btn-addservices {
     background-color: var(--colorBlueDark);
     margin-bottom: 35px;
     margin-top: 20px;
     font-size: 16px;
     color: var(--ColorWhite);
-  }
-  /*hover cuando el usuario interactúa con el botón.*/
-  .btn-addservices:hover{
+}
+
+
+/*hover cuando el usuario interactúa con el botón.*/
+
+.btn-addservices:hover {
     background-color: var(--ColorWhite);
     color: var(--colorBlueDark);
     border-color: var(--colorBlueDark);
-  }
+}
 
-
-.titleFormat{
+.titleFormat {
     font-size: 19px;
     font-weight: bold;
+}
+
+
+/* Formato de colapse ayuda.html*/
+
+.titleFormatColapse {
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
 }
