@@ -19,9 +19,10 @@ let myHelp = `<!--Form-->
 <div class="containerAsk ">
     <div class="col">
         <div class="col-12 col-sm-7 col-lg-7 mx-auto ">
-            <h1 class="text-center ask">"${pfTitle}"</h1>
+            
 
             <div class="accordion containerColapse" id="accordionExample">
+            <h1 class="text-center ask">${pfTitle}</h1>
                 <div class="card colapseSt ">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
@@ -188,7 +189,7 @@ let myHelp = `<!--Form-->
                     </div>
                 </div>
                 <hr />
-                <button class="col-md-3 col-12 btn btn-col btnDef" type="submit" value="Entrar">Enviar</button>
+                <button class="col-md-3 col-12 btn btn-col btnDef float-right"  type="submit" value="Entrar">Enviar</button>
             </form>
             </section>
             <!-- Modal  Terminos y condiciones-->
@@ -300,13 +301,13 @@ let myHelp = `<!--Form-->
 <!--Localizacion map-->
 <div class="col-md-8 offset-md-3">
     <fieldset>
-        <legend><i class="fa fa-location-arrow"></i>Nuestra ubicación en el mapa</legend>
+            <h4 class="ubicacion">Nuestra ubicación</h4>                    
     </fieldset>
     <div class="row">
         <div class="col-md-9">
             <div class="map-responsive"><iframe
                     src="${mUrl}"
-                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    width="600px" height="4500px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
         </div>
         <div class="col-sm-6">
             <fieldset>

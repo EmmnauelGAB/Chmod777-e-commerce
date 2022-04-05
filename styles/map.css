@@ -2,10 +2,13 @@
 
 /*responsive*/
 .map-responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
-    height:0;
+    
 }
 
 /*iframe responsive*/

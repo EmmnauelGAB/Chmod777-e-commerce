@@ -43,6 +43,7 @@ body{
 }
 
 
+
 .navStyle{
     
     background-color: var(--colorSkye);
@@ -235,3 +236,4 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     justify-content: center;
 }
+

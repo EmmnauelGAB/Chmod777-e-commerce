@@ -33,7 +33,7 @@ let myIndex = `<!--DANIKA-->
     <p class="text-justify parrafStyle">${dDes}</p>
   </div>
   <div class="container1-2 col-12 col-md-4 col-lg-6">
-    <img src="${dImg}" alt="" width="450px">
+    <img class="imgFormat" src="${dImg}" alt="" width="450px">
   </div>
 </section>
 </div>
@@ -48,7 +48,7 @@ let myIndex = `<!--DANIKA-->
   ${cpaList}
   </div>
   <div class="container2-3">
-    <img src="${cpaImg}" alt="" width="450px">
+    <img class="imgFormat" src="${cpaImg}" alt="" width="450px">
   </div>
 </section>
 
@@ -76,20 +76,21 @@ let myIndex = `<!--DANIKA-->
     </ul>
   </div>
   <div class="container4-3">
-    <img src="${bImg}" alt="" width="370px">
+    <img class="imgFormat" src="${bImg}" alt="" width="370px">
   </div>
 </section>
 
 <!--TESTIMONIOS-->
 <div class="containertestimonios col align-items-center">
-  <div class="titulos">
-    <h1 class="tit">${tTitle}</h1>
-    <hr>
-  </div>
+  
   <div class="jumbotron jumbotron-testimonios">
     <div class="container-xl">
       <div class="row">
         <div class="col-md-10 mx-auto">
+        <div class="titulos">
+          <h1 class="tit">${tTitle}</h1>
+           <hr>
+          </div>
           <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">

@@ -57,7 +57,9 @@
     justify-content: center;
     margin: auto;
     margin-top: 0px;
+    
   }
+
 
   .card-titles{
     font-size: 25px;
@@ -73,6 +75,7 @@
   .card-bodyy{
     height: 250px;
     background-color: #6fc4c531;
+    
   }
 
   @media (max-width: 920px) {
