@@ -4,7 +4,7 @@ const titleModal = `Ingresar`;
 const imgModal = `../img/user_2.png`;
 //Creacion de plantilla 
 let login = `
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" data-backdrop="static" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -37,7 +37,7 @@ let login = `
           <a href="/page/registrar.html">¿Aún no tienes cuenta?</a>
           <hr>
           <div class="center">
-            <button class="btn btnDef submit">Ingresar</button>
+            <label type="button" class="btn btnDef btnIn submit">Ingresar</label>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             <p class="message pt-4 text-danger"></p>
           </div>
@@ -54,7 +54,6 @@ let txtpass = document.querySelector(".txtpass");
 let submit = document.querySelector(".submit");
 
 if (window.localStorage) {
-    //console.log('Support');
     //Store value usingkey
     localStorage.setItem("user", "danika@gmail.com");
     localStorage.setItem("pass", "123@danika");
@@ -72,21 +71,19 @@ if (window.localStorage) {
                 icon: 'success',
                 title: '¡Éxito!',
                 text: '¡Usuario Correcto!',
-                footer: '<a href="../index.html">Ir a inicio</a>',
-                timer: 60000
             });
+ 
         } else {
             messageUser.innerHTML = `<div class="alert alert-danger" role="alert">¡Usuario Inválido!</div>`;
             messagePass.innerHTML = `<div class="alert alert-danger" role="alert">¡Contraseña Inválido!</div>`;
+            
             Swal.fire({ // Se muestra una alerta que indica Fallo
                 title: '¡Cuidado!',
                 text: 'Usuario incorrecto',
-                icon: 'error',
-                confirmButtonColor: '#ED959C',
-                confirmButtonText: 'Ok.',
-                timer: 60000
+                icon: 'error',              
             });
         }
-
     })
+
+   
 }

@@ -34,7 +34,7 @@ let myHelp = `<!--Form-->
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body card-ayuda">
                            ${pfR1}
                         </div>
                     </div>
@@ -51,7 +51,7 @@ let myHelp = `<!--Form-->
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body card-ayuda">
                             ${pfR2}
                         </div>
                     </div>
@@ -68,7 +68,7 @@ let myHelp = `<!--Form-->
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body card-ayuda">
                             ${pfR3}
                         </div>
                     </div>
@@ -85,18 +85,19 @@ let myHelp = `<!--Form-->
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                         data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body card-ayuda">
                             ${pfR4}
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h1 class="text-center ask2">${cTitle}</h1>
+            
             <section class="containerColorC">
             <form class="sendinfo " id="sendinfo" novalidate action="https://formspree.io/f/mqknblnw" method="POST">
-                <!--Nombre-->
                 
+            <!--Nombre-->
+            <h1 class="text-center ask2">${cTitle}</h1>
                 <div class="form-row ">
                     <div class="col-md-6 mb-3">
                         <label for="name" class="formulario__label titleFormat">Nombre(s)</label>
@@ -344,6 +345,7 @@ function validationForm(name, lastName, state, telephone, email, message) {
     // Validar Nombre
     let text = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     let textName;
+    let condition = true;
     if (nameValue === "" || !text.test(nameValue)) {
         textName = `<div class="alert alert-danger" role="alert">¡Nombre inválido! </div>`;
     } else if (nameValue.length <= 3) {
@@ -406,21 +408,20 @@ function validationForm(name, lastName, state, telephone, email, message) {
     }
     document.getElementById("menssageDemo").innerHTML = textName;
 
-
-}
-if (condition === true) {
-    Swal.fire({
-        icon: 'success',
-        title: '¡Éxito!',
-        text: '¡Correo Enviado!',
-        footer: '<a href="../index.html">Volver al inicio</a>'
-    })
-} else {
-    Swal.fire({
-        icon: 'error',
-        title: '¡Falló!',
-        text: '¡Reintenta de nuevo!',
-    })
+    if (condition === true) {
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '¡Correo Enviado!',
+            footer: '<a href="../index.html">Volver al inicio</a>'
+        })
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: '¡Falló!',
+            text: '¡Reintenta de nuevo!',
+        })
+    }
 }
 
 
