@@ -14,14 +14,14 @@ let servicios = [{
         desc: "En Dánika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares."
     },
     {
-        src: `../img/serv/Psicoterapia grupal.jpg`,
+        src: `../img/serv/Psicoterapiagrupal.jpg`,
         title: "Psicoterapia grupal",
         desc: "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Dánika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos."
     },
     {
         src: `../img/serv/terapiaMadres.jpg`,
         title: "Psicoterapia grupal para mamás",
-        desc: "Es un espacio para el descubrimiento de la maternidad, sus implicaciones, vivencias, aprendizajes y dificultades a través de un acompañamiento cercano y profesional. "
+        desc: "Es un espacio para el descubrimiento de la maternidad, sus implicaciones, vivencias, aprendizajes y dificultades a través de un acompañamiento cercano y profesional."
     }
 
 
@@ -49,14 +49,6 @@ function crearCard(src, title, desc) {
 
 //MOSTRAR CARD SERVICIOS
 function mostrarElementosServicios(servicios) {
-    //traer el elemento ancla    
-    //recorrer algo
-    //por cada elemento nececito hacer algo
-    //dibujar una card(src,title,desc)
-
-
-    //actualizar el elemento con lo que ya tenga mas la nueva card
-    //Pueda mandar un solo elemento
     anclaservicios = document.getElementById('anclaservicios'); //TRAER ELEMENTO
     let containerServicio = '';
 
@@ -65,7 +57,6 @@ function mostrarElementosServicios(servicios) {
         let src = servicios[i].src;
         let title = servicios[i].title;
         let desc = servicios[i].desc;
-
         containerServicio += crearCard(src, title, desc);
         anclaservicios.innerHTML = containerServicio;
     }
@@ -131,24 +122,12 @@ function crearCardTaller(srcT, titleT, descT) {
 
 
 
-
-
 // MOSTRAR CARD TALLER
 function mostrarElementosTaller(taller) {
-    //traer el elemento ancla    
-    //recorrer algo
-    //por cada elemento nececito hacer algo
-    //dibujar una card(src,title,desc)
-
-
-    //actualizar el elemento con lo que ya tenga mas la nueva card
-    //Pueda mandar un solo elemento
     let anclataller = document.getElementById("anclataller"); //TRAER ELEMENTO
     let containerTaller = '';
 
     for (let j = 0; j < taller.length; j++) {
-        // console.log(taller[j].desc);
-
         let srcT = taller[j].srcT;
         let titleT = taller[j].titleT;
         let descT = taller[j].descT;
@@ -161,29 +140,5 @@ function mostrarElementosTaller(taller) {
 
 }
 mostrarElementosTaller(taller);
-//  window.onload = function(){
-//     mostrarElementosTaller(taller);
-//  }
 
-function agregar() {
-    alert("Hola");
 
-    function productos(imgServ, newService, description) {
-        this.imgServ = imgServ;
-        this.newService = newService;
-        this.description = description;
-    }
-    let src = document.getElementById("imgServ");
-    let title = document.getElementById("newService");
-    console.log(title);
-    let desc = document.getElementById("description");
-
-    nuevoProducto = new productos(src, title, desc);
-    console.log(nuevoProducto);
-    agregarNuevo();
-}
-
-function agregarNuevo() {
-    servicios.push(nuevoProducto);
-
-}
