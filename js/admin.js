@@ -62,8 +62,37 @@ let newService = [{
     "title": "Terapia individual",
     "tipe": "Terapia",
     "description": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
-    "image": "terapia-individual.png"
-}];
+    "image": "../img/serv/terapia-individual.jpg"
+},
+{
+    "_id": 1,
+    "title": "Psicoterapia de pareja",
+    "tipe": "Terapia",
+    "description": "Las dificultades en la pareja son una etapa en toda relación. En Dánika la terapia es una oportunidad de escucha y entendimiento a través de un acompañamiento profesional con un enfoque de terapia.",
+    "image": "../img/serv/TerapiaPArejas.jpg"
+},
+{
+    "_id": 2,
+    "title": "Psicoterapia de adolescentes",
+    "tipe": "Terapia",
+    "description": "En Dánika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares.",
+    "image": "../img/serv/terapiaAdolecentes.jpg"
+},
+{
+    "_id": 3,
+    "title": "Psicoterapia grupal",
+    "tipe": "Terapia",
+    "description": "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Dánika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos.",
+    "image": "../img/serv/Psicoterapiagrupal.jpg"
+},
+{
+    "_id": 4,
+    "title": "Psicoterapia grupal para mamás",
+    "tipe": "Terapia",
+    "description": "Es un espacio para el descubrimiento de la maternidad, sus implicaciones, vivencias, aprendizajes y dificultades a través de un acompañamiento cercano y profesional.",
+    "image": "../img/serv/terapiaMadres.jpg"
+}
+];
 
 let recoverData = localStorage.getItem("services")
 if (recoverData == null) {
