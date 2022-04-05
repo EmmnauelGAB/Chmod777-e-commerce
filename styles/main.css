@@ -218,6 +218,11 @@ body::-webkit-scrollbar-thumb{
     color: var(--colorWhite);
     border: none;
 }
+
+.btnIn{
+    margin-bottom: 0px;
+}
+
 .btnDef:hover{
     background-color: var(--colorWhite);
     color: var(--colorSkye);
