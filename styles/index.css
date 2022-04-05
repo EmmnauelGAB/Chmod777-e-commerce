@@ -78,7 +78,8 @@
     align-items: center;
     text-align: justify;
     font-size: 18px;
-    margin-left:50px;
+    margin-left:0px;
+    margin-right: 20px;
 }
 .container2-3{
     width: 40%;
@@ -106,7 +107,6 @@
 
 
 
-
 .container4-1{
     display: flex; 
     align-items: center;
@@ -116,6 +116,7 @@
     align-items: center;
     font-size: 18px;
     margin-left: 20px;
+    
 }
 
 .container4-2{
@@ -124,11 +125,11 @@
     align-items: center;
     text-align: justify;
     font-size: 18px;
-    margin-right: 40px;
+    margin-left: 50px;
+    
 }
 .container4-3{
     width: 40%;
-    
 }
 
 /*Carrusel*/
@@ -221,7 +222,14 @@
 
 
 .jumbotron-testimonios{
-    background-color: #0000002f;
+    background: #6fc4c531;
+    margin: 100px 0px 100px 0px;
+    border-radius: 25px;
+
+}
+
+.imgFormat{
+    border-radius: 30px;
 }
 
 
