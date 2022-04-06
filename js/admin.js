@@ -42,7 +42,7 @@ let myAdmin = `<div class="container">
                         <div id="imageDemo"></div>
                     </div>
                 </div>
-                <button class="btn btn-addservices btnDef float-right" type="submit" value="add" onclick="agregar();">
+                <button class="btn btn-addservices btnDef float-right" type="submit" value="add">
                     Agregar Servicio
                 </button>
             </form>
@@ -62,35 +62,35 @@ let newService = [{
     "title": "Terapia individual",
     "tipe": "Terapia",
     "description": "Cuando te encuentras en una situacion difícil de sobrellevar, no es facil pedir ayuda, pero cuando te encuentras un espacio para ti en terapia, se vuelve un momento para crecer y descubrirte desde la profundidad. Desde ahí, trabajaremos juntos.",
-    "image": "../img/serv/terapia-individual.jpg"
+    "image": "terapia-individual.jpg"
 },
 {
     "_id": 1,
     "title": "Psicoterapia de pareja",
     "tipe": "Terapia",
     "description": "Las dificultades en la pareja son una etapa en toda relación. En Dánika la terapia es una oportunidad de escucha y entendimiento a través de un acompañamiento profesional con un enfoque de terapia.",
-    "image": "../img/serv/TerapiaPArejas.jpg"
+    "image": "TerapiaPArejas.jpg"
 },
 {
     "_id": 2,
     "title": "Psicoterapia de adolescentes",
     "tipe": "Terapia",
     "description": "En Dánika se brinda un espacio para entender la adolescencia como una etapa de crucial para el desarrollo del paciente como de sus familiares.",
-    "image": "../img/serv/terapiaAdolecentes.jpg"
+    "image": "terapiaAdolecentes.jpg"
 },
 {
     "_id": 3,
     "title": "Psicoterapia grupal",
     "tipe": "Terapia",
     "description": "La psicoterapia grupal esta basada en el trabajo  individual a  través de la experiencia  grupal, en Dánika se brinda un acompañamiento profesional para la guía y el autodescubrimiento de todos.",
-    "image": "../img/serv/Psicoterapiagrupal.jpg"
+    "image": "Psicoterapiagrupal.jpg"
 },
 {
     "_id": 4,
     "title": "Psicoterapia grupal para mamás",
     "tipe": "Terapia",
     "description": "Es un espacio para el descubrimiento de la maternidad, sus implicaciones, vivencias, aprendizajes y dificultades a través de un acompañamiento cercano y profesional.",
-    "image": "../img/serv/terapiaMadres.jpg"
+    "image": "terapiaMadres.jpg"
 }
 ];
 
@@ -98,6 +98,52 @@ let recoverData = localStorage.getItem("services")
 if (recoverData == null) {
     let jsonServices = JSON.stringify(newService);
     localStorage.setItem("services", jsonServices);
+} else {
+
+}
+
+
+let newTaller = [{
+    "_id": 0,
+    "title": "Taller reflexivo madres",
+    "tipe": "Taller",
+    "description": "En Dánika ofrecemos un espacio para abordar preguntas, miedos, preocupaciones sobre temas relacionados a la concepción, crianza y otros temas relacionados con la experiencia de ser madres.",
+    "image": "tellerMamas.jpg"
+},
+{
+    "_id": 1,
+    "title": "Taller parejas",
+    "tipe": "Taller",
+    "description": "Los talleres tienen como objetivo brindar herramientas a las parejas para la vinculación positiva: conocerse mejor, comprenderse, apoyarse desde un enfoque terapeútico.",
+    "image": "tallerParejas.jpg"
+},
+{
+    "_id": 2,
+    "title": "Taller crianza positiva",
+    "tipe": "Taller",
+    "description": "Conversatorios y conferencias para madres y padres sobre crianza, educación, maternidad y paternidad. Talleres de información para una maternidad y paternidad más feliz.  Organizamos talleres extraordinarios sobre otros temas de interés como adolescencia, celos entre hermanos.",
+    "image": "TallercrianzaPositiva.jpg"
+},
+{
+    "_id": 3,
+    "title": "Taller adicciones",
+    "tipe": "Taller",
+    "description": "El consumo de sustancias inicia en edades tempranas. En Dánika ofrecemos talleres psicoeducativos sobre adicciones, sus consecuencias y tratamientos ya que el trabajo preventivo es uno de nuestros objetivos principales.",
+    "image": "TallerAdicciones.jpg"
+},
+{
+    "_id": 4,
+    "title": "Taller psicoeducativo",
+    "tipe": "Taller",
+    "description": "Son talleres dirigidos a grupos, instituciones educativa y organizaciones. En Dánika nos preocupamos por ofrecer temáticas actualizadas y que se ajustan a las necesidades del cliente.",
+    "image": "tallerPsicoeducativo.jpg"
+}
+];
+
+let recoverDatat = localStorage.getItem("talleres")
+if (recoverDatat == null) {
+    let jsonTaller = JSON.stringify(newTaller);
+    localStorage.setItem("talleres", jsonTaller);
 } else {
 
 }
@@ -148,13 +194,15 @@ function servicesAdd(title, tipe, description, image) {
     }
     document.getElementById("imageDemo").innerHTML = textName;
 
-    if (condition === true) {
+    
+
+    if (condition === true && tipe.value == "Terapia") {
         let newService = {
             "_id": arrayService.length + 1,
             "title": title.value,
             "tipe": tipe.value,
             "description": description.value,
-            "image": image.value
+            "image": image.value.substr(12)
         };
         arrayService.push(newService);
         let jsonServices = JSON.stringify(arrayService);
@@ -165,8 +213,26 @@ function servicesAdd(title, tipe, description, image) {
             title: '¡Éxito!',
             text: '¡Se agregó el servicio!',
             footer: '<a href="./servicios.html">Ir a servicios</a>'
-        })
-    } else {
+        });
+    } else if(condition === true && tipe.value == "Taller"){
+        let newTaller = {
+            "_id": arrayTaller.length + 1,
+            "title": title.value,
+            "tipe": tipe.value,
+            "description": description.value,
+            "image": image.value.substr(12)
+        };
+        arrayTaller.push(newTaller);
+        let jsonTaller = JSON.stringify(arrayTaller);
+        localStorage.setItem("talleres", jsonTaller);
+
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '¡Se agregó el servicio!',
+            footer: '<a href="./servicios.html">Ir a servicios</a>'
+        });
+    }else {
         Swal.fire({
             icon: 'error',
             title: '¡Falló!',
@@ -177,6 +243,9 @@ function servicesAdd(title, tipe, description, image) {
 
 let servicesStorage = localStorage.getItem("services");
 let arrayService = JSON.parse(servicesStorage);
+
+let talleresStorage = localStorage.getItem("talleres");
+let arrayTaller = JSON.parse(talleresStorage);
 
 
 let formAddService = document.getElementById("form-service");

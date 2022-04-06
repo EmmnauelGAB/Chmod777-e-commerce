@@ -105,7 +105,6 @@ let acerca =[
         let container = '';
 
         for(let i=0 ; i<acerca.length; i++){
-            console.log(acerca [i].desc);
 
             let src = acerca [i].src;
             let title = acerca [i].title;
